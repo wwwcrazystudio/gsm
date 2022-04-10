@@ -1,0 +1,225 @@
+.archive-numbers {
+    &__wrap {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+
+    &__catalog-content {
+        margin-bottom: rem(126px);
+
+        @include media-breakpoint-down(xl) {
+            margin-bottom: rem(20px);
+        }
+    }
+
+    &__hot {
+        margin-bottom: rem(136px);
+    }
+
+    &__support {
+        margin-bottom: rem(96px);
+    }
+}
+
+.search-summary {
+
+    &__content {
+        padding-left: rem(32px);
+        padding-right: rem(30px);
+
+        @include media-breakpoint-only(lg) {
+            padding-left: rem(20px);
+            padding-right: rem(0px);
+        }
+
+        @include media-breakpoint-down(lg) {
+            padding-left: rem(20px);
+            padding-right: rem(0px);
+            margin-bottom: rem(30px);
+        }
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: rem(19px);
+        margin-bottom: rem(24px);
+    }
+
+    &__list {
+        @include unlist;
+        margin-bottom: rem(44px);
+
+        @include media-breakpoint-down(lg) {
+            margin-bottom: rem(20px);
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: rem(24px);
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        @include media-breakpoint-only(lg) {
+            font-size: rem(14px);
+        }
+
+        @include media-breakpoint-down(lg) {
+            margin-bottom: rem(12px);
+        }
+    }
+
+    &__info {
+        font-size: rem(14px);
+        color: $gray;
+
+        span {
+            color: red;
+        }
+    }
+
+    &__result {
+        margin-left: auto;
+        font-weight: 500;
+        position: relative;
+    }
+
+    &__discount {
+        display: block;
+        position: absolute;
+        font-weight: 500;
+        color: $gray;
+        right: 0;
+        bottom: -80%;
+    }
+
+    &__text {
+        font-size: rem(14px);
+        margin-bottom: rem(16px);
+        line-height: 1;
+    }
+
+    &__total {
+        font-size: rem(47px);
+        font-weight: 500;
+        line-height: 1;
+        margin-bottom: rem(8px);
+    }
+
+    &__notice {
+        color: $gray;
+        margin-bottom: rem(24px);
+        display: block;
+    }
+
+    &__btn {
+        @extend %btn-main;
+        width: 100%;
+        margin-bottom: rem(8px);
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        &--support {
+            display: flex;
+            align-items: center;
+
+            @include media-breakpoint-down(lg) {
+                width: fit-content;
+            }
+
+            @include media-breakpoint-down(md) {
+                width: 100%;
+            }
+        }
+
+        span {
+            display: block;
+        }
+
+        &:hover {
+            .search-summary__svg-wrap {
+                background-color: $main;
+                transition: 250ms;
+
+                svg {
+                    path {
+                        fill: $accent;
+                    }
+                }
+            }
+        }
+
+
+
+
+
+    }
+
+    &__svg-wrap {
+        max-width: rem(32px);
+        width: 100%;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: rem(16px);
+        background: $gray;
+        border-radius: 50%;
+        transition: 250ms;
+
+        svg {
+            width: 18px;
+            height: 18px;
+
+            path {
+                fill: $lines;
+            }
+        }
+    }
+
+    &__support-wrap {
+        display: flex;
+    }
+
+    &__support-label {
+        color: $main;
+        opacity: 0.5;
+        margin-bottom: rem(8px);
+        font-size: rem(14px);
+
+        @include media-breakpoint-down(xl) {
+            font-size: rem(12px);
+        }
+    }
+
+    &__support-tel {
+        font-weight: 500;
+        font-size: rem(19px);
+
+        @include media-breakpoint-down(xl) {
+            font-size: rem(16px);
+        }
+    }
+
+
+
+    &__link {
+        color: $accent;
+
+        &:hover {
+            color: $accent;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        position: sticky;
+        top: 10px;
+    }
+}

@@ -1,0 +1,175 @@
+<%= require('@parts/header.ejs')({title: 'contacts-page' }) %>
+
+<main class="contacts-page" id="root">
+
+   <div class="policy-page__wrap-dec corner-dots-dec">
+        <img src="<%=require('@img/bg/dot-bg-full.svg')%>" alt="">
+    </div>
+
+    <div class="container">
+
+        <%= require('@parts/_breadcrumbs.ejs')({$class: 'contacts-page', page: 'Контакты', levels: 2}) %>
+
+    </div>
+
+    <div class="contacts-page__content">
+
+        <div class="container">
+
+            <h1 class="contacts-page__heading">Контакты</h1>
+
+            <div class="contacts-page__contacts-info contacts-info">
+                <a href="" class="contacts-info__item-wrap contacts-info__item-wrap--big">
+                    <div class="contacts-info__icon-wrap">
+                        <img src='<%=require('@img/icons/tel-black.svg')%>' alt=''>
+                    </div>
+                    <div class="contacts-info__text-wrap">
+                        <div class="contacts-info__label">Круглосуточный контактный центр</div>
+                        <span class="contacts-info__info">8 (800) 350-45-45</span>
+                    </div>
+                </a>
+
+                <div class="contacts-info__contacts-additional-info contacts-additional-info">
+                    <ul class="contacts-additional-info__list">
+                        <li class="contacts-additional-info__item">
+                            <div class="contacts-additional-info__item-wrap">
+                                <div class="contacts-additional-info__icon-wrap">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 19C12 15.13 15.13 12 19 12C20.08 12 21.09 12.25 22 12.68V6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H12.08C12.03 19.67 12 19.34 12 19ZM4 6L12 11L20 6V8L12 13L4 8V6ZM17.34 22L13.8 18.46L15.21 17.05L17.33 19.17L21.57 14.93L23 16.34L17.34 22Z"
+                                            fill="#8C97A2" />
+                                    </svg>
+
+                                </div>
+                                <p class="contacts-additional-info__text">Обработка заявок осуществляется круглосуточно
+                                    без выходных.
+                                    Доставка с 10 до 22 без выходных.</p>
+                            </div>
+                        </li>
+                        <li class="contacts-additional-info__item">
+                            <div class="contacts-additional-info__item-wrap">
+                                <div class="contacts-additional-info__icon-wrap">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z"
+                                            fill="#8C97A2" />
+                                        <path d="M12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z" fill="#8C97A2" />
+                                    </svg>
+                                </div>
+                                <div class="contacts-additional-info__label">График работы офиса:</div>
+                                <p class="contacts-additional-info__text">Ежедневно c 08-00 до 22-00</p>
+                            </div>
+                        </li>
+                        <li class="contacts-additional-info__item">
+                            <div class="contacts-additional-info__item-wrap">
+                                <div class="contacts-additional-info__icon-wrap">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z"
+                                            fill="#8C97A2" />
+                                        <path d="M12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z" fill="#8C97A2" />
+                                    </svg>
+                                </div>
+                                <div class="contacts-additional-info__label">График работы отдела продаж:</div>
+                                <p class="contacts-additional-info__text">Будни c 10-00 до 20-30
+                                </p>
+                                <p class="contacts-additional-info__text">Выходные с 11-00 до 18-30</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="contacts-info__list">
+                    <li class="contacts-info__item">
+                        <a href="" class="contacts-info__item-wrap">
+                            <div class="contacts-info__icon-wrap">
+                                <img src='<%=require('@img/icons/mail-black.svg')%>' alt=''>
+                            </div>
+                            <div class="contacts-info__text-wrap">
+                                <div class="contacts-info__label">Электронная почта</div>
+                                <span class="contacts-info__info">support@ru-connect.ru</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="contacts-info__item">
+                        <a href="" class="contacts-info__item-wrap">
+                            <div class="contacts-info__icon-wrap">
+                                <img src='<%=require('@img/icons/telegram.svg')%>' alt=''>
+
+                            </div>
+                            <div class="contacts-info__text-wrap">
+                                <div class="contacts-info__label">Telegram</div>
+                                <span class="contacts-info__info">t.me/@ru-connect</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="contacts-info__item">
+                        <a href="" class="contacts-info__item-wrap">
+                            <div class="contacts-info__icon-wrap">
+                                <img src='<%=require('@img/icons/whatsapp.svg')%>' alt=''>
+
+                            </div>
+                            <div class="contacts-info__text-wrap">
+                                <div class="contacts-info__label">Whatsapp</div>
+                                <span class="contacts-info__info">+7 (969) 080-08-08</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+                <form action="" class="contacts-info__form form">
+                    <div class="form__wrap form__wrap--about">
+                        <h3 class="form__title">Бесплатная консультация от нашей поддержки:</h3>
+                        <div class="form__row">
+                            <div class="form__col">
+                                <div class="form__group">
+                                    <label for="coop-name" class="form__label">Представьтесь<span>*</span></label>
+                                    <input type="text" id="coop-name" placeholder="+7 (992) 21" class="form__control">
+                                </div>
+                            </div>
+                            <div class="form__col">
+                                <div class="form__group">
+                                    <label for="coop-email" class="form__label">Электронная почта*</label>
+                                    <input type="coop-email" id="email" placeholder="Ваш email" class="form__control">
+                                </div>
+                            </div>
+                            <div class="form__col">
+                                <div class="form__group">
+                                    <label for="tel" class="form__label">Номер телефона (для связи)</label>
+                                    <input type="tel" id="tel" placeholder="+7 (___) ___ - __ - __" class="form__control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__about-footer">
+                            <button class="form__btn" type="button" data-bs-toggle="modal"
+                            data-bs-target="#contacts-modal">Получить консультацию</button>
+                            <div class="form__policy">Нажимая на кнопку вы соглашаетесь на <a href="" class="form__link">обработку
+                                    персональных данных</a></div>
+                        </div>
+                    </div>
+            
+                </form>
+
+                <span class="contacts-info__adress">
+                    <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 0C3.13 0 0 3.13 0 7C0 12.25 7 20 7 20C7 20 14 12.25 14 7C14 3.13 10.87 0 7 0ZM7 9.5C5.62 9.5 4.5 8.38 4.5 7C4.5 5.62 5.62 4.5 7 4.5C8.38 4.5 9.5 5.62 9.5 7C9.5 8.38 8.38 9.5 7 9.5Z" fill="#474D57"/>
+                        </svg>
+                       «РУ КОННЕКТ», 125445, Россия, г. Москва, ул. Смольная, д. 24А ОГРН 1175029022750 
+                </span>
+                <div class="contacts-info__map">
+                    <div id="map" style="width: 100%; height: 100%"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+   
+
+</main>
+
+<%= require('@parts/footer.ejs')() %>

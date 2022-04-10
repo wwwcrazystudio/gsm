@@ -1,0 +1,19 @@
+.unlimited-tariffs {
+    &__wrap {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+
+    &__catalog-content {
+        margin-bottom: rem(126px);
+        @include media-breakpoint-down(xl) {
+        margin-bottom: rem(20px);
+        }
+    }
+
+    &__hot {
+        margin-bottom: rem(136px);
+    }
+}

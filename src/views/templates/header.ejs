@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>
+        <%= title %>
+    </title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=8b48c677-6a2e-4fd1-bdb4-893815b981a0&lang=ru_RU" type="text/javascript">
+    </script>
+
+</head>
+
+<body>
+
+    <div class="header-common <% if (title=='frontpage') {%> header-dark <% } %>">
+        <div class="preheader">
+            <div class="container">
+
+                <div class="preheader__wrapper preheader__wrapper--mobile">
+                    <p class="preheader__desc">Безлимитные тарифы и красивые номера</p>
+                    <div class="preheader__contacts">
+                        <div class="preheader__tel-wrap">
+                            <a href="tel:" class="preheader__tel">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.34 8.25333C10.52 8.25333 9.72667 8.12 8.98667 7.88C8.75333 7.8 8.49333 7.86 8.31333 8.04L7.26667 9.35333C5.38 8.45333 3.61333 6.75333 2.67333 4.8L3.97333 3.69333C4.15333 3.50667 4.20667 3.24667 4.13333 3.01333C3.88667 2.27333 3.76 1.48 3.76 0.66C3.76 0.3 3.46 0 3.1 0H0.793333C0.433333 0 0 0.16 0 0.66C0 6.85333 5.15333 12 11.34 12C11.8133 12 12 11.58 12 11.2133V8.91333C12 8.55333 11.7 8.25333 11.34 8.25333Z"
+                                        fill="white" />
+                                </svg>
+                                8 (800) 350-45-45 
+                            </a>
+                            <a href="tel:" class="preheader__tel">
+                                8 (495) 080-08-08
+                            </a>
+                        </div>
+                     
+                        <button class="preheader__location" type="button" data-bs-toggle="modal"
+                            data-bs-target="#city-modal">
+                            <svg width="10" height="14" viewBox="0 0 10 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5 0C2.23571 0 0 2.191 0 4.9C0 8.575 5 14 5 14C5 14 10 8.575 10 4.9C10 2.191 7.76429 0 5 0ZM5 6.65C4.01429 6.65 3.21429 5.866 3.21429 4.9C3.21429 3.934 4.01429 3.15 5 3.15C5.98571 3.15 6.78571 3.934 6.78571 4.9C6.78571 5.866 5.98571 6.65 5 6.65Z"
+                                    fill="white" />
+                            </svg> Москва
+                            <?xml version="1.0" encoding="iso-8859-1"?>
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8px" height="6px"
+                                viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;"
+                                xml:space="preserve">
+                                <g>
+                                    <path
+                                        d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751
+                                    c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0
+                                    c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z" />
+                                </g>
+                                <g>
+                            </svg>
+
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <header class="header">
+            <div class="container">
+
+                <div class="header__wrapper">
+                    <a href="" class="header__logo">
+                        <div class="header__icon">
+                            <% if (title=='frontpage') {%>
+                            <svg width="59" height="42" viewBox="0 0 350 256" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M269.309 21.6392L328.585 80.9146C354.472 106.802 354.472 149.199 328.585 175.085L269.309 234.361C243.422 260.248 201.025 260.248 175.139 234.361L115.863 175.085C89.9762 149.199 89.9762 106.802 115.863 80.9146L175.139 21.6392C201.059 -4.24774 243.422 -4.24774 269.309 21.6392ZM237.394 47.5596L302.698 112.863C311.037 121.202 311.037 134.832 302.698 143.171L237.394 208.474C229.056 216.813 215.426 216.813 207.087 208.474L141.784 143.171C133.445 134.832 133.445 121.202 141.784 112.863L207.087 47.5596C215.426 39.2209 229.056 39.2209 237.394 47.5596Z"
+                                    stroke="white" stroke-width="3" stroke-miterlimit="22.9256" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M172.861 21.6392L174 22.7778L145.066 51.7123L140.913 47.5596C132.574 39.2209 118.944 39.2209 110.606 47.5596L45.3022 112.863C36.9634 121.202 36.9634 134.832 45.3022 143.171L110.606 208.474C118.944 216.813 132.574 216.813 140.913 208.474L206.216 143.171C214.555 134.832 214.555 121.202 206.216 112.863L174 80.6467L202.935 51.7123L232.137 80.9146C258.024 106.802 258.024 149.199 232.137 175.085L172.861 234.361C146.975 260.248 104.578 260.248 78.6906 234.361L19.4152 175.085C-6.47173 149.199 -6.47173 106.802 19.4152 80.9146L78.6906 21.6392C104.611 -4.24774 146.975 -4.24774 172.861 21.6392Z"
+                                    fill="white" />
+                            </svg>
+
+                            <%} else { %>
+                            <svg width="59" height="42" viewBox="0 0 57 42" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M42.3224 4.58839C38.483 0.748958 32.1951 0.748492 28.3499 4.58871L18.9247 14.0139C15.0851 17.8535 15.0851 24.1465 18.9247 27.9861L28.3502 37.4117C32.1898 41.2513 38.4828 41.2513 42.3224 37.4117L51.748 27.9861C55.5876 24.1465 55.5876 17.8535 51.748 14.0139L42.3224 4.58839ZM27.3484 3.58588C31.7466 -0.806607 38.9313 -0.807072 43.3246 3.58621L52.7502 13.0118C57.1433 17.4049 57.1433 24.5952 52.7502 28.9883L43.3246 38.4139C38.9315 42.807 31.7412 42.807 27.3481 38.4139L17.9225 28.9883C13.5294 24.5952 13.5294 17.4049 17.9225 13.0118L27.3484 3.58588ZM37.2475 8.71007C36.1983 7.66085 34.4797 7.66085 33.4304 8.71007L23.0464 19.0941C21.9971 20.1434 21.9971 21.862 23.0464 22.9112L33.4304 33.2953C34.4797 34.3445 36.1983 34.3445 37.2475 33.2953L47.6316 22.9112C48.6808 21.862 48.6808 20.1434 47.6316 19.0941L37.2475 8.71007ZM32.4283 7.70789C34.031 6.10518 36.647 6.10518 38.2497 7.70789L48.6338 18.092C50.2365 19.6947 50.2365 22.3107 48.6338 23.9134L38.2497 34.2975C36.647 35.9002 34.031 35.9002 32.4283 34.2975L22.0442 23.9134C20.4415 22.3107 20.4415 19.6947 22.0442 18.092L32.4283 7.70789Z"
+                                    fill="#0F0F17" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M27.4872 4.08727L27.6682 4.26832L23.0673 8.86927L22.407 8.20895C21.081 6.88298 18.9137 6.88298 17.5877 8.20895L7.20362 18.593C5.87766 19.919 5.87766 22.0863 7.20362 23.4123L17.5877 33.7964C18.9137 35.1223 21.081 35.1223 22.407 33.7964L32.791 23.4123C34.117 22.0863 34.117 19.919 32.791 18.593L27.6682 13.4702L32.2692 8.86927L36.9127 13.5128C41.0291 17.6292 41.0291 24.3708 36.9127 28.4872L27.4872 37.9127C23.3708 42.0291 16.6292 42.0291 12.5128 37.9127L3.08727 28.4872C-1.02909 24.3708 -1.02909 17.6292 3.08727 13.5128L12.5128 4.08727C16.6345 -0.0290887 23.3708 -0.0290887 27.4872 4.08727Z"
+                                    fill="#0F0F17" />
+                            </svg>
+                            <%}%>
+                        </div>
+                    </a>
+                    <nav class="header__header-menu header-menu">
+                        <ul class="header-menu__list">
+                            <li class="header-menu__item menu-item-has-children"><a class="header-menu__link"
+                                    href="">Красивые номера</a>
+                                <ul class="header-menu__sub-menu sub-menu">
+                                    <li class="sub-menu__sub-item"><a class="sub-menu__link" href="">Lorem ipsum</a>
+                                    </li>
+                                    <li class="sub-menu__sub-item"><a class="sub-menu__link" href="">Lorem ipsum</a>
+                                    </li>
+                                    <li class="sub-menu__sub-item"><a class="sub-menu__link" href="">Lorem ipsum</a>
+                                    </li>
+                                    <li class="sub-menu__sub-item"><a class="sub-menu__link" href="">Lorem ipsum</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header-menu__item menu-item-has-children"><a class="header-menu__link"
+                                    href="">Безлимитные тарифы</a>
+                                <ul class="header-menu__sub-menu sub-menu">
+                                    <li class="sub-menu__sub-item"><a class="sub-menu__link" href="">Lorem ipsum</a>
+                                    </li>
+                                    <li class="sub-menu__sub-item"><a class="sub-menu__link" href="">Lorem ipsum</a>
+                                    </li>
+                                    <li class="sub-menu__sub-item"><a class="sub-menu__link" href="">Lorem ipsum</a>
+                                    </li>
+                                    <li class="sub-menu__sub-item"><a class="sub-menu__link" href="">Lorem ipsum</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header-menu__item"><a class="header-menu__link" href="">Акции <span
+                                        class="new-icon">New</span> </a></li>
+                            <li class="header-menu__item"><a class="header-menu__link" href="">Как это работает?</a>
+                            </li>
+                            <li class="header-menu__item"><a class="header-menu__link" href="">Сотрудничество</a></li>
+                            <li class="header-menu__item"><a class="header-menu__link" href="">Помощь</a></li>
+                            <li class="header-menu__item"><a class="header-menu__link" href="">Контакты</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="header__btns">
+                        <button class="header__btn header__btn--mail"><img src="<%=require('@img/icons/mail.svg')%>"
+                            alt=""></button>
+                            <button class="header__btn header__btn--cart" id="button" aria-describedby="tooltip"><img
+                                    src="<%=require('@img/icons/cart.svg')%>" alt="">
+                                <div class="header__count">1</div>
+                            </button>
+
+                            <div class="header__cart-modal cart-modal" id="tooltip" role="tooltip">
+                                <div class="cart-modal__wrap">
+                                    <ul class="cart-modal__list">
+                                        <li class="cart-modal__item">
+                                            <div class="cart-modal__icon">
+                                                <img src="<%=require('@img/icons/hint1.svg')%>" alt="">
+                                            </div>
+
+                                            <div class="cart-modal__info">
+                                                <div class="cart-modal__label">
+                                                    958-120-6666
+                                                </div>
+                                                <ul class="cart-modal__tags-list">
+                                                    <li class="cart-modal__tags-item">Московская обл.</li>
+                                                    <li class="cart-modal__tags-item">Федеральный</li>
+                                                </ul>
+                                            </div>
+                                            <div class="cart-modal__price-wrap">
+                                                <div class="cart-modal__price">5 499 руб</div>
+                                            </div>
+                                        </li>
+                                        <li class="cart-modal__item">
+                                            <div class="cart-modal__icon">
+                                                <img src="<%=require('@img/icons/hint2.svg')%>" alt="">
+                                            </div>
+
+                                            <div class="cart-modal__info">
+                                                <div class="cart-modal__label">
+                                                    Качай больше 600
+                                                </div>
+                                                <ul class="cart-modal__tags-list">
+                                                    <li class="cart-modal__tags-item">2000 минут</li>
+                                                    <li class="cart-modal__tags-item">35Gb</li>
+                                                    <li class="cart-modal__tags-item">1000</li>
+                                                </ul>
+                                            </div>
+                                            <div class="cart-modal__price-wrap">
+                                                <div class="cart-modal__price">5 499 руб</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="cart-modal__footer">
+                                        <div class="cart-modal__summary">Итого:<span>5 998 руб</span></div>
+                                        <div class="cart-modal__btns-wrap">
+                                            <a href="" class="cart-modal__btn">В корзину</a>
+                                            <a href="" class="cart-modal__btn">Оформить заказ</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="header__toggle-wrap">
+                                <div class="header__mobile-toggle mobile-toggle" id="">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+    </div>
+
+    <div class="mobile-menu">
+        <div class="mobile-menu__wrap">
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item mobile-menu-has-children">Красивые
+                    номера
+                    <ul class="mobile-menu__mobile-sub-menu mobile-sub-menu">
+                        <li class="mobile-sub-menu__sub-item"><a class="mobile-sub-menu__link" href="">Lorem
+                                ipsum</a></li>
+                        <li class="mobile-sub-menu__sub-item"><a class="mobile-sub-menu__link" href="">Lorem
+                                ipsum</a></li>
+                        <li class="mobile-sub-menu__sub-item"><a class="mobile-sub-menu__link" href="">Lorem
+                                ipsum</a></li>
+                        <li class="mobile-sub-menu__sub-item"><a class="mobile-sub-menu__link" href="">Lorem
+                                ipsum</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__item mobile-menu-has-children">Безлимитные
+                    тарифы
+                    <ul class="mobile-menu__mobile-sub-menu mobile-sub-menu">
+                        <li class="mobile-sub-menu__sub-item"><a class="mobile-sub-menu__link" href="">Lorem
+                                ipsum</a></li>
+                        <li class="mobile-sub-menu__sub-item"><a class="mobile-sub-menu__link" href="">Lorem
+                                ipsum</a></li>
+                        <li class="mobile-sub-menu__sub-item"><a class="mobile-sub-menu__link" href="">Lorem ipsum</a>
+                        </li>
+                        <li class="mobile-sub-menu__sub-item"><a class="mobile-sub-menu__link" href="">Lorem
+                                ipsum</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Акции <span
+                            class="new-icon new-icon--mobile">New</span> </a></li>
+                <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Как это работает?</a>
+                </li>
+                <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Сотрудничество</a></li>
+                <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Помощь</a></li>
+                <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Контакты</a></li>
+            </ul>
+        </div>
+        <button class="mobile-menu__close">
+            <img src="<%=require('@img/icons/close.svg')%>" alt="">
+        </button>
+    </div>
+
+

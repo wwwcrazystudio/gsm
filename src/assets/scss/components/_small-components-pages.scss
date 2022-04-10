@@ -1,0 +1,223 @@
+.operators {
+    &__wrap {
+        margin-bottom: rem(72px);
+    }
+
+    &__list {
+        @include unlist;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-column-gap: 23px;
+        grid-row-gap: 23px;
+        width: 100%;
+        margin-top: -32px;
+        position: relative;
+
+        @include media-breakpoint-down(lg) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include media-breakpoint-down(md) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &__op-wrap {
+        background: #FFFFFF;
+        box-shadow: 0px 100px 80px rgba(15, 15, 23, 0.02), 0px 41.7776px 33.4221px rgba(15, 15, 23, 0.0143771), 0px 22.3363px 17.869px rgba(15, 15, 23, 0.0119221), 0px 12.5216px 10.0172px rgba(15, 15, 23, 0.01), 0px 6.6501px 5.32008px rgba(15, 15, 23, 0.00807786), 0px 2.76726px 2.21381px rgba(15, 15, 23, 0.00562291);
+        border-radius: 16px;
+        width: 100%;
+        padding: rem(32px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $main;
+        text-decoration: none;
+        &:hover {
+            color: $main;
+        }
+
+        @include media-breakpoint-only(lg) {
+            padding: rem(20px);
+        }
+    }
+
+    &__img {
+        width: 40px;
+        height: 40px;
+        display: block;
+        margin-bottom: rem(24px);
+
+        @include media-breakpoint-only(lg) {
+            margin-bottom: rem(18px);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+}
+
+
+%section-title {
+    font-weight: 500;
+    font-size: 47px;
+    line-height: 100%;
+}
+
+.pagination {
+    &__list {
+        @include unlist;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+
+    &__item {
+        margin: rem(0 9px);
+
+
+        &--more {
+            .pagination__link {
+                padding-left: 0;
+                padding-right: 0;
+                background: none;
+                margin: rem(0 14px);
+
+                &::before {
+                    background: none;
+                }
+            }
+
+            &:hover {
+                .pagination__link {
+                    padding-left: 0;
+                    padding-right: 0;
+                    background: none;
+                    margin: rem(0 14px);
+
+                    &::before {
+                        background: none;
+                    }
+                }
+            }
+        }
+
+    }
+
+    &__link {
+        color: $main;
+        display: block;
+        padding: rem(10px);
+        @extend %btn-main;
+        margin-bottom: rem(8px);
+        border-radius: 4px;
+    }
+}
+
+.corner-dots-dec {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.buble-btn {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+//Small pages 
+
+.error-page {
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 618px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: rem(110px 0);
+        padding-bottom: rem(20px);
+        text-align: center;
+    }
+
+    &__img-wrap {
+        max-width: 666px;
+        width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        margin-bottom: rem(16px);
+    }
+
+    &__heading {
+        font-size: rem(33px);
+        margin-bottom: rem(15px);
+        @include media-breakpoint-down(md) {
+        font-size: rem(26px);
+        }
+    }
+
+    &__subheading {
+        margin-bottom: rem(32px);
+        color: $gray;
+        font-size: rem(23px);
+        @include media-breakpoint-down(md) {
+            font-size: rem(16px);
+            }
+    }
+
+    &__link {
+        @extend %btn-main;
+    }
+}
+
+.policy-page {
+
+    &__content {
+        width: 100%;
+        max-width: 996px;
+        margin-left: auto;
+        margin-right: auto;
+        h1 {
+            margin-bottom: rem(48px);
+            font-weight: 600;
+            @include media-breakpoint-down(lg) {
+                font-size: rem(40px);
+                margin-bottom: rem(24px);
+            }
+    
+            @include media-breakpoint-down(md) {
+                font-size: rem(23px);
+            }
+        }
+    
+        h2 {
+            font-size: rem(23px);
+            font-size: 400;
+            margin-bottom: rem(20px);
+     
+        }
+    
+        p {
+            line-height: 30px;
+        }
+    }
+}

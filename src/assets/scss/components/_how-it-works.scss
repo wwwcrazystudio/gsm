@@ -1,0 +1,200 @@
+.how-works {
+
+    &__wrap {
+        margin-bottom: rem(96px);
+    }
+
+    &__raw {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        @include media-breakpoint-down(lg) {
+        display: block;
+        }
+    }
+
+    &__title {
+        color: $main;
+        font-size: rem(58px);
+        line-height: 1;
+        margin-bottom: rem(24px);
+        font-weight: 500;
+        @include media-breakpoint-down(lg) {
+            font-size: rem(40px);
+            }
+            @include media-breakpoint-down(md) {
+            font-size: rem(32px);
+            }
+    }
+
+    &__text {
+        color: $secondary;
+        margin-bottom: rem(48px);
+    }
+
+    &__content {
+        margin-top: rem(54px);
+        width: 100%;
+        max-width: 493px;
+        margin-right: 80px;
+        position: relative;
+        z-index: 1;
+        @include media-breakpoint-down(lg) {
+        max-width: 100%;
+        margin-bottom: rem(30px);
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+       text-align: center;
+        }
+    }
+
+
+    &__btns {
+        display: flex;
+        align-items: center;
+    }
+
+    &__btn {
+        @extend %btn-main;
+        margin-right: rem(24px);
+        color: $main;
+    }
+
+    &__btn-link {
+        color: $main;
+        position: relative;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        font-size: rem(14px);
+
+        &:hover {
+            color: $main;
+            text-decoration: none;
+        }
+
+        &::after {
+            content: '';
+            width: 7px;
+            height: 12px;
+            display: block;
+            margin-left: 8px;
+            background-image: url("data:image/svg+xml,%3Csvg width='7' height='12' viewBox='0 0 7 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.06066 0.939331L6.12132 5.99999L1.06066 11.0607L0 9.99999L4 5.99999L0 1.99999L1.06066 0.939331Z' fill='black'/%3E%3C/svg%3E%0A");
+
+        }
+    }
+
+    &__img-wrap {
+        width: 621px;
+        height: 520px;
+        display: block;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        @include media-breakpoint-down(lg) {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: auto;
+        }
+    }
+}
+
+.advantages {
+    &__list {
+        @include unlist;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__item {
+        padding: rem(24px);
+        padding-right: rem(79px);
+        background: #FFFFFF;
+        border-radius: 16px;
+        transition: 250ms;
+        width: 100%;
+        max-width: 384px;
+
+        &:hover {
+            transition: 250ms;
+            box-shadow: 0px 100px 80px rgba(15, 15, 23, 0.02), 0px 41.7776px 33.4221px rgba(15, 15, 23, 0.0143771), 0px 22.3363px 17.869px rgba(15, 15, 23, 0.0119221), 0px 12.5216px 10.0172px rgba(15, 15, 23, 0.01), 0px 6.6501px 5.32008px rgba(15, 15, 23, 0.00807786), 0px 2.76726px 2.21381px rgba(15, 15, 23, 0.00562291);
+            border-radius: 16px;
+            .advantages__icon-wrap {
+                transition: 250ms;
+                background: $main;
+                box-shadow: none;
+                svg {
+                    path {
+                        fill: $accent;
+                    }
+                }
+            }
+        }
+        @include media-breakpoint-only(lg) {
+            padding-right: rem(24px);
+            max-width: 294px;
+           
+        }
+        @include media-breakpoint-down(lg) {
+            flex-basis: 48%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: rem(16px);
+        }
+        @include media-breakpoint-down(md) {
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        margin-bottom: rem(24px);
+    }
+
+    &__icon-wrap {
+        transition: 250ms;
+        width: 54px;
+        height: 54px;
+        background: #FFFFFF;
+        box-shadow: 0px 100px 80px rgba(15, 15, 23, 0.02), 0px 41.7776px 33.4221px rgba(15, 15, 23, 0.0143771), 0px 22.3363px 17.869px rgba(15, 15, 23, 0.0119221), 0px 12.5216px 10.0172px rgba(15, 15, 23, 0.01), 0px 6.6501px 5.32008px rgba(15, 15, 23, 0.00807786), 0px 2.76726px 2.21381px rgba(15, 15, 23, 0.00562291);
+        border-radius: 8px;
+        margin-right: rem(16px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 100%;
+            max-width: 30px;
+            height: 24px;
+            object-fit: contain; 
+        }
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: rem(33px);
+        @include media-breakpoint-down(lg) {
+            font-size: rem(24px);
+        }
+    }
+
+    &__text {
+        font-size: rem(14px);
+        color: $secondary;
+        margin-bottom: rem(32px);
+    }
+    &__btn-link {
+        @extend %btn-empty;
+        width: fit-content;
+        padding: rem(8px 16px);
+    }
+}

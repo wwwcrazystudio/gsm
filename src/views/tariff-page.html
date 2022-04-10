@@ -1,0 +1,336 @@
+<%= require('@parts/header.ejs')({title: 'tariff-page' }) %>
+
+<main class="tariff-page" id="root">
+
+    <div class="tariff-page__wrap corner-dots-dec">
+        <img src="<%=require('@img/bg/dot-bg-full.svg')%>" alt="">
+    </div>
+
+    <div class="container">
+
+        <%= require('@parts/_breadcrumbs.ejs')({$class: 'tariff-page', page: 'Тариф', levels: 2}) %>
+
+    </div>
+
+    <div class="container">
+
+        <div class="tariff-page__hints hints">
+            <ul class="hints__list">
+                <li class="hints__hint hint--active">
+                    <div class="hint__icon-wrap">
+                        <img class="hint__icon" src='<%=require('@img/icons/hint1.svg')%>' alt=''>
+                    </div>
+
+                    <div class="hint__info">
+                        Выберите понравившийся вам номер из каталога
+                    </div>
+                </li>
+                <li class="hints__hint hint hint--big hint--active">
+                    <div class="hint__icon-wrap">
+                        <img class="hint__icon" src='<%=require('@img/icons/hint2.svg')%>' alt=''>
+                    </div>
+                    <div class="hint__info">
+                        Подберите подходящий тариф
+                        или обратитесь в нашу <a href="" class="hint__link">поддержку</a>
+                    </div>
+                </li>
+                <li class="hints__hint hint hint--active">
+                    <div class="hint__icon-wrap">
+                        <img class="hint__icon" src='<%=require('@img/icons/hint3.svg')%>' alt=''>
+                    </div>
+                    <div class="hint__info">
+                        Оставьте заявку и наш менеджер свяжется с вам.
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <section class="tariff-page__catalog-content catalog-content catalog-content--tariff">
+        <div class="container">
+            <h1 class="catalog-content__heading">Плати меньше</h1>
+
+            <div class="catalog-content__catalog-list catalog-list">
+
+                <div class="catalog-list__content">
+
+
+                    <div class="catalog-list__col">
+
+                        <div class="catalog-list__tariff-content tariff-content">
+
+                            <ul class="tariff-content__list">
+                                <li class="tariff-content__item">
+                                    <div class="tariff-content__item-wrap">
+                                        <div class="tariff-content__expand-btn">
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+
+                                        <div class="tariff-content__meta-wrap">
+                                            <div class="tariff-content__icon-wrap">
+                                                <img class="tariff-content__icon" src="<%=require('@img/icons/hotspot.svg')%>" alt="">
+                                            </div>
+                                            <div class="tariff-content__info-wrap">
+                                                <div class="tariff-content__name">Мобильный интернет, 35Gb</div>
+                                                <div class="tariff-content__meta">Основной пакет тарифа</div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="tariff-content__content">
+                                            <ul class="tariff-content__price-list">
+                                                <li class="tariff-content__price-item">
+                                                    <div class="tariff-content__price-wrap">
+                                                        <div class="tariff-content__price-info">
+                                                            Мобильный интернет по России (Включено 35Gb)
+                                                        </div>
+                                                      
+                                                        <span class="tariff-content__price">0 руб</span>
+                                                    </div>
+                                                </li>
+                                                <li class="tariff-content__price-item">
+                                                    <div class="tariff-content__price-wrap">
+                                                        <div class="tariff-content__price-info">
+                                                            Мобильный интернет на территории республики Крым и г. Севастополь (за 1 МБ)
+                                                        </div>
+                                                      
+                                                        <span class="tariff-content__price">2 руб</span>
+                                                    </div>
+                                                </li>
+                                                <li class="tariff-content__price-item">
+                                                    <div class="tariff-content__info">
+                                                        При превышении ежемесячного объема трафика, представляемого в рамках тарифного плана, будет установлено ограничение скорости приема и передачи данных 64 Кбит/с до окончания расчетного периода (месяца оказания услуг). При ограничении скорости возможен разрыв текущей сессии. Не тарифицируемый объем переданных/полученных данных в начале каждой сессии составляет 1 Кб. Объем переданных/полученных данных в течение сессии округляется в большую сторону с точностью до 256 Кб. Тарификация действует при нахождении на территории региона пребывания в сети «Билайн». При нахождении абонента в сети «Билайн» на территории Чукотского автономного округа: интернет-трафик предоставляется на скорости до 128 Кбит/с. Скорость восстанавливается в течение двух суток с момента последней интернет-сессии за пределами данных территорий. При нахождении абонента в сети других операторов интернет-трафик предоставляется согласно тарификации в разделе прайс-листа «тарификации при нахождении в сети других операторов».
+                                                    </div>
+                                                </li>
+                                                <li class="tariff-content__price-item">
+                                                    <div class="tariff-content__price-wrap">
+                                                        «Безлимитный интернет в 4G»
+                                                       
+                                                    </div>
+                                                    <span class="tariff-content__price">100 руб. / мес.</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="tariff-content__item">
+                                    <div class="tariff-content__item-wrap">
+                                        <div class="tariff-content__expand-btn">
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+
+                                        <div class="tariff-content__meta-wrap">
+                                            <div class="tariff-content__icon-wrap">
+                                                <img class="tariff-content__icon" src="<%=require('@img/icons/front-step2.svg')%>" alt="">
+                                            </div>
+                                            <div class="tariff-content__info-wrap">
+                                                <div class="tariff-content__name">Исходящие звонки, 2000</div>
+                                                <div class="tariff-content__meta">Исходящие звонки по России</div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="tariff-content__content">
+                                            <ul class="tariff-content__price-list">
+                                                <li class="tariff-content__price-item">
+                                                    <div class="tariff-content__price-wrap">
+                                                        Мобильный интернет по России (Включено 35Gb)
+                                                        <span class="tariff-content__price">0 руб</span>
+                                                    </div>
+                                                </li>
+                                                <li class="tariff-content__price-item">
+                                                    <div class="tariff-content__price-wrap">
+                                                        Мобильный интернет на территории республики Крым и г. Севастополь (за 1 МБ)
+                                                        <span class="tariff-content__price">100 руб. / мес.</span>
+                                                    </div>
+                                                </li>
+                                                <li class="tariff-content__price-item">
+                                                    <div class="tariff-content__info">
+                                                        При превышении ежемесячного объема трафика, представляемого в рамках тарифного плана, будет установлено ограничение скорости приема и передачи данных 64 Кбит/с до окончания расчетного периода (месяца оказания услуг). При ограничении скорости возможен разрыв текущей сессии. Не тарифицируемый объем переданных/полученных данных в начале каждой сессии составляет 1 Кб. Объем переданных/полученных данных в течение сессии округляется в большую сторону с точностью до 256 Кб. Тарификация действует при нахождении на территории региона пребывания в сети «Билайн». При нахождении абонента в сети «Билайн» на территории Чукотского автономного округа: интернет-трафик предоставляется на скорости до 128 Кбит/с. Скорость восстанавливается в течение двух суток с момента последней интернет-сессии за пределами данных территорий. При нахождении абонента в сети других операторов интернет-трафик предоставляется согласно тарификации в разделе прайс-листа «тарификации при нахождении в сети других операторов».
+                                                    </div>
+                                                </li>
+                                                <li class="tariff-content__price-item">
+                                                    <div class="tariff-content__price-wrap">
+                                                        Мобильный интернет по России (Включено 35Gb)
+                                                        <span class="tariff-content__price">0 руб</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="tariff-content__item">
+                                    <div class="tariff-content__item-wrap">
+                                        <div class="tariff-content__expand-btn">
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+
+                                        <div class="tariff-content__meta-wrap">
+                                            <div class="tariff-content__icon-wrap">
+                                                <img class="tariff-content__icon" src="<%=require('@img/icons/hint3.svg')%>" alt="">
+                                            </div>
+                                            <div class="tariff-content__info-wrap">
+                                                <div class="tariff-content__name">Сообщения, 1000</div>
+                                                <div class="tariff-content__meta">Включено в пакет</div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="tariff-content__content">
+                                            <ul class="tariff-content__price-list">
+                                                <li class="tariff-content__price-item">
+                                                    <div class="tariff-content__price-wrap">
+                                                        Мобильный интернет по России (Включено 35Gb)
+                                                        <span class="tariff-content__price">0 руб</span>
+                                                    </div>
+                                                </li>
+                                                <li class="tariff-content__price-item">
+                                                    <div class="tariff-content__price-wrap">
+                                                        Мобильный интернет на территории республики Крым и г. Севастополь (за 1 МБ)
+                                                        <span class="tariff-content__price">100 руб. / мес.</span>
+                                                    </div>
+                                                </li>
+                                                <li class="tariff-content__price-item">
+                                                    <div class="tariff-content__info">
+                                                        При превышении ежемесячного объема трафика, представляемого в рамках тарифного плана, будет установлено ограничение скорости приема и передачи данных 64 Кбит/с до окончания расчетного периода (месяца оказания услуг). При ограничении скорости возможен разрыв текущей сессии. Не тарифицируемый объем переданных/полученных данных в начале каждой сессии составляет 1 Кб. Объем переданных/полученных данных в течение сессии округляется в большую сторону с точностью до 256 Кб. Тарификация действует при нахождении на территории региона пребывания в сети «Билайн». При нахождении абонента в сети «Билайн» на территории Чукотского автономного округа: интернет-трафик предоставляется на скорости до 128 Кбит/с. Скорость восстанавливается в течение двух суток с момента последней интернет-сессии за пределами данных территорий. При нахождении абонента в сети других операторов интернет-трафик предоставляется согласно тарификации в разделе прайс-листа «тарификации при нахождении в сети других операторов».
+                                                    </div>
+                                                </li>
+                                                <li class="tariff-content__price-item">
+                                                    <div class="tariff-content__price-wrap">
+                                                        Мобильный интернет по России (Включено 35Gb)
+                                                        <span class="tariff-content__price">0 руб</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <small class="tariff-content__small">*Пакет минут, мб, смс, не распространяется на Крым и г.Севастополь.</small>
+                            <div class="tariff-content__notice-wrap">
+                                <button class="tariff-content__notice-btn">Примечание</button>
+                                <ul class="tariff-content__notice-list">
+                                    <li class="tariff-content__notice-item">
+                                        Активация номера после блокировки за неуплату
+                                        <span class="tariff-content__notice-meta">0 руб</span>
+                                    </li>
+                                    <li class="tariff-content__notice-item">
+                                        Блокировка номера по желанию абонента
+                                        <span class="tariff-content__notice-meta">0 руб</span>
+                                    </li>
+                                    <li class="tariff-content__notice-item">
+                                        Восстановление cим-карты по утрате
+                                        <span class="tariff-content__notice-meta">0 руб</span>
+                                    </li>
+                                    <li class="tariff-content__notice-item">
+                                        Замена сим-карты на микро/нано-сим
+                                        <span class="tariff-content__notice-meta">0 руб</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+
+                        <div class="catalog-list__small-banner small-banner">
+
+                            <div class="small-banner__padding-wrap">
+                                <a href="" class="small-banner__wrap">
+                                    <div class="small-banner__content">
+                                        <div class="small-banner__logo-wrap">
+                                            <img src="<%=require('@img/icons/logo-gold.svg')%>" alt="">
+                                        </div>
+                                        <span class="small-banner__title">Лучшие номера и тарифы
+                                            по выгодным ценам.</span>
+                                    </div>
+                                    <div class="small-banner__info-small">РК Коннект</div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="catalog-list__col">
+                        <div class="search-summary__content">
+                            <h2 class="search-summary__title">Ваш заказ:</h2>
+                            <ul class="search-summary__list">
+                                <li class="search-summary__item">
+                                    <div class="search-summary__info">Оператор:</div>
+                                    <div class="search-summary__result">Мегафон</div>
+                                </li>
+                                <li class="search-summary__item">
+                                    <div class="search-summary__info">Номер:</div>
+                                    <div class="search-summary__result">958-120-6666</div>
+                                </li>
+                                <li class="search-summary__item">
+                                    <div class="search-summary__info">Стоимость номера:</div>
+                                    <div class="search-summary__result">5 499 руб</div>
+                                </li>
+                                <li class="search-summary__item">
+                                    <div class="search-summary__info">Тарифный план:<span>*</span></div>
+                                    <div class="search-summary__result"><a href="" class="search-summary__link">Не
+                                            выбран</a></div>
+                                </li>
+                            </ul>
+
+                            <div class="search-summary__footer">
+                                <div class="search-summary__text">К оплате:</div>
+                                <div class="search-summary__total">5 499 руб.</div>
+                                <small class="search-summary__notice">Не забудьте выбрать тарфный план.</small>
+                                <button class="search-summary__btn" type="button" data-bs-toggle="modal" data-bs-target="#addtocart-modal">Добавить заказ в корзину</button>
+                                <button class="search-summary__btn">Оформить в 1 клик</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="archive-numbers__support support">
+        <div class="container">
+            <div class="support__wrap">
+                <div class="support__left">
+                    <divicture class="support__image-wrap">
+                        <source srcset='<%=require('@img/img/support-img.png')%>.webp' type='image/webp'>
+                        <img class="support__img-main" src="<%=require('@img/img/support-img.png')%>" alt="">
+                    </picture>
+                    <div class="support__title">Подобрать вам
+                        красивый номер
+                        и выгодный тариф?</div>
+                    <a href="" class="support__cat-link">Перейти в каталог</a>
+                </div>
+                <div class="support__right">
+                    <h2 class="support__heading">Задать вопрос
+                        поддержке</h2>
+                    <div class="support__subheading">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+                    </div>
+                    <div class="support__buttons">
+                        <button class="support__btn">Позвонить</button>
+                        <button class="support__btn" data-bs-toggle="modal" data-bs-target="#message-modal">Написать
+                            сообщение</button>
+                    </div>
+                    <small class="support__small">Ожидание ответа в случае отправки сообщения
+                        может занимать до 3-х рабочих дней.</small>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+</main>
+
+<%= require('@parts/footer.ejs')() %>

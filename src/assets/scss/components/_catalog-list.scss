@@ -1,0 +1,189 @@
+.catalog-content {
+    &__heading {
+        margin-bottom: rem(32px);
+        letter-spacing: -0.005em;
+        line-height: 100%;
+        font-weight: 500;
+
+        @include media-breakpoint-down(lg) {
+            font-size: rem(40px);
+        }
+
+        @include media-breakpoint-down(md) {
+            font-size: rem(32px);
+        }
+    }
+
+    &__title {
+        @extend %section-title;
+
+        @include media-breakpoint-down(lg) {
+            font-size: rem(40px);
+            margin-bottom: rem(20px);
+        }
+
+        @include media-breakpoint-down(md) {
+            font-size: rem(32px);
+        }
+    }
+
+    &__subheading {
+        margin-bottom: rem(16px);
+        color: $gray;
+        text-transform: uppercase;
+        font-size: rem(10px);
+        line-height: 100%;
+        letter-spacing: 0.015em;
+    }
+
+    &__form {
+        margin-bottom: rem(50px);
+
+        @include media-breakpoint-down(lg) {
+            margin-bottom: rem(25px);
+        }
+    }
+
+    &__watch-all {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: fit-content;
+        @extend %btn-empty;
+    }
+
+    &--tariff {
+        margin-bottom: rem(96px);
+        @include media-breakpoint-down(md) {
+           margin-bottom: rem(20px);
+        }
+    }
+
+}
+
+.catalog-list {
+    &__checkout-content, &__tariff-content {
+        padding-right: rem(37px);
+        border-right: 1px solid #F2F2F2;
+
+        @include media-breakpoint-only(lg) {
+            padding-right: rem(20px);
+        }
+
+        @include media-breakpoint-down(lg) {
+            border: none;
+            padding-right: 0;
+        }
+
+    }
+    
+
+    &__content {
+        display: grid;
+        grid-template-columns: 2.2fr 1fr;
+
+        @include media-breakpoint-only(lg) {
+            grid-template-columns: 2.3fr 1fr;
+        }
+
+        @include media-breakpoint-down(lg) {
+            display: block;
+        }
+    }
+
+    &__sort {
+        display: flex;
+        align-items: center;
+        color: $gray;
+        font-size: rem(14px);
+        margin-bottom: rem(20px);
+    }
+
+    &__burger {
+        width: 16px;
+        height: 16px;
+        object-fit: cover;
+        margin-right: rem(10px);
+    }
+
+    &__list {
+        @include unlist;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 24px;
+        grid-row-gap: 16px;
+        margin-bottom: rem(32px);
+        padding-right: rem(37px);
+        border-right: 1px solid #F2F2F2;
+
+        @include media-breakpoint-only(lg) {
+            grid-column-gap: 12px;
+            padding-right: rem(20px);
+        }
+
+        @include media-breakpoint-down(lg) {
+            grid-column-gap: 12px;
+            grid-template-columns: repeat(1, 1fr);
+            border: none;
+            padding-right: 0;
+        }
+
+        &--lg-single {
+            @include media-breakpoint-only(lg) {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    }
+
+    &__show-more {
+        @extend %btn-main;
+        display: flex;
+        align-items: center;
+        transition: 250ms;
+        margin-bottom: rem(64px);
+
+        &:hover {
+            svg {
+                margin-left: 10px;
+
+                path {
+                    fill: $main;
+                }
+            }
+        }
+
+        svg {
+            margin-left: 10px;
+            transition: 250ms;
+        }
+
+        @include media-breakpoint-down(lg) {
+            margin-bottom: rem(30px);
+        }
+    }
+
+    &--without-col {
+        .catalog-list__content {
+            display: block;
+            padding-bottom: rem(20px);
+        
+        }
+
+        .catalog-list__list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding-right: 0;
+            border-right: 0;
+
+            @include media-breakpoint-down(xl) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @include media-breakpoint-down(md) {
+                grid-template-columns: repeat(1, 1fr);
+
+            }
+        }
+    }
+
+}

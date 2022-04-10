@@ -1,0 +1,446 @@
+<%= require('@parts/header.ejs')({title: 'checkout-page' }) %>
+
+<main class="unlimited-tariffs" id="root">
+
+    <div class="unlimited-tariffs__wrap corner-dots-dec">
+        <img src="<%=require('@img/bg/dot-bg-full.svg')%>" alt="">
+    </div>
+
+    <div class="container">
+
+        <%= require('@parts/_breadcrumbs.ejs')({$class: 'unlimited-tariffs', page: 'Красивые номера', levels: 2}) %>
+
+    </div>
+
+    <div class="container">
+
+        <div class="unlimited-tariffs__hints hints">
+            <ul class="hints__list">
+                <li class="hints__hint hint--active">
+                    <div class="hint__icon-wrap">
+                        <img class="hint__icon" src='<%=require('@img/icons/hint1.svg')%>' alt=''>
+                    </div>
+
+                    <div class="hint__info">
+                        958-120-6666
+                    </div>
+                </li>
+                <li class="hints__hint hint hint--big hint--active">
+                    <div class="hint__icon-wrap">
+                        <img class="hint__icon" src='<%=require('@img/icons/hint2.svg')%>' alt=''>
+                    </div>
+                    <div class="hint__info">
+                        Подберите подходящий тариф
+                        или обратитесь в нашу <a href="" class="hint__link">поддержку</a>
+                    </div>
+                </li>
+                <li class="hints__hint hint hint--active">
+                    <div class="hint__icon-wrap">
+                        <img class="hint__icon" src='<%=require('@img/icons/hint3.svg')%>' alt=''>
+                    </div>
+                    <div class="hint__info">
+                        Оставьте заявку и наш менеджер свяжется с вам.
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <section class="unlimited-tariffs__catalog-content catalog-content">
+        <div class="container">
+            <h1 class="catalog-content__heading">Оформление заказа<a href=""></a></h1>
+
+            <div class="catalog-content__catalog-list catalog-list">
+
+                <div class="catalog-list__content">
+
+                    <div class="catalog-list__col">
+
+                        <div class="catalog-list__checkout-content checkout-content">
+
+                            <div class="checkout-content__cart-result">
+
+                                <ul class="checkout-content__cart-list cart-list">
+
+                                    <li class="cart-list__cart-item cart-item">
+                                        <div class="cart-item__wrap">
+                                            <div class="cart-item__icon-wrap">
+                                                <img src="<%=require('@img/icons/hint1.svg')%>" alt="">
+                                            </div>
+                                            <div class="cart-item__text-wrap">
+                                                <div class="cart-item__label">Качай больше 600</div>
+                                                <ul class="cart-item__info-list">
+                                                    <li class="cart-item__info-item">
+                                                        Регион: <span>Московская обл.</span>
+                                                    </li>
+                                                    <li class="cart-item__info-item">
+                                                        Тип номера: <span>Федеральный</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="cart-item__right">
+                                                <div class="cart-item__price">5 499 руб</div>
+                                                <button class="cart-item__remove"><svg width="4" height="16"
+                                                        viewBox="0 0 4 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM2 12C0.9 12 0 12.9 0 14C0 15.1 0.9 16 2 16C3.1 16 4 15.1 4 14C4 12.9 3.1 12 2 12Z"
+                                                            fill="#8C97A2" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="cart-list__cart-item cart-item">
+                                        <div class="cart-item__wrap">
+                                            <div class="cart-item__icon-wrap">
+                                                <img src="<%=require('@img/icons/hint2.svg')%>" alt="">
+                                            </div>
+                                            <div class="cart-item__text-wrap">
+                                                <div class="cart-item__label"><img
+                                                        src="<%=require('@img/icons/megafon.svg')%>" alt=""
+                                                        class="cart-item__small-icon">Качай больше 600</div>
+                                                <ul class="cart-item__info-list">
+                                                    <li class="cart-item__info-item">
+                                                        Звонки по России <span>2000 минут</span>
+                                                    </li>
+                                                    <li class="cart-item__info-item">
+                                                        Интернет <span>35Gb</span>
+                                                    </li>
+                                                    <li class="cart-item__info-item">
+                                                        SMS/MMS <span>1000</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="cart-item__right">
+                                                <div class="cart-item__price">499 руб</div>
+                                                <button class="cart-item__remove"><svg width="4" height="16"
+                                                        viewBox="0 0 4 16" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM2 12C0.9 12 0 12.9 0 14C0 15.1 0.9 16 2 16C3.1 16 4 15.1 4 14C4 12.9 3.1 12 2 12Z"
+                                                            fill="#8C97A2" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <button class="cart-list__promo-btn">Ввести промокод <svg width="6" height="10"
+                                            viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M4.12056 5L0 0.879438L0.879438 0L5.87944 5L0.879438 10L0 9.12056L4.12056 5Z"
+                                                fill="#8C97A2" />
+                                        </svg>
+                                    </button>
+
+                                </ul>
+
+                            </div>
+
+                            <form action="" class="checkout-content__form form">
+                                <h3 class="form__small-title">Ваши данные:</h3>
+                                <div class="form__checkout-content">
+                                    <div class="form__checkout-personal-info row">
+
+                                        <div class="col-md-12">
+                                            <div class="form__group">
+                                                <label for="name" class="form__label">Представьтесь <span>*</span></label>
+                                                <input type="text" id="name" placeholder="Фамилия Имя Отчество"
+                                                    class="form__control">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form__group">
+                                                <label for="tel" class="form__label">Номер телефона (для связи) <span>*</span></label>
+                                                <input type="tel" id="tel" placeholder="+7 (___) ___ - __ - __"
+                                                    class="form__control">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form__group">
+                                                <label for="email" class="form__label">Электронная почта</label>
+                                                <input type="email" id="email" placeholder="email@example.com"
+                                                    class="form__control">
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="form__checkout-delivery-type checkout-delivery-type">
+                                        <h3 class="form__small-title">Выберите удобный способ доставки</h3>
+                                        <div class="checkout-delivery-type__header">
+                                            <div class="checkout-delivery-type__form">
+                                                <div class="form__radio-btn">
+                                                    <input class="form__control" type="radio" name="payment"
+                                                        id="payment1" placeholder="">
+                                                    <label for="payment1" class="form__label">Курьерская служба</label>
+
+                                                </div>
+                                                <div class="form__radio-btn">
+                                                    <input class="form__control" type="radio" name="payment"
+                                                        id="payment2" placeholder="">
+                                                    <label for="payment2" class="form__label">Самовывоз</label>
+                                                </div>
+                                                <div class="form__radio-btn">
+                                                    <input class="form__control-radio" type="radio" name="payment"
+                                                        id="payment3" placeholder="">
+                                                    <label for="payment3" class="form__label">Почта России</label>
+                                                </div>
+                                                <div class="form__radio-btn">
+                                                    <input class="form__control-radio" type="radio" name="payment"
+                                                        id="payment4" placeholder="">
+                                                    <label for="payment4" class="form__label">CDEK</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="checkout-delivery-type__eta">В течение <span>1-2 рабочих
+                                                    дней</span></div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form__group">
+                                                    <label for="city" class="form__label">Город<span>*</span></label>
+                                                    <input type="text" id="city" placeholder="Ваш город"
+                                                        class="form__control">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="form__group">
+                                                    <label for="adress" class="form__label">Адрес проживания (полностью)
+                                                        <span>*</span> </label>
+                                                    <input type="text" id="adress" placeholder="Улица, дом, подъезд, квартира (номер домофона) ..."
+                                                        class="form__control">
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="form__checkout-time-date">
+                                        <h3 class="form__small-title">Желаемая дата и время доставки</h3>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form__group form__group--date">
+                                                    <label for="date" class="form__label">Выберите дату <span>*</span> </label>
+                                                    <input type="date" id="date" placeholder="__ . __ . ____"
+                                                        class="form__control">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="form__label">Выберите время <span>*</span></div>
+                                                <div class="form__select-wrap">
+                                                    <input class="form__input-hidden" type="hidden" name="myinput"
+                                                        id="payment-types" />
+                                                    <div class="form__select-btn select-btn" id='select-one'>c 9.00
+                                                    </div>
+                                                    <ul class="select-btn__list">
+                                                        <li class="select-btn__item" data-value="c 9.00">c 9.00</li>
+                                                        <li class="select-btn__item" data-value="Option2">Option2</li>
+                                                        <li class="select-btn__item" data-value="Option3">Option3</li>
+                                                        <li class="select-btn__item" data-value="Option4">Option4</li>
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="form__select-wrap form__select-wrap--mt">
+                                                    <input class="form__input-hidden" type="hidden" name="myinput"
+                                                        id="payment-types" />
+                                                    <div class="form__select-btn select-btn" id='select-two'>до 19:00
+                                                    </div>
+                                                    <ul class="select-btn__list">
+                                                        <li class="select-btn__item" data-value="c 9.00">до 19:00</li>
+                                                        <li class="select-btn__item" data-value="Option2">Option2</li>
+                                                        <li class="select-btn__item" data-value="Option3">Option3</li>
+                                                        <li class="select-btn__item" data-value="Option4">Option4</li>
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form__group">
+                                            <label for="question" class="form__label">Комментарий к
+                                                заказу<span>*</span></label>
+                                            <textarea class="form__control form__control--textarea" rows="7"
+                                                id='question' name="text" placeholder="Оставьте ваше сообщение"></textarea>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form__checkout-paying-method">
+                                        <h3 class="form__small-title">Желаемая дата и время доставки</h3>
+                                        <div class="form__radio-wrap">
+                                            <div class="form__radio-btn">
+                                                <input class="form__control" type="radio" name="payment" id="cash"
+                                                    placeholder="">
+                                                <label for="cash" class="form__label"> <img
+                                                        src="<%=require('@img/icons/money.svg')%>"
+                                                        alt="">Наличные</label>
+                                            </div>
+                                            <div class="form__radio-btn">
+                                                <input class="form__control" type="radio" name="payment" id="card"
+                                                    placeholder="">
+                                                <label for="card" class="form__label"><img
+                                                        src="<%=require('@img/icons/visa.svg')%>" alt=""><img
+                                                        src="<%=require('@img/icons/mastercard.svg')%>"
+                                                        alt="">Банковская карта</label>
+                                            </div>
+                                            <div class="form__radio-btn">
+                                                <input class="form__control" type="radio" name="payment" id="qiwi"
+                                                    placeholder="">
+                                                <label for="qiwi" class="form__label"><img
+                                                        src="<%=require('@img/icons/qiwi.svg')%>" alt="">QIWI
+                                                    Wallet</label>
+                                            </div>
+                                            <div class="form__radio-btn form__radio-btn--unactive">
+                                                <input class="form__control" type="radio" name="payment" id="other"
+                                                    placeholder="" disabled>
+                                                <label for="other" class="form__label">Другие способы оплаты <svg
+                                                        width="11" height="6" viewBox="0 0 11 6" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M5.52148 4.18083L9.64205 0.0602722L10.5215 0.93971L5.52148 5.93971L0.521484 0.93971L1.40092 0.0602718L5.52148 4.18083Z"
+                                                            fill="#8C97A2" />
+                                                    </svg>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button class="form__btn form__btn--checkout" type="button" data-bs-toggle="modal"
+                            data-bs-target="#checkout-modal">Оформить заказ</button>
+                                    <div class="form__policy">Оформляя заказ я соглашаюсь с условиями <a href=""
+                                            class="form__link">пользовательского соглашения</a></div>
+
+                                </div>
+
+                            </form>
+                        </div>
+
+
+                        <div class="catalog-list__small-banner small-banner">
+
+                            <div class="small-banner__padding-wrap">
+                                <a href="" class="small-banner__wrap">
+                                    <div class="small-banner__content">
+                                        <div class="small-banner__logo-wrap">
+                                            <img src="<%=require('@img/icons/logo-gold.svg')%>" alt="">
+                                        </div>
+                                        <span class="small-banner__title">Лучшие номера и тарифы
+                                            по выгодным ценам.</span>
+                                    </div>
+                                    <div class="small-banner__info-small">РК Коннект</div>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="catalog-list__col">
+                        <div class="catalog-list__search-summary search-summary">
+
+                            <div class="search-summary__content">
+                                <h2 class="search-summary__title">Ваш заказ:</h2>
+                                <ul class="search-summary__list">
+                                    <li class="search-summary__item">
+                                        <div class="search-summary__info">Оператор:</div>
+                                        <div class="search-summary__result">Мегафон</div>
+                                    </li>
+                                    <li class="search-summary__item">
+                                        <div class="search-summary__info">Номер:</div>
+                                        <div class="search-summary__result">958-120-6666</div>
+                                    </li>
+                                    <li class="search-summary__item">
+                                        <div class="search-summary__info">Стоимость номера:</div>
+                                        <div class="search-summary__result">5 499 руб</div>
+                                    </li>
+                                    <li class="search-summary__item">
+                                        <div class="search-summary__info">Тарифный план:<span>*</span></div>
+                                        <div class="search-summary__result">Качай больше 600
+                                            <span class="search-summary__discount">499 руб.</span> </div>
+                                    </li>
+                                </ul>
+
+                                <div class="search-summary__footer">
+                                    <div class="search-summary__text">К оплате:</div>
+                                    <div class="search-summary__total">5 998 руб.</div>
+                                    <small class="search-summary__notice">Оплата за тариф (с 2-го мес.) = 600
+                                        руб./мес</small>
+                                    <a href='' class="search-summary__btn search-summary__btn--support">
+                                        <div class="search-summary__svg-wrap">
+                                            <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M17 12.808C15.274 12.808 13.628 12.432 12.11 11.69C11.872 11.576 11.596 11.558 11.344 11.644C11.092 11.732 10.886 11.916 10.77 12.154L10.05 13.644C7.89 12.404 6.098 10.61 4.856 8.45L6.348 7.73C6.588 7.614 6.77 7.408 6.858 7.156C6.944 6.904 6.928 6.628 6.812 6.39C6.068 4.874 5.692 3.228 5.692 1.5C5.692 0.948 5.244 0.5 4.692 0.5H1C0.448 0.5 0 0.948 0 1.5C0 10.874 7.626 18.5 17 18.5C17.552 18.5 18 18.052 18 17.5V13.808C18 13.256 17.552 12.808 17 12.808Z"
+                                                    fill="#F1BF13" />
+                                            </svg>
+
+                                        </div> <span
+                                            class="search-summary__support-wrap">
+                                            <span class="search-summary__support-label">Служба поддержки
+                                                клиентов:</span>
+                                            <span class="search-summary__support-tel">8 (800) 555-5555</span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="unlimited-tariffs__support support">
+        <div class="container">
+            <div class="support__wrap">
+                <div class="support__left">
+                    <picture class="support__image-wrap">
+                        <source srcset='<%=require('@img/img/support-img.png')%>.webp' type='image/webp'>
+                        <img class="support__img-main" src="<%=require('@img/img/support-img.png')%>" alt="">
+                    </picture>
+                    <div class="support__title">Подобрать вам
+                        красивый номер
+                        и выгодный тариф?</div>
+                    <a href="" class="support__cat-link">Перейти в каталог</a>
+                </div>
+                <div class="support__right">
+                    <h2 class="support__heading">Задать вопрос
+                        поддержке</h2>
+                    <div class="support__subheading">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+                    </div>
+                    <div class="support__buttons">
+                        <button class="support__btn">Позвонить</button>
+                        <button class="support__btn" data-bs-toggle="modal"
+                            data-bs-target="#message-modal">Написать сообщение</button>
+                    </div>
+                    <small class="support__small">Ожидание ответа в случае отправки сообщения
+                        может занимать до 3-х рабочих дней.</small>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+</main>
+
+
+<%= require('@parts/footer.ejs')() %>

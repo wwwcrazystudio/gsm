@@ -1,0 +1,453 @@
+.banner-big {
+
+    &__wrap {
+        padding: rem(48px 102px 62px);
+        background: $main;
+        border-radius: 24px;
+        display: flex;
+        background-image: url(../img/bg/bannerbig-bg.png);
+        background-position: right;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        position: relative;
+
+        @include media-breakpoint-down(xl) {
+            padding: rem(48px 52px 62px);
+        }
+
+        @include media-breakpoint-down(md) {
+            padding: rem(40px);
+        }
+    }
+
+    &__content {
+        width: 100%;
+        max-width: 434px;
+
+        @include media-breakpoint-down(md) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    &__heading {
+        color: #fff;
+        line-height: 1;
+        margin-bottom: rem(16px);
+
+        @include media-breakpoint-down(lg) {
+            font-size: rem(40px);
+            margin-bottom: rem(20px);
+        }
+
+        @include media-breakpoint-down(md) {
+            font-size: rem(32px);
+        }
+    }
+
+    &__subheading {
+        color: #fff;
+        font-size: rem(23px);
+        margin-bottom: rem(48px);
+
+        @include media-breakpoint-down(lg) {
+            font-size: rem(16px)
+        }
+    }
+
+    &__btn {
+        @extend %btn-main;
+        color: $main;
+    }
+
+    &__small {
+        padding: rem(4px 12px);
+        background: $accent;
+        border-radius: 150px;
+        color: $main;
+        font-size: rem(12px);
+        font-weight: 600;
+        width: fit-content;
+        text-transform: uppercase;
+        margin-bottom: rem(52px);
+
+        &:hover {
+            color: $main;
+        }
+
+        @include media-breakpoint-down(md) {
+            padding: rem(2px 4px);
+            background: #F1BF13;
+            border-radius: 4px;
+            color: #0F0F17;
+            font-size: 6px;
+            font-weight: 500;
+        }
+    }
+
+    &__img-wrap {
+        width: 636px;
+        height: 446px;
+        position: absolute;
+        right: 0;
+        bottom: -140px;
+
+        @include media-breakpoint-only(lg) {
+            right: -20%;
+        }
+
+        @include media-breakpoint-only(md) {
+            right: -30%;
+            height: 376px;
+        }
+
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__images-wrap {
+        //
+    }
+
+    &__dec-img {
+        width: 56.6px;
+        top: 70px;
+        right: 480px;
+        position: absolute;
+        height: 56.6px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(15px);
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 60%;
+            height: 60%;
+            object-fit: contain;
+        }
+
+        &:nth-of-type(1) {
+            width: 56px;
+            height: 56px;
+            top: 15%;
+            left: -12%;
+
+            @include media-breakpoint-down(md) {
+                width: 46px;
+                height: 46px;
+                left: -2%;
+                top: -2%;
+            }
+        }
+
+        &:nth-of-type(2) {
+            width: 101px;
+            height: 101px;
+            left: -8%;
+            top: 60%;
+
+            @include media-breakpoint-down(md) {
+                width: 76px;
+                height: 76px;
+                left: 2%;
+            }
+        }
+
+        &:nth-of-type(3) {
+            width: 70px;
+            height: 70px;
+            top: 35%;
+            left: 64%;
+
+            @include media-breakpoint-down(md) {
+                width: 56px;
+                height: 56px;
+            }
+        }
+    }
+
+    &--partnerhship {
+        .banner-big__wrap {
+            background-position: 30%;
+
+            @include media-breakpoint-down(lg) {
+                display: block;
+                padding-bottom: 0;
+                background-image: url(../img/bg/bannerbig-bg.png);
+                background-size: 71% 70%;
+                background-position: 120% 0%;
+            }
+
+            @include media-breakpoint-down(md) {
+                background-size: 100% 70%;
+            }
+
+        }
+
+        .banner-big__content {
+            @include media-breakpoint-down(lg) {
+                margin-bottom: rem(30px);
+            }
+        }
+
+        .banner-big__img-wrap {
+            width: 471px;
+            height: 380px;
+            bottom: -3%;
+            right: 4%;
+            z-index: 0;
+
+            &::before {
+                content: '';
+                width: 674px;
+                height: 674px;
+                border-radius: 50%;
+                background: $accent;
+                position: absolute;
+                z-index: -1;
+                right: -30%;
+                top: -30%;
+            }
+
+            @include media-breakpoint-only(lg) {
+                right: -7%;
+            }
+
+            @include media-breakpoint-down(lg) {
+                display: block;
+                position: relative;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: -20px;
+
+                &::before {
+                    content: '';
+                    width: 1074px;
+                    height: 674px;
+                    border-radius: 50%;
+                    background: #F1BF13;
+                    position: absolute;
+                    z-index: -1;
+                    right: -60%;
+                    top: 3%;
+                }
+            }
+
+            @include media-breakpoint-down(md) {
+                width: 401px;
+                height: 330px;
+                bottom: -3%;
+                right: 4%;
+                z-index: 0;
+                margin-bottom: -42px;
+            }
+
+
+        }
+    }
+}
+
+
+.small-banner {
+    &__padding-wrap {
+        padding-right: rem(37px);
+
+        @include media-breakpoint-only(lg) {
+            padding-right: rem(20px);
+        }
+
+        @include media-breakpoint-down(lg) {
+            padding-right: 0;
+        }
+    }
+    &__wrap {
+        padding: rem(25px);
+        background: $main;
+        text-decoration: none;
+        color: #fff;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        background-image: url('../img/bg/ban-bg.svg');
+        background-repeat: no-repeat;
+        background-position: right;
+        z-index: 1;
+
+        &:hover {
+            color: #fff;
+        }
+
+        @include media-breakpoint-down(lg) {
+            margin-bottom: rem(30px);
+        }
+
+        @include media-breakpoint-down(md) {
+            padding: rem(15px);
+            background-size: 90%;
+        }
+    }
+
+    &__content {
+        width: 100%;
+        max-width: 370px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: rem(22px);
+        line-height: 100%;
+
+        @include media-breakpoint-down(md) {
+
+            font-size: rem(16px);
+            line-height: 100%;
+        }
+    }
+
+    &__logo-wrap {
+        width: 100%;
+        max-width: 62px;
+        height: 45px;
+        margin-right: rem(16px);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @include media-breakpoint-down(md) {
+            max-width: 42px;
+            height: 31px;
+        }
+    }
+
+    &__info-small {
+        padding: rem(4px 8px);
+        background: $accent;
+        border-radius: 8px;
+        color: $main;
+        font-size: rem(12px);
+        font-weight: 500;
+        margin-left: auto;
+
+        &:hover {
+            color: $main;
+        }
+
+        @include media-breakpoint-down(md) {
+            padding: rem(2px 4px);
+            background: #F1BF13;
+            border-radius: 4px;
+            color: #0F0F17;
+            font-size: 6px;
+            font-weight: 500;
+            margin-left: auto;
+            width: 50px;
+        }
+    }
+
+}
+
+.about-banner {
+    &__content {
+        width: 100%;
+        max-width: 498px;
+        @include media-breakpoint-only(md) {
+            max-width: 358px;
+        }
+    }
+
+    &__wrap {
+        padding: rem(64px);
+        background: #FFFFFF;
+        box-shadow: 0px 100px 80px rgba(15, 15, 23, 0.02), 0px 41.7776px 33.4221px rgba(15, 15, 23, 0.0143771), 0px 22.3363px 17.869px rgba(15, 15, 23, 0.0119221), 0px 12.5216px 10.0172px rgba(15, 15, 23, 0.01), 0px 6.6501px 5.32008px rgba(15, 15, 23, 0.00807786), 0px 2.76726px 2.21381px rgba(15, 15, 23, 0.00562291);
+        border-radius: 16px;
+        display: flex;
+        position: relative;
+        margin-bottom: rem(96px);
+        @include media-breakpoint-down(lg) {
+            padding: rem(40px);
+        }
+        @include media-breakpoint-only(md) {
+        overflow: hidden;
+        
+        }
+        @include media-breakpoint-down(md) {
+            padding: rem(30px);
+            padding-bottom: rem(290px);
+            box-shadow: 0px 100px 30px rgba(15, 15, 23, 0.02), 0px 41.7776px 33.4221px rgba(15, 15, 23, 0.0143771), 0px 22.3363px 17.869px rgba(15, 15, 23, 0.0119221), 0px 12.5216px 10.0172px rgba(15, 15, 23, 0.01), 0px 6.6501px 5.32008px rgba(15, 15, 23, 0.00807786), 0px 2.76726px 2.21381px rgba(15, 15, 23, 0.00562291);
+            margin-bottom: rem(46px);
+        }
+    }
+
+    &__title {
+        @extend %section-title;
+        margin-bottom: rem(25px);
+
+        @include media-breakpoint-down(lg) {
+            font-size: rem(40px);
+
+        }
+
+        @include media-breakpoint-down(md) {
+            font-size: rem(32px);
+        }
+
+
+    }
+
+    &__info {
+        margin-bottom: rem(32px);
+        @include media-breakpoint-down(md) {
+        font-size: rem(14px);
+        }
+    }
+
+    &__btn {
+        @extend %btn-main;
+    }
+
+    &__img-wrap {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border-radius: 0 0 16px 0;
+        overflow: hidden;
+        width: 498px;
+        height: 428px;
+
+        @include media-breakpoint-down(only) {
+            width: 398px;
+            height: 342px;
+        }
+
+        @include media-breakpoint-only(md) {
+            right: -80px;
+        }
+        @include media-breakpoint-down(sm) {
+            width: 338px;
+            height: 291px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}

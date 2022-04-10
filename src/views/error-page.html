@@ -1,0 +1,22 @@
+<%= require('@parts/header.ejs')({title: 'error-page.html' }) %>
+
+<main class="error-page">
+    <div class="error-page__wrap-dec corner-dots-dec">
+        <img src="<%=require('@img/bg/dot-bg-full.svg')%>" alt="">
+    </div>
+    <div class="error-page__wrap">
+        <div class="container">
+            <div class="error-page__content">
+                <div class="error-page__img-wrap">
+                    <img src="<%=require('@img/icons/404.svg')%>" alt="">
+                </div>
+                <h1 class="error-page__heading">Что-то пошло не так</h1>
+                <div class="error-page__subheading">Страница, которую вы ищете, не может быть найдена</div>
+                <a href="" class="error-page__link">Вернуться на главную</a>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<%= require('@parts/footer.ejs')() %>

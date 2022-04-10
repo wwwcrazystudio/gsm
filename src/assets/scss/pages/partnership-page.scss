@@ -1,0 +1,136 @@
+.partnership-page {
+    &__banner-big {
+        margin-bottom: rem(72px);
+
+        @include media-breakpoint-down(md) {
+            margin-bottom: rem(32px);
+        }
+    }
+}
+
+.about-us {
+
+    &__content {
+        width: 100%;
+        max-width: 1124px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__text-wrap {
+        max-width: 996px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: rem(110px);
+        @include media-breakpoint-down(lg) {
+            margin-bottom: rem(62px);
+            }
+        @include media-breakpoint-down(md) {
+        margin-bottom: rem(42px);
+        font-size: rem(14px);
+        }
+    }
+
+    &__history {
+        font-size: rem(23px);
+        color: $secondary;
+        margin-bottom: rem(48px);
+        @include media-breakpoint-down(md) {
+        font-size: rem(16px);
+        margin-bottom: rem(30px);
+        }
+    }
+
+    &__title {
+        font-size: rem(47px);
+        line-height: 1;
+        margin-bottom: rem(24px);
+
+        @include media-breakpoint-down(lg) {
+            font-size: rem(40px);
+        }
+
+        @include media-breakpoint-down(md) {
+            margin-bottom: rem(20px);
+        }
+
+        &--center {
+            text-align: center;
+            margin-bottom: rem(78px);
+            @include media-breakpoint-down(lg) {
+                font-size: rem(40px);
+            }
+            @include media-breakpoint-down(md) {
+                margin-bottom: rem(20px);
+            }
+        }
+    }
+
+    &__info {
+        margin-bottom: rem(20px);
+        line-height: 180%;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    &__advantages {
+        margin-bottom: rem(96px);
+        @include media-breakpoint-down(sm) {
+            margin-bottom: rem(62px);
+        }
+        @include media-breakpoint-down(sm) {
+            margin-bottom: rem(46px);
+        }
+    }
+
+    &__advantages-info {
+        width: 100%;
+        max-width: 234px;
+        @include media-breakpoint-down(md) {
+        font-size: rem(14px);
+        }
+    }
+
+    &__advantages-list {
+        @include unlist; 
+        display: grid; 
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 158px;
+        grid-row-gap: 83px;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        @include media-breakpoint-only(lg) {
+            grid-row-gap: 43px;
+        }
+        @include media-breakpoint-only(md) {
+            grid-column-gap: 0px;
+            grid-row-gap: 43px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include media-breakpoint-down(md) {
+            grid-template-columns: repeat(1, 1fr);
+            grid-row-gap: 30px;
+        }
+      
+
+    }
+    &__advantages-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__icon-wrap {
+        width: 96px;
+        height: 70px;
+        object-fit: contain;
+        margin-bottom: rem(20px);
+    }
+
+}

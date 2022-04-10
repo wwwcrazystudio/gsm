@@ -1,0 +1,129 @@
+<%= require('@parts/header.ejs')({title: 'promo-single' }) %>
+
+<main class="promo-single" id="root">
+ <div class="archive-numbers__wrap corner-dots-dec">
+        <img src="<%=require('@img/bg/dot-bg-full.svg')%>" alt="">
+    </div>
+
+    <div class="container">
+
+        <%= require('@parts/_breadcrumbs.ejs')({$class: 'archive-numbers', page: 'Акции', levels: 2}) %>
+
+    </div>
+
+    <div class="container">
+
+        <picture class="promo-single__thumbnail">
+            <source srcset='<%=require('@img/placeholder/promo-single.png')%>.webp' type='image/webp'>
+            <img src='<%=require('@img/placeholder/promo-single.png')%>' alt=''>
+        </picture>
+
+        <div class="promo-single__content">
+            <span>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</span>
+            <h2>Lorem ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu consequat ac felis donec et odio pellentesque diam volutpat. Pharetra et ultrices neque ornare aenean euismod. Suscipit tellus mauris a diam maecenas. Tempus urna et pharetra pharetra massa massa. Varius sit amet mattis vulputate enim nulla aliquet porttitor lacus. Nunc non blandit massa enim nec dui nunc. Sem nulla pharetra diam sit. Egestas egestas fringilla phasellus faucibus. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu consequat ac felis donec et odio pellentesque diam volutpat. Pharetra et ultrices neque ornare aenean euismod. Suscipit tellus mauris a diam maecenas. Tempus urna et pharetra pharetra massa massa. Varius sit amet mattis vulputate enim nulla aliquet porttitor lacus. Nunc non blandit massa enim nec dui nunc. Sem nulla pharetra diam sit. Egestas egestas fringilla phasellus faucibus. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit.</p>
+            <blockquote>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</blockquote>
+            <img src="<%=require('@img/placeholder/single-placeholder.jpg')%>" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu consequat ac felis donec et odio pellentesque diam volutpat. Pharetra et ultrices neque ornare aenean euismod. Suscipit tellus mauris a diam maecenas. Tempus urna et pharetra pharetra massa massa. Varius sit amet mattis vulputate enim nulla aliquet porttitor lacus. Nunc non blandit massa enim nec dui nunc. Sem nulla pharetra diam sit. Egestas egestas fringilla phasellus faucibus. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit.</p>
+        </div>
+        <a href="" class="promo-single__btn">Принять участие</a>
+
+        <div class="promo-single__wrap">
+
+            <h2 class="promo-single__title">Отзывы клиентов</h2>
+
+            <div class="promo-single__promo-slider promo-slider">
+                <div class="promo-slider__control-wrapper">
+                    <div class="promo-slider__wrapper">
+                        <div class="promo-slider__content swiper-container" id="promoSlider">
+                            <div class="promo-slider__swiper-wrapper swiper-wrapper">
+    
+                                <div class="promo-catalog__promos-item promos-item swiper-slide">
+                                    <a href='' class="promos-item__wrap">
+                                        <picture class="promos-item__img-wrap">
+                                            <source srcset='<%=require('@img/placeholder/2.jpg')%>.webp' type='image/webp'>
+                                            <img src='<%=require('@img/placeholder/2.jpg')%>' alt=''>
+                                        </picture>
+                                        <div class="promos-item__footer">
+                                            <div class="promos-item__info">Lorem ipsum is placeholder text commonly used in
+                                                the graphic</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="promo-catalog__promos-item promos-item swiper-slide">
+                                    <a href='' class="promos-item__wrap">
+                                        <picture class="promos-item__img-wrap">
+                                            <source srcset='<%=require('@img/placeholder/7.jpg')%>.webp' type='image/webp'>
+                                            <img src='<%=require('@img/placeholder/7.jpg')%>' alt=''>
+                                        </picture>
+                                        <div class="promos-item__footer">
+                                            <div class="promos-item__info">Lorem ipsum is placeholder text commonly used in
+                                                the graphic</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="promo-catalog__promos-item promos-item swiper-slide">
+                                    <a href='' class="promos-item__wrap">
+                                        <picture class="promos-item__img-wrap">
+                                            <source srcset='<%=require('@img/placeholder/6.jpg')%>.webp' type='image/webp'>
+                                            <img src='<%=require('@img/placeholder/6.jpg')%>' alt=''>
+                                        </picture>
+                                        <div class="promos-item__footer">
+                                            <div class="promos-item__info">Lorem ipsum is placeholder text commonly used in
+                                                the graphic</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="promo-catalog__promos-item promos-item swiper-slide">
+                                    <a href='' class="promos-item__wrap">
+                                        <picture class="promos-item__img-wrap">
+                                            <source srcset='<%=require('@img/placeholder/5.jpg')%>.webp' type='image/webp'>
+                                            <img src='<%=require('@img/placeholder/5.jpg')%>' alt=''>
+                                        </picture>
+                                        <div class="promos-item__footer">
+                                            <div class="promos-item__info">Lorem ipsum is placeholder text commonly used in
+                                                the graphic</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="promo-catalog__promos-item promos-item swiper-slide">
+                                    <a href='' class="promos-item__wrap">
+                                        <picture class="promos-item__img-wrap">
+                                            <source srcset='<%=require('@img/placeholder/3.jpg')%>.webp' type='image/webp'>
+                                            <img src='<%=require('@img/placeholder/3.jpg')%>' alt=''>
+                                        </picture>
+                                        <div class="promos-item__footer">
+                                            <div class="promos-item__info">Lorem ipsum is placeholder text commonly used in
+                                                the graphic</div>
+                                        </div>
+                                    </a>
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                    <div class="promo-slider-swiper-controls swiper-controls">
+                        <div class="swiper-button-prev swiper-button"></div>
+                        <div class="swiper-button-next swiper-button"></div>
+                    </div>
+    
+    
+                </div>
+    
+            </div>
+        
+        </div>
+
+    </div>
+
+</main>
+
+<%= require('@parts/footer.ejs')() %>

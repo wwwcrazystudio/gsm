@@ -1,0 +1,356 @@
+<%= require('@parts/header.ejs')({title: 'how-it-works' }) %>
+
+<main class="how-works-page" id="root">
+
+  <div class="how-works-page__wrap-dec corner-dots-dec">
+    <img src="<%=require('@img/bg/dot-bg-full.svg')%>" alt="">
+</div>
+
+  <div class="container">
+
+    <%= require('@parts/_breadcrumbs.ejs')({$class: 'archive-numbers', page: 'Красивые номера', levels: 2}) %>
+
+  </div>
+
+  <div class="how-works-page__banner-big banner-big">
+    <div class="container">
+
+      <div class="banner-big__wrap">
+        <div class="banner-big__content">
+          <div class="banner-big__small">РУ КОННЕКТ</div>
+          <h1 class="banner-big__heading">Как это работает?</h1>
+          <div class="banner-big__subheading">Выгодные тарифы и красивые номера</div>
+          <button class="banner-big__btn" class="support__btn" data-bs-toggle="modal" data-bs-target="#message-modal">Задать вопрос</button>
+        </div>
+        <div class="banner-big__img-wrap">
+            <img src="<%=require('@img/icons/white-black-logo.svg')%>" alt="">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="how-works-page__front-steps front-steps">
+    <div class="container">
+      <div class="front-steps__content">
+        <ul class="front-steps__list">
+          <li class="front-steps__item">
+            <div class="front-steps__icon-wrap">
+              <img class="front-steps__icon" src="<%=require('@img/icons/front-step1.svg')%>" alt="">
+              <img class="front-steps__dec" src="<%=require('@img/icons/step-dec1.svg')%>" alt="">
+            </div>
+            <h3 class="front-steps__step">Шаг 1</h3>
+            <p class="front-steps__info">Зарегистрируйтесь на площадке РТ Коннект. Большой выбор крсивых номеров и
+              ввыгодных тарифов</p>
+            <a href="" class="front-steps__btn-link">Зарегистрироваться</a>
+          </li>
+          <li class="front-steps__item">
+            <div class="front-steps__icon-wrap">
+              <img class="front-steps__icon" src="<%=require('@img/icons/front-step2.svg')%>" alt="">
+              <img class="front-steps__dec" src="<%=require('@img/icons/step-dec2.svg')%>" alt="">
+            </div>
+            <h3 class="front-steps__step">Шаг 2</h3>
+            <p class="front-steps__info">Выберите наиболее выгодный и подходящи вам тариф из нашего каталога операторов
+            </p>
+            <a href="" class="front-steps__btn-link">Выбрать тариф</a>
+          </li>
+          <li class="front-steps__item">
+            <div class="front-steps__icon-wrap">
+              <img class="front-steps__icon" src="<%=require('@img/icons/front-step3.svg')%>" alt="">
+              <img class="front-steps__dec" src="<%=require('@img/icons/step-dec3.svg')%>" alt="">
+            </div>
+            <h3 class="front-steps__step">Шаг 3</h3>
+            <p class="front-steps__info">Выберите красивый номер для вашего тарифа из каталога предложенных номеров.
+            </p>
+            <a href="" class="front-steps__btn-link">Выбрать номер</a>
+          </li>
+          <li class="front-steps__item">
+            <div class="front-steps__icon-wrap">
+              <img class="front-steps__icon" src="<%=require('@img/icons/front-step4.svg')%>" alt="">
+              <img class="front-steps__dec" src="<%=require('@img/icons/step-dec4.svg')%>" alt="">
+            </div>
+            <h3 class="front-steps__step">Шаг 4</h3>
+            <p class="front-steps__info">Оставьте заявку в специальной форме. Наш специалист свяжется и объяснит как
+              получить ваш заказ.</p>
+            <a href="" class="front-steps__btn-link">Оставьте заявку</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <section class="how-works-page__how-works how-works">
+    <div class="how-works__wrap">
+
+      <div class="container">
+
+        <div class="how-works__raw">
+
+          <div class="how-works__content">
+            <h2 class="how-works__title">Как это
+              работает?</h2>
+            <p class="how-works__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.
+              <br>
+              <br>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="how-works__btns">
+              <a href="" class="how-works__btn">Подобрать тариф</a>
+              <a href="" class="how-works__btn-link">Подобрать номер</a>
+            </div>
+          </div>
+
+          <div class="how-works__img-wrap">
+            <img src="<%=require('@img/img/how-work.png')%>" alt="">
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="how-works__advantages advantages">
+
+      <div class="container">
+
+        <ul class="advantages__list">
+
+          <li class="advantages__item">
+            <div class="advantages__header">
+              <div class="advantages__icon-wrap">
+                <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M23.7499 5H19.9999V0H2.49994C1.12494 0 -6.10352e-05 1.125 -6.10352e-05 2.5V16.25H2.49994C2.49994 18.325 4.17494 20 6.24994 20C8.32494 20 9.99994 18.325 9.99994 16.25H17.4999C17.4999 18.325 19.1749 20 21.2499 20C23.3249 20 24.9999 18.325 24.9999 16.25H27.4999V10L23.7499 5ZM6.24994 18.125C5.21244 18.125 4.37494 17.2875 4.37494 16.25C4.37494 15.2125 5.21244 14.375 6.24994 14.375C7.28744 14.375 8.12494 15.2125 8.12494 16.25C8.12494 17.2875 7.28744 18.125 6.24994 18.125ZM23.1249 6.875L25.5749 10H19.9999V6.875H23.1249ZM21.2499 18.125C20.2124 18.125 19.3749 17.2875 19.3749 16.25C19.3749 15.2125 20.2124 14.375 21.2499 14.375C22.2874 14.375 23.1249 15.2125 23.1249 16.25C23.1249 17.2875 22.2874 18.125 21.2499 18.125Z"
+                    fill="#0F0F17" />
+                </svg>
+              </div>
+              <h3 class="advantages__title">Доставка</h3>
+            </div>
+            <p class="advantages__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.</p>
+            <a href='' class="advantages__btn-link">Подробнее</a>
+          </li>
+
+          <li class="advantages__item">
+            <div class="advantages__header">
+              <div class="advantages__icon-wrap">
+                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20.4444 2.55556H17.8889V0H5.11111V2.55556H2.55556C1.15 2.55556 0 3.70556 0 5.11111V6.38889C0 9.64722 2.45333 12.305 5.60944 12.7011C6.41444 14.6178 8.13944 16.0617 10.2222 16.4833V20.4444H5.11111V23H17.8889V20.4444H12.7778V16.4833C14.8606 16.0617 16.5856 14.6178 17.3906 12.7011C20.5467 12.305 23 9.64722 23 6.38889V5.11111C23 3.70556 21.85 2.55556 20.4444 2.55556ZM2.55556 6.38889V5.11111H5.11111V9.99222C3.62889 9.45555 2.55556 8.05 2.55556 6.38889ZM20.4444 6.38889C20.4444 8.05 19.3711 9.45555 17.8889 9.99222V5.11111H20.4444V6.38889Z"
+                    fill="#0F0F17" />
+                  <defs>
+                    <linearGradient id="paint0_linear" x1="11.5" y1="0" x2="11.5" y2="23"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#F7CD2A" />
+                      <stop offset="1" stop-color="#F1BD10" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <h3 class="advantages__title">Доставка</h3>
+            </div>
+            <p class="advantages__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.</p>
+            <a href='' class="advantages__btn-link">Подробнее</a>
+          </li>
+
+          <li class="advantages__item">
+            <div class="advantages__header">
+              <div class="advantages__icon-wrap">
+                <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.6 0L0 3.6V10.908C0 16.968 4.092 22.62 9.6 24C15.108 22.62 19.2 16.968 19.2 10.908V3.6L9.6 0ZM8.328 16.248L4.08 12L5.772 10.308L8.316 12.852L13.404 7.764L15.096 9.456L8.328 16.248Z"
+                    fill="#0F0F17" />
+                </svg>
+              </div>
+              <h3 class="advantages__title">Доставка</h3>
+            </div>
+            <p class="advantages__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.</p>
+            <a href='' class="advantages__btn-link">Подробнее</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </section>
+
+  <div class="how-works-page__reviews reviews">
+    <div class="reviews__wrap">
+
+      <div class="container">
+
+        <h2 class="reviews__title">Отзывы клиентов</h2>
+
+        <div class="reviews__reviews-slider reviews-slider">
+          <div class="reviews-slider__control-wrapper">
+            <div class="reviews-slider__wrapper">
+              <div class="reviews-slider__content swiper-container" id="reviewsSlider">
+                <div class="reviews-slider__swiper-wrapper swiper-wrapper">
+
+                  <div class="reviews__reviews-item reviews-item swiper-slide">
+                    <div class="reviews-item__wrap">
+                      <p class="reviews-item__message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <a href="" class="reviews-item__link">Читать полностью</a>
+                      <div class="reviews-item__reviewer">
+                        <div class="reviews-item__icon-wrap">
+                          <img src="<%=require('@img/icons/reviwer1.png')%>" alt="">
+                        </div>
+                        <div class="reviews-item__info">
+                          <div class="reviews-item__reviver-name">Михаил Меньшиков</div>
+                          <div class="reviews-item__reviewr-occupation">Топ-менеджер Газпромбанк</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="reviews__reviews-item reviews-item swiper-slide">
+                    <div class="reviews-item__wrap">
+                      <p class="reviews-item__message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <a href="" class="reviews-item__link">Читать полностью</a>
+                      <div class="reviews-item__reviewer">
+                        <div class="reviews-item__icon-wrap">
+                          <img src="<%=require('@img/icons/reviwer2.png')%>" alt="">
+                        </div>
+                        <div class="reviews-item__info">
+                          <div class="reviews-item__reviver-name">Михаил Меньшиков</div>
+                          <div class="reviews-item__reviewr-occupation">Топ-менеджер Газпромбанк</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="reviews__reviews-item reviews-item swiper-slide">
+                    <div class="reviews-item__wrap">
+                      <p class="reviews-item__message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <a href="" class="reviews-item__link">Читать полностью</a>
+                      <div class="reviews-item__reviewer">
+                        <div class="reviews-item__icon-wrap">
+                          <img src="<%=require('@img/icons/reviwer1.png')%>" alt="">
+                        </div>
+                        <div class="reviews-item__info">
+                          <div class="reviews-item__reviver-name">Михаил Меньшиков</div>
+                          <div class="reviews-item__reviewr-occupation">Топ-менеджер Газпромбанк</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="reviews__reviews-item reviews-item swiper-slide">
+                    <div class="reviews-item__wrap">
+                      <p class="reviews-item__message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <a href="" class="reviews-item__link">Читать полностью</a>
+                      <div class="reviews-item__reviewer">
+                        <div class="reviews-item__icon-wrap">
+                          <img src="<%=require('@img/icons/reviwer1.png')%>" alt="">
+                        </div>
+                        <div class="reviews-item__info">
+                          <div class="reviews-item__reviver-name">Михаил Меньшиков</div>
+                          <div class="reviews-item__reviewr-occupation">Топ-менеджер Газпромбанк</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="reviews__reviews-item reviews-item swiper-slide">
+                    <div class="reviews-item__wrap">
+                      <p class="reviews-item__message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <a href="" class="reviews-item__link">Читать полностью</a>
+                      <div class="reviews-item__reviewer">
+                        <div class="reviews-item__icon-wrap">
+                          <img src="<%=require('@img/icons/reviwer3.png')%>" alt="">
+                        </div>
+                        <div class="reviews-item__info">
+                          <div class="reviews-item__reviver-name">Анжела Митькова</div>
+                          <div class="reviews-item__reviewr-occupation">Топ-менеджер Газпромбанк</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="reviews__reviews-item reviews-item swiper-slide">
+                    <div class="reviews-item__wrap">
+                      <p class="reviews-item__message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <a href="" class="reviews-item__link">Читать полностью</a>
+                      <div class="reviews-item__reviewer">
+                        <div class="reviews-item__icon-wrap">
+                          <img src="<%=require('@img/icons/reviwer1.png')%>" alt="">
+                        </div>
+                        <div class="reviews-item__info">
+                          <div class="reviews-item__reviver-name">Марина Карпова</div>
+                          <div class="reviews-item__reviewr-occupation">Топ-менеджер Газпромбанк</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="reviews-slider-swiper-controls swiper-controls">
+              <div class="swiper-button-prev swiper-button"></div>
+              <div class="swiper-button-next swiper-button"></div>
+            </div>
+    
+
+          </div>
+
+        </div>
+       
+        <a href="" class="reviews__see-all">Смотреть все отзывы</a>
+
+      </div>
+     
+    </div>
+
+    
+  </div>
+
+
+</main>
+
+<%= require('@parts/footer.ejs')() %>

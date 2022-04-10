@@ -1,0 +1,175 @@
+<%= require('@parts/header.ejs')({title: 'partnership-page' }) %>
+
+<main class="partnership-page" id="root">
+ <div class="archive-numbers__wrap corner-dots-dec">
+        <img src="<%=require('@img/bg/dot-bg-full.svg')%>" alt="">
+    </div>
+
+
+    <div class="container">
+
+        <%= require('@parts/_breadcrumbs.ejs')({$class: 'archive-numbers', page: 'Сотрудничество', levels: 2}) %>
+
+    </div>
+
+    <div class="partnership-page__banner-big banner-big banner-big--partnerhship">
+        <div class="container">
+
+            <div class="banner-big__wrap">
+                <div class="banner-big__content">
+                    <div class="banner-big__small">РУ КОННЕКТ</div>
+                    <h2 class="banner-big__heading">Сотрудничество</h2>
+                    <div class="banner-big__subheading">Зарабатывайте вместе с нами!</div>
+                    <button id="scroll-to-from"class="banner-big__btn">Отправить заявку</button>
+                </div>
+                <div class="banner-big__img-wrap">
+                    <img src="<%=require('@img/img/banner-man.png')%>" alt="">
+                    <div class="banner-big__images-wrap">
+                        <div class="banner-big__dec-img">
+                            <img src="<%=require('@img/icons/coin-us.svg')%>" alt="">
+                        </div>
+                        <div class="banner-big__dec-img">
+                            <img src="<%=require('@img/icons/coin-ru.svg')%>" alt="">
+                        </div>
+                        <div class="banner-big__dec-img">
+                            <img src="<%=require('@img/icons/coin-eu.svg')%>" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <section class="partnership-page__about-us about-us">
+
+        <div class="container">
+
+            <div class="about-us__content">
+                <div class="about-us__text-wrap">
+                    <p class="about-us__history">Мы проделали долгий путь, с момента создания первого в истории мобильного
+                        вызова в России, с октября 2003 года. Сегодня, более 100000 клиентов по всему миру выбирают нас.</p>
+                    <h2 class="about-us__title">О компании</h2>
+                    <p class="about-us__info">Наша сеть позволяет людям общаться обмениваться изображениями и видео,
+                        делиться мыслями и чувствами, как только они возникают не задумываясь о расходах. Так как, мы
+                        предоставляем возможность больше не ограничивать себя в общении в отличие от остальных линейных
+                        тарифов, все больше клиентов обращаются к GSMCorporacia.
+                    </p>
+                    <p class="about-us__info">
+                        GSMCorporacia понимает, что нынешним клиентам требуется индивидуальное обслуживание и
+                        своевременная четкая информация о расходах. Для этого наша компания предоставляет клиентам
+                        индивидуального менеджера. Личный кабинет на сайте зарегистрировавшись в котором, вы получаете
+                        надежный и эффективный инструмент управления (собственной торговой точкой или субдилерской
+                        сетью).
+                    </p>
+                </div>
+    
+                <div class="about-us__about-banner about-banner">
+                    <div class="about-banner__wrap">
+                        <div class="about-banner__content">
+                            <h3 class="about-banner__title">Кабинет дилера</h3>
+                            <p class="about-banner__info">Зарегистрировавшись в КАБИНЕТЕ ДИЛЕРА, вы получаете надежный и эффективный инструмент управления (собственной торговой точкой или субдилерской сетью).</p>
+                            <button class="about-banner__btn">Зарегистрировать аккаунт</button>
+                        </div>
+                        <div class="about-banner__img-wrap">
+                            <img src="<%=require('@img/img/about-tels.png')%>" alt="">
+                        </div>
+                    </div>
+                </div>
+    
+                <h2 class="about-us__title about-us__title--center">Мы предоставляем</h2>
+    
+                <div class="about-us__advantages">
+    
+                    <ul class="about-us__advantages-list">
+                        <li class="about-us__advantages-item">
+
+                            <div class="about-us__icon-wrap">
+                                <img src="<%=require('@img/icons/advantages-ab1.svg')%>" alt="">
+                            </div>
+                            <p class="about-us__advantages-info">Индивидуальный подход
+                                к каждому партнеру, персональный менеджер</p>
+                        </li>
+                        <li class="about-us__advantages-item">
+
+                            <div class="about-us__icon-wrap">
+                                <img src="<%=require('@img/icons/advantages-ab2.svg')%>" alt="">
+                            </div>
+                            <p class="about-us__advantages-info">Бесплатная доставка 
+                                в удобное для Вас время, по договоренности</p>
+                        </li>
+                        <li class="about-us__advantages-item">
+
+                            <div class="about-us__icon-wrap">
+                                <img src="<%=require('@img/icons/advantages-ab3.svg')%>" alt="">
+                            </div>
+                            <p class="about-us__advantages-info">Понятная схема начисления вознаграждения, высокие ставки комиссии</p>
+                        </li>
+                        <li class="about-us__advantages-item">
+
+                            <div class="about-us__icon-wrap">
+                                <img src="<%=require('@img/icons/advantages-ab4.svg')%>" alt="">
+                            </div>
+                            <p class="about-us__advantages-info">Полный ассортимент оборудования сотовых операторов и сим-карт</p>
+                        </li>
+                        <li class="about-us__advantages-item">
+
+                            <div class="about-us__icon-wrap">
+                                <img src="<%=require('@img/icons/advantages-ab5.svg')%>" alt="">
+                            </div>
+                            <p class="about-us__advantages-info">Возможность получения товара в кредит или
+                                с рассрочкой платежа</p>
+                        </li>
+                        <li class="about-us__advantages-item">
+
+                            <div class="about-us__icon-wrap">
+                                <img src="<%=require('@img/icons/advantages-ab6.svg')%>" alt="">
+                            </div>
+                            <p class="about-us__advantages-info">Взаимовыгодные условия сотрудничества</p>
+                        </li>
+                    </ul>
+    
+                </div>
+
+                <form action="" class="catalog-content__form form">
+                    <div class="form__wrap form__wrap--about">
+                        <h3 class="form__title">Отправить заявку на сотрудничество</h3>
+                        <div class="form__row">
+                            <div class="form__col">
+                                <div class="form__group">
+                                    <label for="coop-name" class="form__label">Представьтесь<span>*</span></label>
+                                    <input type="text" id="coop-name" placeholder="+7 (992) 21" class="form__control">
+                                </div>
+                            </div>
+                            <div class="form__col">
+                                <div class="form__group">
+                                    <label for="coop-tel" class="form__label">Номер телефона (для связи)</label>
+                                    <input type="tel" id="tel" placeholder="+7 (992) 21" class="form__control">
+                                </div>
+                            </div>
+                            <div class="form__col">
+                                <div class="form__group">
+                                    <label for="coop-email" class="form__label">Поиск нужного номера:</label>
+                                    <input type="coop-email" id="email" placeholder="+7 (992) 21" class="form__control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__about-footer">
+                            <button class="form__btn">Отправить сообщение</button>
+                            <div class="form__policy">Нажимая на кнопку вы соглашаетесь на <a href="" class="form__link">обработку персональных данных</a></div>
+                        </div>
+                    </div>
+                  
+
+                </form>
+
+
+            </div>
+      
+        </div>
+    </section>
+
+</main>
+
+<%= require('@parts/footer.ejs')() %>

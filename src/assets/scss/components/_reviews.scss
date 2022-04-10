@@ -1,0 +1,77 @@
+.reviews {
+    &__title {
+        @extend %section-title;
+        margin-bottom: rem(32px);
+        text-align: center;
+        @include media-breakpoint-down(lg) {
+            font-size: rem(40px);
+            margin-bottom: rem(20px);
+            }
+            @include media-breakpoint-down(md) {
+            font-size: rem(32px);
+            }
+    }
+
+    &__see-all {
+        display: block;
+        z-index: 10;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+        color: $gray;
+        margin-top: rem(48px);
+        font-size: rem(14px);
+        &:hover {
+            color: $gray;
+        }
+    } 
+
+}
+
+.reviews-item {
+    .container {
+        position: relative;
+    }
+
+    &__wrap {
+        background: #FFFFFF;
+        box-shadow: 0px 100px 80px rgba(15, 15, 23, 0.02), 0px 41.7776px 33.4221px rgba(15, 15, 23, 0.0143771), 0px 22.3363px 17.869px rgba(15, 15, 23, 0.0119221), 0px 12.5216px 10.0172px rgba(15, 15, 23, 0.01), 0px 6.6501px 5.32008px rgba(15, 15, 23, 0.00807786), 0px 2.76726px 2.21381px rgba(15, 15, 23, 0.00562291);
+        border-radius: 16px;
+        padding: rem(24px);
+        padding-right: rem(46px);
+    }
+
+    &__reviewer {
+        display: flex;
+        align-items: center;
+    }
+
+    &__text {
+        font-size: rem(14px);
+        color: $secondary;
+    }
+
+    &__link {
+        display: block;
+        color: $accent;
+        margin-bottom: rem(32px);
+        font-size: rem(14px);
+        text-decoration: none;
+        &:hover {
+            color: $accent;
+        }
+    }
+    &__icon-wrap {
+        margin-right: rem(12px);
+        width: 50px;
+        height: 50px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+   
+}

@@ -1,0 +1,23 @@
+.how-works-page {
+    &__banner-big {
+        margin-bottom: rem(92px);
+        @include media-breakpoint-down(md) {
+        margin-bottom: rem(46px);
+        }
+    }
+
+    &__front-steps {
+        margin-bottom: rem(144px);
+        @include media-breakpoint-down(md) {
+            margin-bottom: rem(60px);
+        }
+    }
+
+    &__how-works {
+        margin-bottom: rem(96px);
+    }
+
+    &__reviews {
+        margin-bottom: rem(136px);
+    }
+}

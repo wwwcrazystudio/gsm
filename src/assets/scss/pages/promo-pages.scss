@@ -1,0 +1,328 @@
+.promo-catalog {
+
+    &__categories {
+        display: flex;
+        align-items: center;
+        margin-bottom: rem(48px);
+    }
+
+    &__heading {
+        margin-bottom: rem(32px);
+
+        @include media-breakpoint-down(lg) {
+            font-size: rem(40px);
+            margin-bottom: rem(15px);
+        }
+
+        @include media-breakpoint-down(md) {
+            font-size: rem(32px);
+        }
+    }
+
+    &__sort-by {
+        font-size: rem(14px);
+        color: $gray;
+        margin-right: rem(24px);
+
+        @include media-breakpoint-down(lg) {
+            margin-right: rem(12px);
+        }
+    }
+
+    &__categories-list {
+        @include unlist;
+        display: flex;
+
+        @include media-breakpoint-down(lg) {
+            white-space: nowrap;
+            overflow-x: scroll;
+            padding: rem(10px 0);
+        }
+    }
+
+    &__category {
+        margin-right: rem(24px);
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+        @include media-breakpoint-down(lg) {
+            margin-right: rem(12px);
+        }
+    }
+
+    &__btn {
+        color: $main;
+        font-size: rem(14px);
+        transition: 250ms;
+
+        &:hover {
+            color: $accent;
+            transition: 250ms;
+        }
+    }
+
+    &__summary {
+        font-size: rem(14px);
+        color: $gray;
+        margin-left: auto;
+
+        @include media-breakpoint-down(xl) {
+            display: none
+        }
+    }
+
+    &__promos-list {
+        @include unlist;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 24px;
+        grid-row-gap: 48px;
+        margin-right: rem(14px);
+
+        @include media-breakpoint-down(lg) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-row-gap: 34px;
+        }
+
+        @include media-breakpoint-down(md) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    &__show-more {
+        @extend %btn-main;
+        width: 100%;
+        border-radius: 8px;
+        background: none;
+        border: 1px solid #F2F2F2;
+        margin-bottom: rem(48px);
+
+        @include media-breakpoint-down(lg) {
+            margin-bottom: rem(38px);
+        }
+
+        @include media-breakpoint-down(lg) {
+            margin-bottom: rem(2 8px);
+        }
+    }
+
+    &__pagination {
+        margin-bottom: rem(137px);
+
+        @include media-breakpoint-down(xl) {
+            margin-bottom: rem(88px);
+        }
+
+        @include media-breakpoint-down(lg) {
+            margin-bottom: rem(72px);
+        }
+    }
+}
+
+.promos-item {
+    &__wrap {
+        display: block;
+        color: $main;
+        text-decoration: none;
+        transition: 250ms;
+        border-radius: 16px 16px 16px 16px;
+        background: #fff;
+        width: 100%;
+        max-width: 384px;
+        margin-left: auto;
+        margin-right: auto;
+
+        &:hover {
+            color: $main;
+            box-shadow: 0px 100px 80px rgba(15, 15, 23, 0.02), 0px 41.7776px 33.4221px rgba(15, 15, 23, 0.0143771), 0px 22.3363px 17.869px rgba(15, 15, 23, 0.0119221), 0px 12.5216px 10.0172px rgba(15, 15, 23, 0.01), 0px 6.6501px 5.32008px rgba(15, 15, 23, 0.00807786), 0px 2.76726px 2.21381px rgba(15, 15, 23, 0.00562291);
+
+            .promos-item__img-wrap {
+                border-radius: 16px 16px 0 0;
+                transition: 250ms;
+            }
+
+            .promos-footer {
+                background: #fff;
+            }
+        }
+
+    }
+
+    &__img-wrap {
+        display: block;
+
+        border-radius: 16px;
+        overflow: hidden;
+        height: 200px;
+        width: 100%;
+        max-width: 384px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        @include media-breakpoint-down(xl) {
+            height: auto;
+        }
+
+    }
+
+    &__footer {
+        padding: rem(16px 8px 24px 16px);
+        border-radius: 0 0 16px 16px;
+    }
+
+    &__info {
+        font-size: rem(16px);
+        font-weight: 600;
+
+        @include media-breakpoint-down(lg) {
+            font-size: rem(14px);
+        }
+    }
+
+}
+
+.promo-single {
+    &__thumbnail {
+        width: 100%;
+        height: 100%;
+        max-height: 360px;
+        margin-bottom: rem(72px);
+        display: block;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        @include media-breakpoint-down(lg) {
+            margin-bottom: rem(42px);
+        }
+
+        @include media-breakpoint-down(md) {
+            margin-bottom: rem(32px);
+        }
+    }
+
+    &__content {
+        width: 100%;
+        max-width: 932px;
+        margin-left: auto;
+        margin-right: auto;
+
+        span {
+            font-size: rem(23px);
+            line-height: 130%;
+            color: $secondary;
+            margin-bottom: rem(64px);
+            display: block;
+
+            @include media-breakpoint-down(lg) {
+                margin-bottom: rem(42px);
+                font-size: rem(18px);
+            }
+
+            @include media-breakpoint-down(md) {
+                margin-bottom: rem(32px);
+                font-size: rem(16px);
+            }
+        }
+
+        h2 {
+            font-weight: 600;
+            font-size: 47px;
+            margin-bottom: rem(24px);
+
+            @include media-breakpoint-down(lg) {
+                font-size: rem(40px);
+            }
+
+            @include media-breakpoint-down(md) {
+                font-size: rem(32px);
+                margin-bottom: rem(12px);
+            }
+        }
+
+        p {
+            font-size: rem(16px);
+
+            &:last-of-type {
+                margin-bottom: rem(64px);
+                @include media-breakpoint-down(lg) {
+                margin-bottom: rem(42px);
+                }
+                @include media-breakpoint-down(md) {
+                margin-bottom: rem(32px);
+                }
+            }
+            @include media-breakpoint-down(md) {
+            font-size: rem(14px);
+            }
+        }
+
+        blockquote {
+            border-left: 4px solid #F1BF13;
+            padding: rem(15px);
+            padding-left: rem(24px);
+            margin-bottom: rem(72px);
+            font-size: rem(23px);
+            color: $secondary;
+            @include media-breakpoint-down(lg) {
+                font-size: rem(18px);
+                margin-bottom: rem(52px);
+            }
+            @include media-breakpoint-down(md) {
+            font-size: rem(16px);
+            margin-bottom: rem(42px);
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            max-height: 402px;
+            margin-bottom: rem(104px);
+            @include media-breakpoint-down(lg) {
+            margin-bottom: rem(72px);
+            }
+            @include media-breakpoint-down(md) {
+            margin-bottom: rem(52px);
+            }
+        }
+    }
+
+    &__btn {
+        @extend %btn-main;
+        margin-bottom: rem(96px);
+        margin-left: auto;
+        margin-right: auto;
+        @include media-breakpoint-down(lg) {
+        margin-bottom: rem(72px);
+        }
+        @include media-breakpoint-down(md) {
+        margin-bottom: rem(52px);
+        }
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: rem(23px);
+        margin-bottom: rem(32px);
+    }
+
+    &__wrap {
+        margin-bottom: rem(200px);
+        @include media-breakpoint-down(lg) {
+        margin-bottom: rem(150px);
+        }
+        @include media-breakpoint-down(md) {
+        margin-bottom: rem(100px);
+        }
+    }
+}

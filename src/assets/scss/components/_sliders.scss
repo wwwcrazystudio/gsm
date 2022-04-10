@@ -1,0 +1,355 @@
+.hot {
+    position: relative;
+
+    &__heading {
+        @extend %section-title;
+        text-align: center;
+        margin: 0 0 35px;
+        @include media-breakpoint-down(lg) {
+            font-size: rem(40px);
+            margin-bottom: rem(20px);
+            }
+            @include media-breakpoint-down(md) {
+            font-size: rem(32px);
+            }
+    }
+
+    &__toggle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 48px;
+        gap: 16px;
+
+        p {
+            margin-bottom: 0;
+            color: $gray;
+        }
+
+        .slider-active {
+            color: $main;
+        }
+
+        @include media-breakpoint-down(xl) {
+        margin-bottom: rem(24px);
+        }
+        @include media-breakpoint-down(md) {
+        font-size: rem(12px);
+        }
+    }
+
+    &__hot-active {
+        color: $main;
+    }
+
+    &__hot-toggle {
+        position: relative;
+        display: inline-block;
+        width: 48px;
+        height: 28px;
+        cursor: pointer;
+
+        .hot-toggle__slider {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: transparent;
+            border: 1px solid #dbdbdb;
+            border-radius: 16px;
+
+            &::before {
+                position: absolute;
+                content: "";
+                display: block;
+                height: 24px;
+                width: 24px;
+                left: 1px;
+                top: 1px;
+                background: $accent;
+                border-radius: 50%;
+                transition: 250ms;
+            }
+        }
+
+        input {
+            visibility: hidden;
+            width: 0;
+            height: 0;
+            transition: 250ms;
+
+            &:checked {
+                &+.hot-toggle__slider {
+                    &::before {
+                        transition: 250ms;
+                        transform: translateX(18px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.hot-slider {
+    &__control-wrapper {
+        position: relative;
+        width: 100%;
+        .swiper-controls {
+            position: absolute;
+            top: calc(50% - 38px); 
+            left: -72px;
+            transform: translateY(-50%);
+            width: calc(100% + 144px);
+            height: 48px;
+            display: flex;
+            justify-content: space-between;
+            z-index: 0;
+    
+            .swiper-button {
+                position: relative;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: 0;
+                padding: 0;
+                width: 48px;
+                height: 48px;
+                border: 1px solid $border-color;
+                border-radius: 50%;
+                background: transparent;
+                  transition: 250ms;
+                &:hover {
+                    border: 1px solid $accent;
+                    transition: 250ms;
+                }
+                &::after {
+                    display: none;
+                }
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 7px;
+                    height: 12px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background-image: url("data:image/svg+xml,%3Csvg width='8' height='13' viewBox='0 0 8 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.31702 6.82527L0.333252 1.8415L1.39692 0.777832L7.44436 6.82527L1.39692 12.8727L0.333252 11.809L5.31702 6.82527Z' fill='%230F0F17'/%3E%3C/svg%3E%0A");
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                &-prev {
+                    &::before {
+                        transform: translate(-50%, -50%) scale(-1);
+                    }
+                }
+            }
+        }
+    }
+
+    &__wrapper {
+        overflow: hidden;
+        position: relative;
+        margin: -24px -24px -100px;
+        padding: 24px 24px 100px;
+        height: fit-content;
+        @include media-breakpoint-down(md) {
+        padding-bottom: rem(70px);
+        }
+    }
+
+    &__content {
+        display: none;
+        overflow: unset !important;
+    }
+
+    .slider-active {
+        display: block !important;
+    }
+
+    .swiper-pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        bottom: -32px;
+
+        .swiper-pagination-bullet-active {
+            background-color: $main;
+        }
+    }
+    overflow: unset !important;
+    .swiper-slide:not(.swiper-slide-visible) {
+        box-shadow: none;
+    }
+}
+
+.reviews-slider {
+    &__wrapper {
+        overflow: hidden;
+        position: relative;
+        margin: -24px -24px -100px;
+        padding: 24px 24px 100px;
+        height: fit-content;
+        @include media-breakpoint-down(md) {
+        padding-bottom: rem(70px);
+        }
+    }
+
+    &__content {
+        overflow: unset !important;
+    }
+
+
+    &__control-wrapper {
+        position: relative;
+        width: 100%;
+        .swiper-controls {
+            position: absolute;
+            top: calc(50% - 38px); 
+            left: -72px;
+            transform: translateY(-50%);
+            width: calc(100% + 144px);
+            height: 48px;
+            display: flex;
+            justify-content: space-between;
+            z-index: 0;
+    
+            .swiper-button {
+                position: relative;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: 0;
+                padding: 0;
+                width: 48px;
+                height: 48px;
+                border: 1px solid $border-color;
+                border-radius: 50%;
+                background: transparent;
+                  transition: 250ms;
+                &:hover {
+                    border: 1px solid $accent;
+                    transition: 250ms;
+                }
+                &::after {
+                    display: none;
+                }
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 7px;
+                    height: 12px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background-image: url("data:image/svg+xml,%3Csvg width='8' height='13' viewBox='0 0 8 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.31702 6.82527L0.333252 1.8415L1.39692 0.777832L7.44436 6.82527L1.39692 12.8727L0.333252 11.809L5.31702 6.82527Z' fill='%230F0F17'/%3E%3C/svg%3E%0A");
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                &-prev {
+                    &::before {
+                        transform: translate(-50%, -50%) scale(-1);
+                    }
+                }
+            }
+        }
+    }
+
+    .swiper-slide:not(.swiper-slide-visible) {
+        .reviews-item__wrap {
+            box-shadow: none;
+        }
+       
+    } 
+
+    
+}
+
+.promo-slider {
+    &__wrapper {
+        overflow: hidden;
+        position: relative;
+        margin: -24px -24px -100px;
+        padding: 24px 24px 100px;
+        height: fit-content;
+        @include media-breakpoint-down(md) {
+        padding-bottom: rem(70px);
+        }
+    }
+
+    &__content {
+        overflow: unset !important;
+    }
+
+
+    &__control-wrapper {
+        position: relative;
+        width: 100%;
+        .swiper-controls {
+            position: absolute;
+            top: calc(50% - 80px);
+            left: -72px;
+            transform: translateY(-50%);
+            width: calc(100% + 144px);
+            height: 48px;
+            display: flex;
+            justify-content: space-between;
+            z-index: 0;
+    
+            .swiper-button {
+                position: relative;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: 0;
+                padding: 0;
+                width: 48px;
+                height: 48px;
+                border: 1px solid $border-color;
+                border-radius: 50%;
+                background: transparent;
+                  transition: 250ms;
+                &:hover {
+                    border: 1px solid $accent;
+                    transition: 250ms;
+                }
+                &::after {
+                    display: none;
+                }
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 7px;
+                    height: 12px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background-image: url("data:image/svg+xml,%3Csvg width='8' height='13' viewBox='0 0 8 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.31702 6.82527L0.333252 1.8415L1.39692 0.777832L7.44436 6.82527L1.39692 12.8727L0.333252 11.809L5.31702 6.82527Z' fill='%230F0F17'/%3E%3C/svg%3E%0A");
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                &-prev {
+                    &::before {
+                        transform: translate(-50%, -50%) scale(-1);
+                    }
+                }
+            }
+        }
+    }
+
+    .swiper-slide:not(.swiper-slide-visible) {
+        .reviews-item__wrap {
+            box-shadow: none;
+        }
+       
+    } 
+
+    
+}

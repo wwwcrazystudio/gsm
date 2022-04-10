@@ -1,0 +1,1327 @@
+<%= require('@parts/header.ejs')({title: 'frontpage' }) %>
+
+<main class="frontpage" id="root">
+
+  <section class="frontpage__hero hero">
+    <div class="hero__wrap">
+      <div class="container">
+
+        <div class="hero__raw">
+
+          <div class="hero__content">
+            <h1 class="hero__heading">Выбери свой
+              красивый номер</h1>
+            <p class="hero__subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.</p>
+            <div class="hero__btns">
+              <a href="" class="hero__btn">Подобрать номер</a>
+              <a href="" class="hero__link">Безлимитный тариф</a>
+            </div>
+          </div>
+
+          <div class="hero__images-wrap" data-aos="fade-right">
+            <picture class="hero__img-wrap">
+              <source srcset='<%=require('@img/img/gravity-phones.png')%>.webp' type='image/webp'>
+              <img src='<%=require('@img/img/gravity-phones.png')%>' alt=''>
+            </picture>
+            <div class="hero__images">
+              <div class="hero__operators" id="heroOperator1"><img src="<%=require('@img/icons/yota.svg')%>" alt="">
+              </div>
+              <div class="hero__operators" id="heroOperator2"><img src="<%=require('@img/icons/biline-front.svg')%>"
+                  alt=""></div>
+              <div class="hero__operators" id="heroOperator3"><img src="<%=require('@img/icons/mts.svg')%>" alt="">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="frontpage__operators" data-aos="fade-up">
+    <div class="operators__wrap">
+      <div class="container">
+        <ul class="operators__list">
+          <li class="operators__operator">
+            <a href="" class="operators__op-wrap">
+              <div class="operators__img">
+                <img src='<%=require('@img/icons/biline.png')%>' alt=''>
+              </div>
+              <div class="operators__info">Билайн</div>
+            </a>
+           
+          </li>
+          <li class="operators__operator">
+            <a href="" class="operators__op-wrap">
+              <div class="operators__img">
+                <img src='<%=require('@img/icons/megafon.png')%>' alt=''>
+              </div>
+              <div class="operators__info">Мегафон</div>
+            </a>
+
+          </li>
+          <li class="operators__operator">
+            <a href="" class="operators__op-wrap">
+              <div class="operators__img">
+                <img src='<%=require('@img/icons/mtc.png')%>' alt=''>
+              </div>
+              <div class="operators__info">MTC</div>
+            </a>
+          </li>
+          <li class="operators__operator">
+            <a href="" class="operators__op-wrap">
+              <div class="operators__img">
+                <img src='<%=require('@img/icons/yota.png')%>' alt=''>
+              </div>
+            <div class="operators__info">Yota</div>
+            </a>
+          </li>
+          <li class="operators__operator">
+            <a href="" class="operators__op-wrap">
+              <div class="operators__img">
+                <img src='<%=require('@img/icons/tele2.png')%>' alt=''>
+              </div>
+              <div class="operators__info">Теле2</div>
+            </a>
+          </li>
+          <li class="operators__operator">
+            <a href="" class="operators__op-wrap">
+              <div class="operators__img">
+                <img src='<%=require('@img/icons/rostelecom.png')%>' alt=''>
+              </div>
+              <div class="operators__info">Rosctelecom</div>
+            </a>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="frontpage__front-about front-about" data-aos="fade-up">
+
+
+    <div class="container">
+
+      <div class="front-about__wrap">
+
+        <div class="front-about__content">
+          <div class="front-about__logo-wrap">
+            <img src="<%=require('@img/icons/black-white-logo.svg')%>" alt="" class="front-about__logo">
+          </div>
+          <h2 class="front-about__title">РУ КОННЕКТ</h2>
+          <p class="front-about__subtitle">Мы выделяем для вас актуальные преимущества тарифных планов и объединяет их
+            в единое целое!</p>
+
+          <div class="front-about__btns">
+            <a href="" class="front-about__btn-link">Подобрать номер</a>
+            <a href="" class="front-about__btn-link">Безлимитный тариф</a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="frontpage__front-steps front-steps" data-aos="fade-up">
+    <div class="container">
+      <div class="front-steps__content">
+        <ul class="front-steps__list">
+          <li class="front-steps__item">
+            <div class="front-steps__icon-wrap">
+              <img class="front-steps__icon" src="<%=require('@img/icons/front-step1.svg')%>" alt="">
+              <img class="front-steps__dec" src="<%=require('@img/icons/step-dec1.svg')%>" alt="">
+            </div>
+            <h3 class="front-steps__step">Шаг 1</h3>
+            <p class="front-steps__info">Зарегистрируйтесь на площадке РТ Коннект. Большой выбор крсивых номеров и
+              ввыгодных тарифов</p>
+            <a href="" class="front-steps__btn-link">Зарегистрироваться</a>
+          </li>
+          <li class="front-steps__item">
+            <div class="front-steps__icon-wrap">
+              <img class="front-steps__icon" src="<%=require('@img/icons/front-step2.svg')%>" alt="">
+              <img class="front-steps__dec" src="<%=require('@img/icons/step-dec2.svg')%>" alt="">
+            </div>
+            <h3 class="front-steps__step">Шаг 2</h3>
+            <p class="front-steps__info">Выберите наиболее выгодный и подходящи вам тариф из нашего каталога операторов
+            </p>
+            <a href="" class="front-steps__btn-link">Выбрать тариф</a>
+          </li>
+          <li class="front-steps__item">
+            <div class="front-steps__icon-wrap">
+              <img class="front-steps__icon" src="<%=require('@img/icons/front-step3.svg')%>" alt="">
+              <img class="front-steps__dec" src="<%=require('@img/icons/step-dec3.svg')%>" alt="">
+            </div>
+            <h3 class="front-steps__step">Шаг 3</h3>
+            <p class="front-steps__info">Выберите красивый номер для вашего тарифа из каталога предложенных номеров.
+            </p>
+            <a href="" class="front-steps__btn-link">Выбрать номер</a>
+          </li>
+          <li class="front-steps__item">
+            <div class="front-steps__icon-wrap">
+              <img class="front-steps__icon" src="<%=require('@img/icons/front-step4.svg')%>" alt="">
+              <img class="front-steps__dec" src="<%=require('@img/icons/step-dec4.svg')%>" alt="">
+            </div>
+            <h3 class="front-steps__step">Шаг 4</h3>
+            <p class="front-steps__info">Оставьте заявку в специальной форме. Наш специалист свяжется и объяснит как
+              получить ваш заказ.</p>
+            <a href="" class="front-steps__btn-link">Оставьте заявку</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="frontpage__catalog-content catalog-content">
+
+    <div class="catalog-content__wrap">
+
+      <div class="container">
+        <h2 class="catalog-content__title" data-aos="fade-up">Безлимитные тарифы</h2>
+        <div class="catalog-content__catalog-list catalog-list catalog-list--without-col " data-aos="fade-up">
+
+          <div class="catalog-list__content">
+
+            <ul class="catalog-list__list">
+              <li class="catalog-list__tariffs-item tariffs-item">
+                <a href='' class="tariffs-item__tariff-wrap">
+
+                  <div class="tariffs-item__header">
+                    <div class="tariffs-item__small-wrap">
+                      <div class="tariffs-item__icon-wrap">
+                        <img class='tariffs-item__icon' src="<%=require('@img/icons/biline.svg')%>" alt="">
+                      </div>
+                      <div class="tariffs-item__tel">Tvoy за 600</div>
+                    </div>
+                    <div class="tariffs-item__sum">+ 1346</div>
+                  </div>
+
+                  <div class="tariffs-item__specs">
+
+                    <ul class="tariffs-item__list">
+                      <li class="tariffs-item__specs-item">
+                        <div class="tariffs-item__info">Звонки по России:</div>
+                        <div class="tariffs-item__value">2000 минут</div>
+                      </li>
+                      <li class="tariffs-item__specs-item">
+                        <div class="tariffs-item__info">Интернет:</div>
+                        <div class="tariffs-item__value">35Gb</div>
+                      </li>
+                      <li class="tariffs-item__specs-item">
+                        <div class="tariffs-item__info">SMS/MMS:</div>
+                        <div class="tariffs-item__value">1000</div>
+                      </li>
+                    </ul>
+
+                  </div>
+
+                  <div href="" class="tariffs-item__more">
+                    Подробнее
+                  </div>
+
+                  <div class="tariffs-item__footer">
+
+                    <div class="tariffs-item__price-wrap">
+
+                      <div class="tariffs-item__price">499 руб</div>
+                      <div class="tariffs-item__monthly">Абонентская плата 600 руб./мес.</div>
+                    </div>
+                    <div class="tariffs-item__buy-btn" href=""></div>
+                  </div>
+
+                </a>
+              </li>
+              <li class="catalog-list__tariffs-item tariffs-item">
+                <a href='' class="tariffs-item__tariff-wrap">
+
+                  <div class="tariffs-item__header">
+                    <div class="tariffs-item__small-wrap">
+                      <div class="tariffs-item__icon-wrap">
+                        <img class='tariffs-item__icon' src="<%=require('@img/icons/megafon.svg')%>" alt="">
+                      </div>
+                      <div class="tariffs-item__tel">Мегафон Онлайн</div>
+                    </div>
+                    <div class="tariffs-item__sum">+ 1346</div>
+                  </div>
+
+                  <div class="tariffs-item__specs">
+
+                    <ul class="tariffs-item__list">
+                      <li class="tariffs-item__specs-item">
+                        <div class="tariffs-item__info">Звонки по России:</div>
+                        <div class="tariffs-item__value">2000 минут</div>
+                      </li>
+                      <li class="tariffs-item__specs-item">
+                        <div class="tariffs-item__info">Интернет:</div>
+                        <div class="tariffs-item__value">35Gb</div>
+                      </li>
+                      <li class="tariffs-item__specs-item">
+                        <div class="tariffs-item__info">SMS/MMS:</div>
+                        <div class="tariffs-item__value">1000</div>
+                      </li>
+                    </ul>
+
+                  </div>
+
+                  <div href="" class="tariffs-item__more">
+                    Подробнее
+                  </div>
+
+                  <div class="tariffs-item__footer">
+                    <div class="tariffs-item__price-wrap">
+                      <div class="tariffs-item__price">499 руб</div>
+                      <div class="tariffs-item__monthly">Абонентская плата 600 руб./мес.</div>
+                    </div>
+                    <div class="tariffs-item__buy-btn" href=""></div>
+                  </div>
+
+                </a>
+              </li>
+              <li class="catalog-list__tariffs-item tariffs-item tariffs-item--checked">
+                <a href='' class="tariffs-item__tariff-wrap">
+
+                  <div class="tariffs-item__header">
+                    <div class="tariffs-item__small-wrap">
+                      <div class="tariffs-item__icon-wrap">
+                        <img class='tariffs-item__icon' src="<%=require('@img/icons/mts.svg')%>" alt="">
+                      </div>
+                      <div class="tariffs-item__tel">МТС Коннект</div>
+                    </div>
+                    <div class="tariffs-item__sum">+ 1346</div>
+                  </div>
+
+                  <div class="tariffs-item__specs">
+
+                    <ul class="tariffs-item__list">
+                      <li class="tariffs-item__specs-item">
+                        <div class="tariffs-item__info">Звонки по России:</div>
+                        <div class="tariffs-item__value">2000 минут</div>
+                      </li>
+                      <li class="tariffs-item__specs-item">
+                        <div class="tariffs-item__info">Интернет:</div>
+                        <div class="tariffs-item__value">35Gb</div>
+                      </li>
+                      <li class="tariffs-item__specs-item">
+                        <div class="tariffs-item__info">SMS/MMS:</div>
+                        <div class="tariffs-item__value">1000</div>
+                      </li>
+                    </ul>
+
+                  </div>
+
+                  <div href="" class="tariffs-item__more">
+                    Подробнее
+                  </div>
+
+                  <div class="tariffs-item__footer">
+                    <div class="tariffs-item__price-wrap">
+                      <div class="tariffs-item__price">499 руб</div>
+                      <div class="tariffs-item__monthly">Абонентская плата 600 руб./мес.</div>
+                    </div>
+                    <div class="tariffs-item__buy-btn" href=""></div>
+                  </div>
+
+                </a>
+              </li>
+              <li class="catalog-list__tariffs-item tariffs-item">
+                <a href='' class="tariffs-item__tariff-wrap">
+
+                  <div class="tariffs-item__header">
+                    <div class="tariffs-item__small-wrap">
+                      <div class="tariffs-item__icon-wrap">
+                        <img class='tariffs-item__icon' src="<%=require('@img/icons/tele2.svg')%>" alt="">
+                      </div>
+                      <div class="tariffs-item__tel">Теле 2 Интернет</div>
+                    </div>
+                    <div class="tariffs-item__sum">+ 1346</div>
+                  </div>
+
+                  <div class="tariffs-item__specs">
+
+                    <ul class="tariffs-item__list">
+                      <li class="tariffs-item__specs-item">
+                        <div class="tariffs-item__info">Звонки по России:</div>
+                        <div class="tariffs-item__value">2000 минут</div>
+                      </li>
+                      <li class="tariffs-item__specs-item">
+                        <div class="tariffs-item__info">Интернет:</div>
+                        <div class="tariffs-item__value">35Gb</div>
+                      </li>
+                      <li class="tariffs-item__specs-item">
+                        <div class="tariffs-item__info">SMS/MMS:</div>
+                        <div class="tariffs-item__value">1000</div>
+                      </li>
+                    </ul>
+
+                  </div>
+
+                  <div href="" class="tariffs-item__more">
+                    Подробнее
+                  </div>
+
+                  <div class="tariffs-item__footer">
+                    <div class="tariffs-item__price-wrap">
+                      <div class="tariffs-item__price">499 руб</div>
+                      <div class="tariffs-item__monthly">Абонентская плата 600 руб./мес.</div>
+                    </div>
+                    <div class="tariffs-item__buy-btn" href=""></div>
+                  </div>
+
+                </a>
+              </li>
+              <li class="catalog-list__tariffs-item tariffs-item">
+                <a href='' class="tariffs-item__tariff-wrap">
+
+                  <div class="tariffs-item__header">
+                    <div class="tariffs-item__small-wrap">
+                      <div class="tariffs-item__icon-wrap">
+                        <img class='tariffs-item__icon' src="<%=require('@img/icons/mts.svg')%>" alt="">
+                      </div>
+                      <div class="tariffs-item__tel">МТС "Для Ноутбука"</div>
+                    </div>
+                    <div class="tariffs-item__sum">+ 1346</div>
+                  </div>
+
+                  <div class="tariffs-item__specs">
+
+                    <ul class="tariffs-item__list">
+                      <li class="tariffs-item__specs-item">
+                        <div class="tariffs-item__info">Звонки по России:</div>
+                        <div class="tariffs-item__value">2000 минут</div>
+                      </li>
+                      <li class="tariffs-item__specs-item">
+                        <div class="tariffs-item__info">Интернет:</div>
+                        <div class="tariffs-item__value">35Gb</div>
+                      </li>
+                      <li class="tariffs-item__specs-item">
+                        <div class="tariffs-item__info">SMS/MMS:</div>
+                        <div class="tariffs-item__value">1000</div>
+                      </li>
+                    </ul>
+
+                  </div>
+
+                  <div class="tariffs-item__more">
+                    Подробнее
+                  </div>
+
+                  <div class="tariffs-item__footer">
+                    <div class="tariffs-item__price-wrap">
+                      <div class="tariffs-item__price">499 руб</div>
+                      <div class="tariffs-item__monthly">Абонентская плата 600 руб./мес.</div>
+                    </div>
+                    <div class="tariffs-item__buy-btn"></div>
+                  </div>
+
+                </a>
+              </li>
+              <li class="catalog-list__tariffs-item tariffs-item">
+                <a href='' class="tariffs-item__tariff-wrap">
+
+                  <div class="tariffs-item__header">
+                    <div class="tariffs-item__small-wrap">
+                      <div class="tariffs-item__icon-wrap">
+                        <img class='tariffs-item__icon' src="<%=require('@img/icons/mts.svg')%>" alt="">
+                      </div>
+                      <div class="tariffs-item__tel">МТС Коннект</div>
+                    </div>
+                    <div class="tariffs-item__sum">+ 1346</div>
+                  </div>
+
+                  <div class="tariffs-item__specs">
+
+                    <ul class="tariffs-item__list">
+                      <li class="tariffs-item__specs-item">
+                        <div class="tariffs-item__info">Звонки по России:</div>
+                        <div class="tariffs-item__value">2000 минут</div>
+                      </li>
+                      <li class="tariffs-item__specs-item">
+                        <div class="tariffs-item__info">Интернет:</div>
+                        <div class="tariffs-item__value">35Gb</div>
+                      </li>
+                      <li class="tariffs-item__specs-item">
+                        <div class="tariffs-item__info">SMS/MMS:</div>
+                        <div class="tariffs-item__value">1000</div>
+                      </li>
+                    </ul>
+
+                  </div>
+
+                  <div href="" class="tariffs-item__more">
+                    Подробнее
+                  </div>
+
+                  <div class="tariffs-item__footer">
+                    <div class="tariffs-item__price-wrap">
+                      <div class="tariffs-item__price">499 руб</div>
+                      <div class="tariffs-item__monthly">Абонентская плата 600 руб./мес.</div>
+                    </div>
+                    <div class="tariffs-item__buy-btn" href=""></div>
+                  </div>
+
+                </a>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+      <a href="" class="catalog-content__watch-all" data-aos="fade-up">Смотреть весь каталог</a>
+
+    </div>
+
+  </div>
+
+
+  <section class="frontpage__hot hot">
+    <div class="container">
+      <h2 class="hot__heading" data-aos="fade-up">Горячие предложения</h2>
+      <div class="hot__toggle">
+        <p class="slider-active" data-aos="fade-up">Распродажа номеров</p>
+        <label class="hot__hot-toggle" data-aos="fade-up">
+          <input type="checkbox" checked>
+          <span class="hot-toggle__slider"></span>
+        </label>
+        <p data-aos="fade-up">Распродажа тарифов</p>
+      </div>
+      <div class="hot__hot-slider hot-slider" data-aos="fade-up">
+        <div class="hot-slider__control-wrapper">
+          <div class="hot-slider__wrapper">
+            <div class="hot-slider__content swiper-container slider-active" id="numbersHotSlider">
+              <div class="hot-slider__swiper-wrapper swiper-wrapper">
+                <div class="hot-slider__numbers-item numbers-item swiper-slide">
+                  <a href="" class="numbers-item__card-wrap">
+
+                    <div class="numbers-item__prestige">
+                      <div class="numbers-item__icon-wrap">
+                        <img class='numbers-item__icon' src="<%=require('@img/icons/silver.svg')%>" alt="">
+                      </div>
+                      <div class="numbers-item__tel">958-120-6666</div>
+                    </div>
+
+                    <div class="numbers-item__specs">
+
+                      <ul class="numbers-item__list">
+                        <li class="numbers-item__specs-item">
+                          <div class="numbers-item__info">Оператор:</div>
+                          <div class="numbers-item__value">Мегафон</div>
+                        </li>
+                        <li class="numbers-item__specs-item">
+                          <div class="numbers-item__info">Номер:</div>
+                          <div class="numbers-item__value">958-120-6666</div>
+                        </li>
+                      </ul>
+
+                      <div class="numbers-item__footer">
+                        <div class="numbers-items__price-wrap">
+                          <div class="numbers-item__hot-price">5 499 руб</div>
+                          <div class="numbers-item__monthly">Абонентская плата 600 руб./мес.
+                          </div>
+                        </div>
+                        <div class="numbers-item__buy-btn"></div>
+                      </div>
+
+                    </div>
+
+                  </a>
+                </div>
+                <div class="hot-slider__numbers-item numbers-item swiper-slide">
+                  <a href="" class="numbers-item__card-wrap">
+
+                    <div class="numbers-item__prestige">
+                      <div class="numbers-item__icon-wrap">
+                        <img class='numbers-item__icon' src="<%=require('@img/icons/gold.svg')%>" alt="">
+                      </div>
+                      <div class="numbers-item__tel">958-120-6666</div>
+                    </div>
+
+                    <div class="numbers-item__specs">
+
+                      <ul class="numbers-item__list">
+                        <li class="numbers-item__specs-item">
+                          <div class="numbers-item__info">Оператор:</div>
+                          <div class="numbers-item__value">Мегафон</div>
+                        </li>
+                        <li class="numbers-item__specs-item">
+                          <div class="numbers-item__info">Номер:</div>
+                          <div class="numbers-item__value">958-120-6666</div>
+                        </li>
+                      </ul>
+
+                      <div class="numbers-item__footer">
+                        <div class="numbers-items__price-wrap">
+                          <div class="numbers-item__hot-price">5 499 руб</div>
+                          <div class="numbers-item__monthly">Абонентская плата 600 руб./мес.
+                          </div>
+                        </div>
+                        <div class="numbers-item__buy-btn"></div>
+                      </div>
+
+                    </div>
+
+                  </a>
+                </div>
+                <div class="hot-slider__numbers-item numbers-item swiper-slide">
+                  <a href="" class="numbers-item__card-wrap">
+
+                    <div class="numbers-item__prestige">
+                      <div class="numbers-item__icon-wrap">
+                        <img class='numbers-item__icon' src="<%=require('@img/icons/bronze.svg')%>" alt="">
+                      </div>
+                      <div class="numbers-item__tel">958-120-6666</div>
+                    </div>
+
+                    <div class="numbers-item__specs">
+
+                      <ul class="numbers-item__list">
+                        <li class="numbers-item__specs-item">
+                          <div class="numbers-item__info">Оператор:</div>
+                          <div class="numbers-item__value">Мегафон</div>
+                        </li>
+                        <li class="numbers-item__specs-item">
+                          <div class="numbers-item__info">Номер:</div>
+                          <div class="numbers-item__value">958-120-6666</div>
+                        </li>
+                      </ul>
+
+                      <div class="numbers-item__footer">
+                        <div class="numbers-items__price-wrap">
+                          <div class="numbers-item__hot-price">5 499 руб</div>
+                          <div class="numbers-item__monthly">Абонентская плата 600 руб./мес.
+                          </div>
+                        </div>
+                        <div class="numbers-item__buy-btn"></div>
+                      </div>
+
+                    </div>
+
+                  </a>
+                </div>
+                <div class="hot-slider__numbers-item numbers-item swiper-slide">
+                  <a href="" class="numbers-item__card-wrap">
+
+                    <div class="numbers-item__prestige">
+                      <div class="numbers-item__icon-wrap">
+                        <img class='numbers-item__icon' src="<%=require('@img/icons/silver.svg')%>" alt="">
+                      </div>
+                      <div class="numbers-item__tel">958-120-6666</div>
+                    </div>
+
+                    <div class="numbers-item__specs">
+
+                      <ul class="numbers-item__list">
+                        <li class="numbers-item__specs-item">
+                          <div class="numbers-item__info">Оператор:</div>
+                          <div class="numbers-item__value">Мегафон</div>
+                        </li>
+                        <li class="numbers-item__specs-item">
+                          <div class="numbers-item__info">Номер:</div>
+                          <div class="numbers-item__value">958-120-6666</div>
+                        </li>
+                      </ul>
+
+                      <div class="numbers-item__footer">
+                        <div class="numbers-items__price-wrap">
+                          <div class="numbers-item__hot-price">5 499 руб</div>
+                          <div class="numbers-item__monthly">Абонентская плата 600 руб./мес.
+                          </div>
+                        </div>
+                        <div class="numbers-item__buy-btn"></div>
+                      </div>
+
+                    </div>
+
+                  </a>
+                </div>
+                <div class="hot-slider__numbers-item numbers-item swiper-slide">
+                  <a href="" class="numbers-item__card-wrap">
+
+                    <div class="numbers-item__prestige">
+                      <div class="numbers-item__icon-wrap">
+                        <img class='numbers-item__icon' src="<%=require('@img/icons/gold.svg')%>" alt="">
+                      </div>
+                      <div class="numbers-item__tel">958-120-6666</div>
+                    </div>
+
+                    <div class="numbers-item__specs">
+
+                      <ul class="numbers-item__list">
+                        <li class="numbers-item__specs-item">
+                          <div class="numbers-item__info">Оператор:</div>
+                          <div class="numbers-item__value">Мегафон</div>
+                        </li>
+                        <li class="numbers-item__specs-item">
+                          <div class="numbers-item__info">Номер:</div>
+                          <div class="numbers-item__value">958-120-6666</div>
+                        </li>
+                      </ul>
+
+                      <div class="numbers-item__footer">
+                        <div class="numbers-items__price-wrap">
+                          <div class="numbers-item__hot-price">5 499 руб</div>
+                          <div class="numbers-item__monthly">Абонентская плата 600 руб./мес.
+                          </div>
+                        </div>
+                        <div class="numbers-item__buy-btn"></div>
+                      </div>
+
+                    </div>
+
+                  </a>
+                </div>
+                <div class="hot-slider__numbers-item numbers-item swiper-slide">
+                  <a href="" class="numbers-item__card-wrap">
+
+                    <div class="numbers-item__prestige">
+                      <div class="numbers-item__icon-wrap">
+                        <img class='numbers-item__icon' src="<%=require('@img/icons/bronze.svg')%>" alt="">
+                      </div>
+                      <div class="numbers-item__tel">958-120-6666</div>
+                    </div>
+
+                    <div class="numbers-item__specs">
+
+                      <ul class="numbers-item__list">
+                        <li class="numbers-item__specs-item">
+                          <div class="numbers-item__info">Оператор:</div>
+                          <div class="numbers-item__value">Мегафон</div>
+                        </li>
+                        <li class="numbers-item__specs-item">
+                          <div class="numbers-item__info">Номер:</div>
+                          <div class="numbers-item__value">958-120-6666</div>
+                        </li>
+                      </ul>
+
+                      <div class="numbers-item__footer">
+                        <div class="numbers-items__price-wrap">
+                          <div class="numbers-item__hot-price">5 499 руб</div>
+                          <div class="numbers-item__monthly">Абонентская плата 600 руб./мес.
+                          </div>
+                        </div>
+                        <div class="numbers-item__buy-btn"></div>
+                      </div>
+
+                    </div>
+
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="hot-slider__content swiper-container" id="tariffsHotSlider">
+              <div class="hot-slider__swiper-wrapper swiper-wrapper">
+                <div class="hot-slider__tariffs-item tariffs-item swiper-slide">
+                  <a href='' class="tariffs-item__tariff-wrap">
+
+                    <div class="tariffs-item__header">
+                      <div class="tariffs-item__small-wrap">
+                        <div class="tariffs-item__icon-wrap">
+                          <img class='tariffs-item__icon' src="<%=require('@img/icons/biline.svg')%>" alt="">
+                        </div>
+                        <div class="tariffs-item__tel">Tvoy за 600</div>
+                      </div>
+                      <div class="tariffs-item__sum">+ 1346</div>
+                    </div>
+
+                    <div class="tariffs-item__specs">
+
+                      <ul class="tariffs-item__list">
+                        <li class="tariffs-item__specs-item">
+                          <div class="tariffs-item__info">Звонки по России:</div>
+                          <div class="tariffs-item__value">2000 минут</div>
+                        </li>
+                        <li class="tariffs-item__specs-item">
+                          <div class="tariffs-item__info">Интернет:</div>
+                          <div class="tariffs-item__value">35Gb</div>
+                        </li>
+                        <li class="tariffs-item__specs-item">
+                          <div class="tariffs-item__info">SMS/MMS:</div>
+                          <div class="tariffs-item__value">1000</div>
+                        </li>
+                      </ul>
+
+                      <div class="tariffs-item__more">
+                        Подробнее
+                      </div>
+
+                      <div class="tariffs-item__footer">
+                        <div class="tariffs-item__price-wrap">
+                          <div class="tariffs-item__price">499 руб</div>
+                          <div class="tariffs-item__monthly">Абонентская плата 600 руб./мес.
+                          </div>
+                        </div>
+                        <div class="tariffs-item__buy-btn"></div>
+                      </div>
+
+                    </div>
+
+                  </a>
+                </div>
+                <div class="hot-slider__tariffs-item tariffs-item swiper-slide">
+                  <a href='' class="tariffs-item__tariff-wrap">
+
+                    <div class="tariffs-item__header">
+                      <div class="tariffs-item__small-wrap">
+                        <div class="tariffs-item__icon-wrap">
+                          <img class='tariffs-item__icon' src="<%=require('@img/icons/rost.svg')%>" alt="">
+                        </div>
+                        <div class="tariffs-item__tel">Tvoy за 600</div>
+                      </div>
+                      <div class="tariffs-item__sum">+ 1346</div>
+                    </div>
+
+                    <div class="tariffs-item__specs">
+
+                      <ul class="tariffs-item__list">
+                        <li class="tariffs-item__specs-item">
+                          <div class="tariffs-item__info">Звонки по России:</div>
+                          <div class="tariffs-item__value">2000 минут</div>
+                        </li>
+                        <li class="tariffs-item__specs-item">
+                          <div class="tariffs-item__info">Интернет:</div>
+                          <div class="tariffs-item__value">35Gb</div>
+                        </li>
+                        <li class="tariffs-item__specs-item">
+                          <div class="tariffs-item__info">SMS/MMS:</div>
+                          <div class="tariffs-item__value">1000</div>
+                        </li>
+                      </ul>
+
+                      <div class="tariffs-item__more">
+                        Подробнее
+                      </div>
+
+                      <div class="tariffs-item__footer">
+                        <div class="tariffs-item__price-wrap">
+                          <div class="tariffs-item__price">499 руб</div>
+                          <div class="tariffs-item__monthly">Абонентская плата 600 руб./мес.
+                          </div>
+                        </div>
+                        <div class="tariffs-item__buy-btn"></div>
+                      </div>
+
+                    </div>
+
+                  </a>
+                </div>
+                <div class="hot-slider__tariffs-item tariffs-item swiper-slide">
+                  <a href='' class="tariffs-item__tariff-wrap">
+
+                    <div class="tariffs-item__header">
+                      <div class="tariffs-item__small-wrap">
+                        <div class="tariffs-item__icon-wrap">
+                          <img class='tariffs-item__icon' src="<%=require('@img/icons/megafon.svg')%>" alt="">
+                        </div>
+                        <div class="tariffs-item__tel">Tvoy за 600</div>
+                      </div>
+                      <div class="tariffs-item__sum">+ 1346</div>
+                    </div>
+
+                    <div class="tariffs-item__specs">
+
+                      <ul class="tariffs-item__list">
+                        <li class="tariffs-item__specs-item">
+                          <div class="tariffs-item__info">Звонки по России:</div>
+                          <div class="tariffs-item__value">2000 минут</div>
+                        </li>
+                        <li class="tariffs-item__specs-item">
+                          <div class="tariffs-item__info">Интернет:</div>
+                          <div class="tariffs-item__value">35Gb</div>
+                        </li>
+                        <li class="tariffs-item__specs-item">
+                          <div class="tariffs-item__info">SMS/MMS:</div>
+                          <div class="tariffs-item__value">1000</div>
+                        </li>
+                      </ul>
+
+                      <div class="tariffs-item__more">
+                        Подробнее
+                      </div>
+
+                      <div class="tariffs-item__footer">
+                        <div class="tariffs-item__price-wrap">
+                          <div class="tariffs-item__price">499 руб</div>
+                          <div class="tariffs-item__monthly">Абонентская плата 600 руб./мес.
+                          </div>
+                        </div>
+                        <div class="tariffs-item__buy-btn"></div>
+                      </div>
+
+                    </div>
+
+                  </a>
+                </div>
+                <div class="hot-slider__tariffs-item tariffs-item swiper-slide">
+                  <a href='' class="tariffs-item__tariff-wrap">
+
+                    <div class="tariffs-item__header">
+                      <div class="tariffs-item__small-wrap">
+                        <div class="tariffs-item__icon-wrap">
+                          <img class='tariffs-item__icon' src="<%=require('@img/icons/biline.svg')%>" alt="">
+                        </div>
+                        <div class="tariffs-item__tel">Tvoy за 600</div>
+                      </div>
+                      <div class="tariffs-item__sum">+ 1346</div>
+                    </div>
+
+                    <div class="tariffs-item__specs">
+
+                      <ul class="tariffs-item__list">
+                        <li class="tariffs-item__specs-item">
+                          <div class="tariffs-item__info">Звонки по России:</div>
+                          <div class="tariffs-item__value">2000 минут</div>
+                        </li>
+                        <li class="tariffs-item__specs-item">
+                          <div class="tariffs-item__info">Интернет:</div>
+                          <div class="tariffs-item__value">35Gb</div>
+                        </li>
+                        <li class="tariffs-item__specs-item">
+                          <div class="tariffs-item__info">SMS/MMS:</div>
+                          <div class="tariffs-item__value">1000</div>
+                        </li>
+                      </ul>
+
+                      <div class="tariffs-item__more">
+                        Подробнее
+                      </div>
+
+                      <div class="tariffs-item__footer">
+                        <div class="tariffs-item__price-wrap">
+                          <div class="tariffs-item__price">499 руб</div>
+                          <div class="tariffs-item__monthly">Абонентская плата 600 руб./мес.
+                          </div>
+                        </div>
+                        <div class="tariffs-item__buy-btn"></div>
+                      </div>
+
+                    </div>
+
+                  </a>
+                </div>
+                <div class="hot-slider__tariffs-item tariffs-item swiper-slide">
+                  <a href='' class="tariffs-item__tariff-wrap">
+
+                    <div class="tariffs-item__header">
+                      <div class="tariffs-item__small-wrap">
+                        <div class="tariffs-item__icon-wrap">
+                          <img class='tariffs-item__icon' src="<%=require('@img/icons/rost.svg')%>" alt="">
+                        </div>
+                        <div class="tariffs-item__tel">Tvoy за 600</div>
+                      </div>
+                      <div class="tariffs-item__sum">+ 1346</div>
+                    </div>
+
+                    <div class="tariffs-item__specs">
+
+                      <ul class="tariffs-item__list">
+                        <li class="tariffs-item__specs-item">
+                          <div class="tariffs-item__info">Звонки по России:</div>
+                          <div class="tariffs-item__value">2000 минут</div>
+                        </li>
+                        <li class="tariffs-item__specs-item">
+                          <div class="tariffs-item__info">Интернет:</div>
+                          <div class="tariffs-item__value">35Gb</div>
+                        </li>
+                        <li class="tariffs-item__specs-item">
+                          <div class="tariffs-item__info">SMS/MMS:</div>
+                          <div class="tariffs-item__value">1000</div>
+                        </li>
+                      </ul>
+
+                      <div class="tariffs-item__more">
+                        Подробнее
+                      </div>
+
+                      <div class="tariffs-item__footer">
+                        <div class="tariffs-item__price-wrap">
+                          <div class="tariffs-item__price">499 руб</div>
+                          <div class="tariffs-item__monthly">Абонентская плата 600 руб./мес.
+                          </div>
+                        </div>
+                        <div class="tariffs-item__buy-btn"></div>
+                      </div>
+
+                    </div>
+
+                  </a>
+                </div>
+                <div class="hot-slider__tariffs-item tariffs-item swiper-slide">
+                  <a href='' class="tariffs-item__tariff-wrap">
+
+                    <div class="tariffs-item__header">
+                      <div class="tariffs-item__small-wrap">
+                        <div class="tariffs-item__icon-wrap">
+                          <img class='tariffs-item__icon' src="<%=require('@img/icons/megafon.svg')%>" alt="">
+                        </div>
+                        <div class="tariffs-item__tel">Tvoy за 600</div>
+                      </div>
+                      <div class="tariffs-item__sum">+ 1346</div>
+                    </div>
+
+                    <div class="tariffs-item__specs">
+
+                      <ul class="tariffs-item__list">
+                        <li class="tariffs-item__specs-item">
+                          <div class="tariffs-item__info">Звонки по России:</div>
+                          <div class="tariffs-item__value">2000 минут</div>
+                        </li>
+                        <li class="tariffs-item__specs-item">
+                          <div class="tariffs-item__info">Интернет:</div>
+                          <div class="tariffs-item__value">35Gb</div>
+                        </li>
+                        <li class="tariffs-item__specs-item">
+                          <div class="tariffs-item__info">SMS/MMS:</div>
+                          <div class="tariffs-item__value">1000</div>
+                        </li>
+                      </ul>
+
+                      <div class="tariffs-item__more">
+                        Подробнее
+                      </div>
+
+                      <div class="tariffs-item__footer">
+                        <div class="tariffs-item__price-wrap">
+                          <div class="tariffs-item__price">499 руб</div>
+                          <div class="tariffs-item__monthly">Абонентская плата 600 руб./мес.
+                          </div>
+                        </div>
+                        <div class="tariffs-item__buy-btn"></div>
+                      </div>
+
+                    </div>
+
+                  </a>
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="swiper-controls numbersHotSlider-swiper-controls">
+            <div class="swiper-button-prev swiper-button"></div>
+            <div class="swiper-button-next swiper-button"></div>
+          </div>
+          <div class="swiper-controls tariffsHotSlider-swiper-controls">
+            <div class="swiper-button-prev swiper-button"></div>
+            <div class="swiper-button-next swiper-button"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="frontpage__how-works how-works">
+    <div class="how-works__wrap">
+
+      <div class="container">
+
+        <div class="how-works__raw">
+
+          <div class="how-works__content" data-aos="fade-right">
+            <h2 class="how-works__title">Как это
+              работает?</h2>
+            <p class="how-works__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.
+              <br>
+              <br>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="how-works__btns">
+              <a href="" class="how-works__btn">Подобрать тариф</a>
+              <a href="" class="how-works__btn-link">Подобрать номер</a>
+            </div>
+          </div>
+
+          <div class="how-works__img-wrap" data-aos="fade-left">
+            <img src="<%=require('@img/img/how-work.png')%>" alt="">
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="how-works__advantages advantages">
+
+      <div class="container">
+
+        <ul class="advantages__list">
+
+          <li class="advantages__item" data-aos="fade-up" data-aos-duration="550">
+            <div class="advantages__header">
+              <div class="advantages__icon-wrap">
+                <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M23.7499 5H19.9999V0H2.49994C1.12494 0 -6.10352e-05 1.125 -6.10352e-05 2.5V16.25H2.49994C2.49994 18.325 4.17494 20 6.24994 20C8.32494 20 9.99994 18.325 9.99994 16.25H17.4999C17.4999 18.325 19.1749 20 21.2499 20C23.3249 20 24.9999 18.325 24.9999 16.25H27.4999V10L23.7499 5ZM6.24994 18.125C5.21244 18.125 4.37494 17.2875 4.37494 16.25C4.37494 15.2125 5.21244 14.375 6.24994 14.375C7.28744 14.375 8.12494 15.2125 8.12494 16.25C8.12494 17.2875 7.28744 18.125 6.24994 18.125ZM23.1249 6.875L25.5749 10H19.9999V6.875H23.1249ZM21.2499 18.125C20.2124 18.125 19.3749 17.2875 19.3749 16.25C19.3749 15.2125 20.2124 14.375 21.2499 14.375C22.2874 14.375 23.1249 15.2125 23.1249 16.25C23.1249 17.2875 22.2874 18.125 21.2499 18.125Z"
+                    fill="#0F0F17" />
+                </svg>
+              </div>
+              <h3 class="advantages__title">Доставка</h3>
+            </div>
+            <p class="advantages__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.</p>
+            <a href='' class="advantages__btn-link">Подробнее</a>
+          </li>
+
+          <li class="advantages__item" data-aos="fade-up" data-aos-duration="750">
+            <div class="advantages__header">
+              <div class="advantages__icon-wrap">
+                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20.4444 2.55556H17.8889V0H5.11111V2.55556H2.55556C1.15 2.55556 0 3.70556 0 5.11111V6.38889C0 9.64722 2.45333 12.305 5.60944 12.7011C6.41444 14.6178 8.13944 16.0617 10.2222 16.4833V20.4444H5.11111V23H17.8889V20.4444H12.7778V16.4833C14.8606 16.0617 16.5856 14.6178 17.3906 12.7011C20.5467 12.305 23 9.64722 23 6.38889V5.11111C23 3.70556 21.85 2.55556 20.4444 2.55556ZM2.55556 6.38889V5.11111H5.11111V9.99222C3.62889 9.45555 2.55556 8.05 2.55556 6.38889ZM20.4444 6.38889C20.4444 8.05 19.3711 9.45555 17.8889 9.99222V5.11111H20.4444V6.38889Z"
+                    fill="#0F0F17" />
+                  <defs>
+                    <linearGradient id="paint0_linear" x1="11.5" y1="0" x2="11.5" y2="23"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#F7CD2A" />
+                      <stop offset="1" stop-color="#F1BD10" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <h3 class="advantages__title">Доставка</h3>
+            </div>
+            <p class="advantages__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.</p>
+            <a href='' class="advantages__btn-link">Подробнее</a>
+          </li>
+
+          <li class="advantages__item" data-aos="fade-up" data-aos-duration="950">
+            <div class="advantages__header">
+              <div class="advantages__icon-wrap">
+                <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.6 0L0 3.6V10.908C0 16.968 4.092 22.62 9.6 24C15.108 22.62 19.2 16.968 19.2 10.908V3.6L9.6 0ZM8.328 16.248L4.08 12L5.772 10.308L8.316 12.852L13.404 7.764L15.096 9.456L8.328 16.248Z"
+                    fill="#0F0F17" />
+                </svg>
+              </div>
+              <h3 class="advantages__title">Доставка</h3>
+            </div>
+            <p class="advantages__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.</p>
+            <a href='' class="advantages__btn-link">Подробнее</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </section>
+
+  <div class="frontpage__reviews reviews" data-aos="fade-up">
+    <div class="reviews__wrap">
+
+      <div class="container">
+
+        <h2 class="reviews__title">Отзывы клиентов</h2>
+
+        <div class="reviews__reviews-slider reviews-slider">
+          <div class="reviews-slider__control-wrapper">
+            <div class="reviews-slider__wrapper">
+              <div class="reviews-slider__content swiper-container" id="reviewsSlider">
+                <div class="reviews-slider__swiper-wrapper swiper-wrapper">
+
+                  <div class="reviews__reviews-item reviews-item swiper-slide">
+                    <div class="reviews-item__wrap">
+                      <p class="reviews-item__message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <a href="" class="reviews-item__link">Читать полностью</a>
+                      <div class="reviews-item__reviewer">
+                        <div class="reviews-item__icon-wrap">
+                          <img src="<%=require('@img/icons/reviwer1.png')%>" alt="">
+                        </div>
+                        <div class="reviews-item__info">
+                          <div class="reviews-item__reviver-name">Михаил Меньшиков</div>
+                          <div class="reviews-item__reviewr-occupation">Топ-менеджер Газпромбанк</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="reviews__reviews-item reviews-item swiper-slide">
+                    <div class="reviews-item__wrap">
+                      <p class="reviews-item__message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <a href="" class="reviews-item__link">Читать полностью</a>
+                      <div class="reviews-item__reviewer">
+                        <div class="reviews-item__icon-wrap">
+                          <img src="<%=require('@img/icons/reviwer2.png')%>" alt="">
+                        </div>
+                        <div class="reviews-item__info">
+                          <div class="reviews-item__reviver-name">Михаил Меньшиков</div>
+                          <div class="reviews-item__reviewr-occupation">Топ-менеджер Газпромбанк</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="reviews__reviews-item reviews-item swiper-slide">
+                    <div class="reviews-item__wrap">
+                      <p class="reviews-item__message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <a href="" class="reviews-item__link">Читать полностью</a>
+                      <div class="reviews-item__reviewer">
+                        <div class="reviews-item__icon-wrap">
+                          <img src="<%=require('@img/icons/reviwer1.png')%>" alt="">
+                        </div>
+                        <div class="reviews-item__info">
+                          <div class="reviews-item__reviver-name">Михаил Меньшиков</div>
+                          <div class="reviews-item__reviewr-occupation">Топ-менеджер Газпромбанк</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="reviews__reviews-item reviews-item swiper-slide">
+                    <div class="reviews-item__wrap">
+                      <p class="reviews-item__message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <a href="" class="reviews-item__link">Читать полностью</a>
+                      <div class="reviews-item__reviewer">
+                        <div class="reviews-item__icon-wrap">
+                          <img src="<%=require('@img/icons/reviwer1.png')%>" alt="">
+                        </div>
+                        <div class="reviews-item__info">
+                          <div class="reviews-item__reviver-name">Михаил Меньшиков</div>
+                          <div class="reviews-item__reviewr-occupation">Топ-менеджер Газпромбанк</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="reviews__reviews-item reviews-item swiper-slide">
+                    <div class="reviews-item__wrap">
+                      <p class="reviews-item__message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <a href="" class="reviews-item__link">Читать полностью</a>
+                      <div class="reviews-item__reviewer">
+                        <div class="reviews-item__icon-wrap">
+                          <img src="<%=require('@img/icons/reviwer3.png')%>" alt="">
+                        </div>
+                        <div class="reviews-item__info">
+                          <div class="reviews-item__reviver-name">Анжела Митькова</div>
+                          <div class="reviews-item__reviewr-occupation">Топ-менеджер Газпромбанк</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="reviews__reviews-item reviews-item swiper-slide">
+                    <div class="reviews-item__wrap">
+                      <p class="reviews-item__message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <a href="" class="reviews-item__link">Читать полностью</a>
+                      <div class="reviews-item__reviewer">
+                        <div class="reviews-item__icon-wrap">
+                          <img src="<%=require('@img/icons/reviwer1.png')%>" alt="">
+                        </div>
+                        <div class="reviews-item__info">
+                          <div class="reviews-item__reviver-name">Марина Карпова</div>
+                          <div class="reviews-item__reviewr-occupation">Топ-менеджер Газпромбанк</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="reviews-slider-swiper-controls swiper-controls">
+              <div class="swiper-button-prev swiper-button"></div>
+              <div class="swiper-button-next swiper-button"></div>
+            </div>
+
+
+          </div>
+
+        </div>
+
+        <a href="" class="reviews__see-all" data-aos="fade-up">Смотреть все отзывы</a>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <section class="frontpage__support support">
+    <div class="container">
+      <div class="support__wrap">
+        <div class="support__left" data-aos="fade-right">
+          <picture class="support__image-wrap">
+            <source srcset='<%=require('@img/img/support-img.png')%>.webp' type='image/webp'>
+            <img class="support__img-main" src="<%=require('@img/img/support-img.png')%>" alt="">
+          </picture>
+          <div class="support__title">Подобрать вам
+            красивый номер
+            и выгодный тариф?</div>
+          <a href="" class="support__cat-link">Перейти в каталог</a>
+        </div>
+        <div class="support__right" data-aos="fade-left">
+          <h2 class="support__heading">Задать вопрос
+            поддержке</h2>
+          <div class="support__subheading">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+          </div>
+          <div class="support__buttons">
+            <button class="support__btn">Позвонить</button>
+            <button class="support__btn" data-bs-toggle="modal" data-bs-target="#message-modal">Написать
+              сообщение</button>
+          </div>
+          <small class="support__small">Ожидание ответа в случае отправки сообщения
+            может занимать до 3-х рабочих дней.</small>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+
+<%= require('@parts/footer.ejs')() %>

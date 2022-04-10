@@ -1,0 +1,191 @@
+<%= require('@parts/header.ejs')({title: 'promo-catalog' }) %>
+
+<main class="promo-catalog" id="root">
+ <div class="archive-numbers__wrap corner-dots-dec">
+        <img src="<%=require('@img/bg/dot-bg-full.svg')%>" alt="">
+    </div>
+
+    <div class="container">
+
+        <%= require('@parts/_breadcrumbs.ejs')({$class: 'archive-numbers', page: 'Акции', levels: 2}) %>
+
+    </div>
+
+    <div class="promo-catalog__wrap">
+
+        <div class="container">
+
+            <div class="promo-catalog__content">
+
+                <h1 class="promo-catalog__heading">Акции</h1>
+
+                <div class="promo-catalog__categories">
+                    <div class="promo-catalog__sort-by">Сортировать:</div>
+                    <ul class="promo-catalog__categories-list">
+                        <li class="promo-catalog__category">
+                            <button class="promo-catalog__btn">Сначала новые</button>
+                        </li>
+                        <li class="promo-catalog__category">
+                            <button class="promo-catalog__btn">Популярные</button>
+                        </li>
+                        <li class="promo-catalog__category">
+                            <button class="promo-catalog__btn">МТС</button>
+                        </li>
+                        <li class="promo-catalog__category">
+                            <button class="promo-catalog__btn">Билайн</button>
+                        </li>
+                        <li class="promo-catalog__category">
+                            <button class="promo-catalog__btn">Мегафон</button>
+                        </li>
+                        <li class="promo-catalog__category">
+                            <button class="promo-catalog__btn">Yota</button>
+                        </li>
+                        <li class="promo-catalog__category">
+                            <button class="promo-catalog__btn">Теле2</button>
+                        </li>
+                        <li class="promo-catalog__category">
+                            <button class="promo-catalog__btn">Ростелеком</button>
+                        </li>
+                        <li class="promo-catalog__category">
+                            <button class="promo-catalog__btn">Интернет</button>
+                        </li>
+                    </ul>
+                    <div class="promo-catalog__summary">
+                        Всего акций:<span class="promo-catalog__sum"> 13</span>
+                    </div>
+
+                </div>
+
+                <ul class="promo-catalog__promos-list">
+                    <li class="promo-catalog__promos-item promos-item">
+                        <a href='' class="promos-item__wrap">
+                            <picture class="promos-item__img-wrap">
+                                <source srcset='<%=require('@img/placeholder/1.jpg')%>.webp' type='image/webp'>
+                                <img src='<%=require('@img/placeholder/1.jpg')%>' alt=''>
+                            </picture>
+                            <div class="promos-item__footer">
+                                <div class="promos-item__info">Lorem ipsum is placeholder text commonly used in the graphic</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="promo-catalog__promos-item promos-item">
+                        <a href='' class="promos-item__wrap">
+                            <picture class="promos-item__img-wrap">
+                                <source srcset='<%=require('@img/placeholder/2.jpg')%>.webp' type='image/webp'>
+                                <img src='<%=require('@img/placeholder/2.jpg')%>' alt=''>
+                            </picture>
+                            <div class="promos-item__footer">
+                                <div class="promos-item__info">Lorem ipsum is placeholder text commonly used in the graphic</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="promo-catalog__promos-item promos-item">
+                        <a href='' class="promos-item__wrap">
+                            <picture class="promos-item__img-wrap">
+                                <source srcset='<%=require('@img/placeholder/3.jpg')%>.webp' type='image/webp'>
+                                <img src='<%=require('@img/placeholder/3.jpg')%>' alt=''>
+                            </picture>
+                            <div class="promos-item__footer">
+                                <div class="promos-item__info">Lorem ipsum is placeholder text commonly used in the graphic</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="promo-catalog__promos-item promos-item">
+                        <a href='' class="promos-item__wrap">
+                            <picture class="promos-item__img-wrap">
+                                <source srcset='<%=require('@img/placeholder/4.jpg')%>.webp' type='image/webp'>
+                                <img src='<%=require('@img/placeholder/4.jpg')%>' alt=''>
+                            </picture>
+                            <div class="promos-item__footer">
+                                <div class="promos-item__info">Lorem ipsum is placeholder text commonly used in the graphic</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="promo-catalog__promos-item promos-item">
+                        <a href='' class="promos-item__wrap">
+                            <picture class="promos-item__img-wrap">
+                                <source srcset='<%=require('@img/placeholder/5.jpg')%>.webp' type='image/webp'>
+                                <img src='<%=require('@img/placeholder/5.jpg')%>' alt=''>
+                            </picture>
+                            <div class="promos-item__footer">
+                                <div class="promos-item__info">Lorem ipsum is placeholder text commonly used in the graphic</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="promo-catalog__promos-item promos-item">
+                        <a href='' class="promos-item__wrap">
+                            <picture class="promos-item__img-wrap">
+                                <source srcset='<%=require('@img/placeholder/6.jpg')%>.webp' type='image/webp'>
+                                <img src='<%=require('@img/placeholder/6.jpg')%>' alt=''>
+                            </picture>
+                            <div class="promos-item__footer">
+                                <div class="promos-item__info">Lorem ipsum is placeholder text commonly used in the graphic</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="promo-catalog__promos-item promos-item">
+                        <a href='' class="promos-item__wrap">
+                            <picture class="promos-item__img-wrap">
+                                <source srcset='<%=require('@img/placeholder/7.jpg')%>.webp' type='image/webp'>
+                                <img src='<%=require('@img/placeholder/7.jpg')%>' alt=''>
+                            </picture>
+                            <div class="promos-item__footer">
+                                <div class="promos-item__info">Lorem ipsum is placeholder text commonly used in the graphic</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="promo-catalog__promos-item promos-item">
+                        <a href='' class="promos-item__wrap">
+                            <picture class="promos-item__img-wrap">
+                                <source srcset='<%=require('@img/placeholder/8.jpg')%>.webp' type='image/webp'>
+                                <img src='<%=require('@img/placeholder/8.jpg')%>' alt=''>
+                            </picture>
+                            <div class="promos-item__footer">
+                                <div class="promos-item__info">Lorem ipsum is placeholder text commonly used in the graphic</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="promo-catalog__promos-item promos-item">
+                        <a href='' class="promos-item__wrap">
+                            <picture class="promos-item__img-wrap">
+                                <source srcset='<%=require('@img/placeholder/9.jpg')%>.webp' type='image/webp'>
+                                <img src='<%=require('@img/placeholder/9.jpg')%>' alt=''>
+                            </picture>
+                            <div class="promos-item__footer">
+                                <div class="promos-item__info">Lorem ipsum is placeholder text commonly used in the graphic</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+                <button class="promo-catalog__show-more">Показать еще акции</button>
+
+                <div class="promo-catalog__pagination pagination">
+                    
+                    <ul class="pagination__list">
+                        <li class="pagination__item">
+                            <a href="" class="pagination__link">1</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" class="pagination__link">2</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" class="pagination__link">3</a>
+                        </li>
+                        <li class="pagination__item pagination__item--more">
+                            <a href="" class="pagination__link">...</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" class="pagination__link">7</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+<%= require('@parts/footer.ejs')() %>

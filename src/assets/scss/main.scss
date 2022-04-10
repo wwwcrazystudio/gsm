@@ -1,0 +1,55 @@
+$container-max-widths: (
+    sm: 540px,
+    md: 768px,
+    lg: 960px,
+    xl: 1230px,
+);
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/containers";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/modal";
+@import "~sass-rem/rem";
+@import "aos/src/sass/aos.scss";
+@import "no-ui-slider/css/nouislider.css";
+@import "no-ui-slider/css/nouislider.pips.css";
+@import "no-ui-slider/css/nouislider.tooltips.css";
+@import "swiper/swiper-bundle.css";
+@import "mixins/utility";
+@import "base/variables";
+@import "base/fonts";
+@import "base/reset";
+@import "base/base";
+@import "base/typography";
+@import "components/buttons";
+@import "components/modals";
+@import "components/breadcrumbs";
+@import "components/form";
+@import "components/hints";
+@import "components/small-components-pages";
+@import "components/sliders";
+@import "components/items";
+@import "components/support";
+@import "components/mobile-toggle";
+@import "components/how-it-works";
+@import "components/reviews";
+@import "components/banners";
+@import "components/catalog-list";
+@import "layout/header";
+@import "layout/footer";
+@import "pages/archive-numbers.scss";
+@import "pages/unlimited-tariffs.scss";
+@import "pages/veb-tariffs.scss";
+@import "pages/front-page.scss";
+@import "pages/how-it-works-page.scss";
+@import "pages/partnership-page.scss";
+@import "pages/promo-pages.scss";
+@import "pages/contacts-page.scss";
+@import "pages/support-page.scss";
+@import "pages/checkout-page.scss";
+@import "pages/tariff-page.scss";

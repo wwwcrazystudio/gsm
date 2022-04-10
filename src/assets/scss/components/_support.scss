@@ -1,0 +1,164 @@
+.support {
+    &__wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        @include media-breakpoint-down(lg) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    &__image-wrap {
+        width: 100%;
+        height: 300px;
+        position: relative;
+        display: block;
+        margin-bottom: rem(43px);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__title {
+        font-size: rem(47px);
+        margin-bottom: rem(32px);
+        line-height: 100%;
+        width: 100%;
+        max-width: 489px;
+        letter-spacing: -0.005em;
+        @include media-breakpoint-down(lg) {
+            grid-template-columns: repeat(1, 1fr);
+            max-width: 100%;
+        }
+        @include media-breakpoint-only(lg) {
+            font-size: rem(40px);
+        }
+
+        @include media-breakpoint-down(md) {
+            font-size: rem(32px);
+        }
+    }
+
+    &__cat-link {
+        color: $main;
+        font-size: rem(16px);
+        line-height: 100%;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+
+        &::after {
+            content: '';
+            background-image: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 5 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.167368 0.167368C0.390524 -0.0557892 0.752333 -0.0557892 0.97549 0.167368L4.40406 3.59594C4.62722 3.8191 4.62722 4.1809 4.40406 4.40406L0.97549 7.83263C0.752333 8.05579 0.390524 8.05579 0.167368 7.83263C-0.0557892 7.60948 -0.0557892 7.24767 0.167368 7.02451L3.19188 4L0.167368 0.97549C-0.0557892 0.752333 -0.0557892 0.390524 0.167368 0.167368Z' fill='%23464646'/%3E%3C/svg%3E%0A");
+            background-repeat: no-repeat;
+            margin-left: rem(8px);
+            width: 5px;
+            height: 8px;
+            margin-top: rem(2px);
+        }
+
+        &:hover {
+            color: $main;
+        }
+    }
+
+    &__left {
+        @include media-breakpoint-down(lg) {
+            margin-bottom: rem(50px);
+        }
+    }
+
+    &__right {
+        position: relative;
+        border-radius: 0px 32px 32px 0px;
+        overflow: hidden;
+        padding: rem(141px 104px 32px 104px);
+
+        &::before {
+            content: '';
+            opacity: 0.1;
+            background: linear-gradient(180deg, #F7CD2A 0%, #F1BD10 100%);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        @include media-breakpoint-only(lg) {
+            padding: rem(100px 60px 32px 60px);
+        }
+        @include media-breakpoint-down(md) {
+            padding: rem(50px 30px 16px 30px);
+        }
+    }
+
+    &__heading {
+        font-weight: 600;
+        font-size: rem(47px);
+        line-height: 100%;
+        text-align: center;
+        margin-bottom: rem(15px);
+
+        @include media-breakpoint-only(lg) {
+            font-size: rem(40px);
+        }
+
+        @include media-breakpoint-down(md) {
+            font-size: rem(32px);
+        }
+    }
+
+    &__subheading {
+        color: #474D57;
+        font-size: rem(16px);
+        margin-bottom: rem(32px);
+        text-align: center;
+        width: 100%;
+        max-width: 361px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        max-width: 336px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: rem(111px);
+        @include media-breakpoint-down(md) {
+            margin-bottom: rem(50px);
+        }
+    }
+
+    &__btn {
+        @extend %btn-main;
+        @include media-breakpoint-down(md) {
+            padding: rem(12px);
+            border-radius: 4px;
+        }
+    }
+
+    &__small {
+        font-size: rem(14px);
+        line-height: 130%;
+        text-align: center;
+        letter-spacing: 0.0025em;
+        color: $main;
+        opacity: 0.4;
+        display: block;
+        @include media-breakpoint-down(md) {
+            font-size: rem(12px);
+        }
+    }
+
+}

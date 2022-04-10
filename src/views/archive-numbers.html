@@ -1,0 +1,1334 @@
+<%= require('@parts/header.ejs')({title: 'archive-numbers' }) %>
+
+<main class="archive-numbers" id="root">
+
+    <div class="archive-numbers__wrap corner-dots-dec">
+        <img src="<%=require('@img/bg/dot-bg-full.svg')%>" alt="">
+    </div>
+
+    <div class="container">
+
+        <%= require('@parts/_breadcrumbs.ejs')({$class: 'archive-numbers', page: 'Красивые номера', levels: 2}) %>
+
+    </div>
+
+    <div class="container">
+
+        <div class="archive-numbers__hints hints">
+            <ul class="hints__list">
+                <li class="hints__hint hint--active">
+                    <div class="hint__icon-wrap">
+                        <img class="hint__icon" src='<%=require('@img/icons/hint1.svg')%>' alt=''>
+                    </div>
+
+                    <div class="hint__info">
+                        Выберите понравившийся вам номер из каталога
+                    </div>
+                </li>
+                <li class="hints__hint hint hint--big">
+                    <div class="hint__icon-wrap">
+                        <img class="hint__icon" src='<%=require('@img/icons/hint2.svg')%>' alt=''>
+                    </div>
+                    <div class="hint__info">
+                        Подберите подходящий тариф
+                        или обратитесь в нашу <a href="" class="hint__link">поддержку</a>
+                    </div>
+                </li>
+                <li class="hints__hint hint">
+                    <div class="hint__icon-wrap">
+                        <img class="hint__icon" src='<%=require('@img/icons/hint3.svg')%>' alt=''>
+                    </div>
+                    <div class="hint__info">
+                        Оставьте заявку и наш менеджер свяжется с вам.
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <section class="archive-numbers__catalog-content catalog-content">
+        <div class="container">
+            <h1 class="catalog-content__heading">Красивые номера</h1>
+            <div class="catalog-content__subheading">фильтр номеров</div>
+
+            <form action="" class="catalog-content__form form">
+                <div class="form__wrap form__wrap--archive">
+                    <div class="form__col">
+                        <div class="form__group">
+                            <label for="cat-search" class="form__label">Поиск нужного номера:</label>
+                            <input type="search" id="cat-search" placeholder="+7 (992) 21" class="form__control">
+                        </div>
+                        <div class="form__out-label form__out-label--mb">
+                            Оператор:
+                        </div>
+                        <div class="form__checkboxes">
+                            <div class="form__group form__group--checkbox">
+                                <input class="form__control" type="checkbox" name="operators" id="bilain"
+                                    placeholder="">
+                                <label for="bilain" class="form__label">Билайн</label>
+                            </div>
+                            <div class="form__group form__group--checkbox">
+                                <input class="form__control" type="checkbox" name="operators" id="megafon"
+                                    placeholder="" checked>
+                                <label for="megafon" class="form__label">Мегафон</label>
+                            </div>
+                            <div class="form__group form__group--checkbox">
+                                <input class="form__control" type="checkbox" name="operators" id="mtc" placeholder="">
+                                <label for="mtc" class="form__label">МТС</label>
+                            </div>
+                            <div class="form__group form__group--checkbox">
+                                <input class="form__control" type="checkbox" name="operators" id="yota" placeholder="">
+                                <label for="yota" class="form__label">Yota</label>
+                            </div>
+                            <div class="form__group form__group--checkbox">
+                                <input class="form__control" type="checkbox" name="operators" id="tele2" placeholder="">
+                                <label for="tele2" class="form__label">Теле2</label>
+                            </div>
+                            <div class="form__group form__group--checkbox">
+                                <input class="form__control" type="checkbox" name="operators" id="rostelecom"
+                                    placeholder="">
+                                <label for="rostelecom" class="form__label">Ростелеком</label>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="form__col">
+                        <div class="form__out-label">
+                            Стоимость номера:
+                        </div>
+                        <div class="form__from-to">
+                            <div class="form__group">
+                                <label for="from" class="form__label"></label>
+                                <input type="text" id="from" placeholder="от" class="form__control">
+                            </div>
+                            <div class="form__group">
+                                <label for="to" class="form__label"></label>
+                                <input type="text" id="to" placeholder="до" class="form__control">
+                            </div>
+                        </div>
+                        <div class="form__out-label form__out-label--mb">
+                            Особенности:
+                        </div>
+                        <div class="form__checkboxes">
+                            <div class="form__group form__group--checkbox">
+                                <input class="form__control" type="checkbox" name="operators" id="free" placeholder="">
+                                <label for="free" class="form__label">Бесплатный</label>
+                            </div>
+                            <div class="form__group form__group--checkbox">
+                                <input class="form__control" type="checkbox" name="operators" id="bronze"
+                                    placeholder="" checked>
+                                <label for="bronze" class="form__label">Бронза</label>
+                            </div>
+                            <div class="form__group form__group--checkbox">
+                                <input class="form__control" type="checkbox" name="operators" id="silver"
+                                    placeholder="">
+                                <label for="silver" class="form__label">Серебро</label>
+                            </div>
+                            <div class="form__group form__group--checkbox">
+                                <input class="form__control" type="checkbox" name="operators" id="gold" placeholder="">
+                                <label for="gold" class="form__label">Золото</label>
+                            </div>
+                            <div class="form__group form__group--checkbox">
+                                <input class="form__control" type="checkbox" name="operators" id="platinum"
+                                    placeholder="">
+                                <label for="platinum" class="form__label">Платина</label>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="form__col">
+                        <div class="form__out-label form__out-label--mb">
+                            Особенности:
+                        </div>
+                        <div class="form__checkboxes form__checkboxes--col">
+                            <div class="form__group form__group--checkbox">
+                                <input class="form__control" type="checkbox" name="type" id="direct" placeholder="">
+                                <label for="direct" class="form__label">Прямой</label>
+                            </div>
+                            <div class="form__group form__group--checkbox">
+                                <input class="form__control" type="checkbox" name="type" id="federal" placeholder="">
+                                <label for="federal" class="form__label">Федеральный</label>
+                            </div>
+                        </div>
+                        <div class="form__buttons-wrap">
+                            <button class="form__btn">Сбросить</button>
+                            <button class="form__btn">Найти номера</button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </form>
+
+            <div class="catalog-content__catalog-list catalog-list catalog-list--without-col">
+                <button class="catalog-list__sort"> <img class="catalog-list__burger"
+                        src="<%=require('@img/icons/burger-small.svg')%>" alt=""> Сортировать по цене</button>
+
+                <div class="catalog-list__content">
+
+                    <div class="catalog-list__col">
+
+                        <ul class="catalog-list__list">
+
+                            <li class="catalog-list__numbers-item numbers-item" type="button" data-bs-toggle="modal"
+                            data-bs-target="#tariffs-modal">
+                                <div class="numbers-item__wrap">
+                                    <div class="numbers-item__icon-wrap">
+                                        <img class='numbers-item__icon' src="<%=require('@img/icons/gold.svg')%>"
+                                            alt="">
+                                    </div>
+                                    <div class="numbers-item__tel">958-120-6666</div>
+                                    <div class="numbers-item__price-wrap">
+                                        <div class="numbers-item__price">5 499 руб</div>
+                                        <div class="numbers-item__discount"></div>
+                                    </div>
+                                    <div class="numbers-item__status">
+
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="catalog-list__numbers-item numbers-item numbers-item--checked" type="button" data-bs-toggle="modal"
+                            data-bs-target="#tariffs-modal">
+                                <div class="numbers-item__wrap">
+                                    <div class="numbers-item__icon-wrap">
+                                        <img class='numbers-item__icon' src="<%=require('@img/icons/biege.svg')%>"
+                                            alt="">
+                                    </div>
+                                    <div class="numbers-item__tel">958-120-6666</div>
+                                    <div class="numbers-item__price-wrap">
+                                        <div class="numbers-item__price">5 499 руб</div>
+                                        <div class="numbers-item__discount">7 499 руб</div>
+                                    </div>
+                                    <div class="numbers-item__status">
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li class="catalog-list__numbers-item numbers-item">
+                                <div class="numbers-item__wrap">
+                                    <div class="numbers-item__icon-wrap">
+                                        <img class='numbers-item__icon' src="<%=require('@img/icons/silver.svg')%>"
+                                            alt="">
+                                    </div>
+                                    <div class="numbers-item__tel">958-120-6666</div>
+                                    <div class="numbers-item__price-wrap">
+                                        <div class="numbers-item__price">5 499 руб</div>
+                                        <div class="numbers-item__discount"></div>
+                                    </div>
+                                    <div class="numbers-item__status">
+
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li class="catalog-list__numbers-item numbers-item">
+                                <div class="numbers-item__wrap">
+                                    <div class="numbers-item__icon-wrap">
+                                        <img class='numbers-item__icon' src="<%=require('@img/icons/silver.svg')%>"
+                                            alt="">
+                                    </div>
+                                    <div class="numbers-item__tel">958-120-6666</div>
+                                    <div class="numbers-item__price-wrap">
+                                        <div class="numbers-item__price">5 499 руб</div>
+                                        <div class="numbers-item__discount"></div>
+                                    </div>
+                                    <div class="numbers-item__status">
+
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li class="catalog-list__numbers-item numbers-item">
+                                <div class="numbers-item__wrap">
+                                    <div class="numbers-item__icon-wrap">
+                                        <img class='numbers-item__icon' src="<%=require('@img/icons/bronze.svg')%>"
+                                            alt="">
+                                    </div>
+                                    <div class="numbers-item__tel">958-120-6666</div>
+                                    <div class="numbers-item__price-wrap">
+                                        <div class="numbers-item__price">5 499 руб</div>
+                                        <div class="numbers-item__discount"></div>
+                                    </div>
+                                    <div class="numbers-item__status">
+
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li class="catalog-list__numbers-item numbers-item">
+                                <div class="numbers-item__wrap">
+                                    <div class="numbers-item__icon-wrap">
+                                        <img class='numbers-item__icon' src="<%=require('@img/icons/silver.svg')%>"
+                                            alt="">
+                                    </div>
+                                    <div class="numbers-item__tel">958-120-6666</div>
+                                    <div class="numbers-item__price-wrap">
+                                        <div class="numbers-item__price">5 499 руб</div>
+                                        <div class="numbers-item__discount"></div>
+                                    </div>
+                                    <div class="numbers-item__status">
+
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li class="catalog-list__numbers-item numbers-item">
+                                <div class="numbers-item__wrap">
+                                    <div class="numbers-item__icon-wrap">
+                                        <img class='numbers-item__icon' src="<%=require('@img/icons/silver.svg')%>"
+                                            alt="">
+                                    </div>
+                                    <div class="numbers-item__tel">958-120-6666</div>
+                                    <div class="numbers-item__price-wrap">
+                                        <div class="numbers-item__price">5 499 руб</div>
+                                        <div class="numbers-item__discount"></div>
+                                    </div>
+                                    <div class="numbers-item__status">
+
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li class="catalog-list__numbers-item numbers-item">
+                                <div class="numbers-item__wrap">
+                                    <div class="numbers-item__icon-wrap">
+                                        <img class='numbers-item__icon' src="<%=require('@img/icons/bronze.svg')%>"
+                                            alt="">
+                                    </div>
+                                    <div class="numbers-item__tel">958-120-6666</div>
+                                    <div class="numbers-item__price-wrap">
+                                        <div class="numbers-item__price">5 499 руб</div>
+                                        <div class="numbers-item__discount"></div>
+                                    </div>
+                                    <div class="numbers-item__status">
+
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li class="catalog-list__numbers-item numbers-item">
+                                <div class="numbers-item__wrap">
+                                    <div class="numbers-item__icon-wrap">
+                                        <img class='numbers-item__icon' src="<%=require('@img/icons/silver.svg')%>"
+                                            alt="">
+                                    </div>
+                                    <div class="numbers-item__tel">958-120-6666</div>
+                                    <div class="numbers-item__price-wrap">
+                                        <div class="numbers-item__price">5 499 руб</div>
+                                        <div class="numbers-item__discount"></div>
+                                    </div>
+                                    <div class="numbers-item__status">
+
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li class="catalog-list__numbers-item numbers-item">
+                                <div class="numbers-item__wrap">
+                                    <div class="numbers-item__icon-wrap">
+                                        <img class='numbers-item__icon' src="<%=require('@img/icons/bronze.svg')%>"
+                                            alt="">
+                                    </div>
+                                    <div class="numbers-item__tel">958-120-6666</div>
+                                    <div class="numbers-item__price-wrap">
+                                        <div class="numbers-item__price">5 499 руб</div>
+                                        <div class="numbers-item__discount"></div>
+                                    </div>
+                                    <div class="numbers-item__status">
+
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="catalog-list__numbers-item numbers-item">
+                                <div class="numbers-item__wrap">
+                                    <div class="numbers-item__icon-wrap">
+                                        <img class='numbers-item__icon' src="<%=require('@img/icons/silver.svg')%>"
+                                            alt="">
+                                    </div>
+                                    <div class="numbers-item__tel">958-120-6666</div>
+                                    <div class="numbers-item__price-wrap">
+                                        <div class="numbers-item__price">5 499 руб</div>
+                                        <div class="numbers-item__discount"></div>
+                                    </div>
+                                    <div class="numbers-item__status">
+
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="catalog-list__numbers-item numbers-item">
+                                <div class="numbers-item__wrap">
+                                    <div class="numbers-item__icon-wrap">
+                                        <img class='numbers-item__icon' src="<%=require('@img/icons/bronze.svg')%>"
+                                            alt="">
+                                    </div>
+                                    <div class="numbers-item__tel">958-120-6666</div>
+                                    <div class="numbers-item__price-wrap">
+                                        <div class="numbers-item__price">5 499 руб</div>
+                                        <div class="numbers-item__discount">7 499 руб</div>
+                                    </div>
+                                    <div class="numbers-item__status">
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li class="catalog-list__numbers-item numbers-item">
+                                <div class="numbers-item__wrap">
+                                    <div class="numbers-item__icon-wrap">
+                                        <img class='numbers-item__icon' src="<%=require('@img/icons/gold.svg')%>"
+                                            alt="">
+                                    </div>
+                                    <div class="numbers-item__tel">958-120-6666</div>
+                                    <div class="numbers-item__price-wrap">
+                                        <div class="numbers-item__price">5 499 руб</div>
+                                        <div class="numbers-item__discount"></div>
+                                    </div>
+                                    <div class="numbers-item__status">
+
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li class="catalog-list__numbers-item numbers-item">
+                                <div class="numbers-item__wrap">
+                                    <div class="numbers-item__icon-wrap">
+                                        <img class='numbers-item__icon' src="<%=require('@img/icons/bronze.svg')%>"
+                                            alt="">
+                                    </div>
+                                    <div class="numbers-item__tel">958-120-6666</div>
+                                    <div class="numbers-item__price-wrap">
+                                        <div class="numbers-item__price">5 499 руб</div>
+                                        <div class="numbers-item__discount"></div>
+                                    </div>
+                                    <div class="numbers-item__status">
+
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li class="catalog-list__numbers-item numbers-item">
+                                <div class="numbers-item__wrap">
+                                    <div class="numbers-item__icon-wrap">
+                                        <img class='numbers-item__icon' src="<%=require('@img/icons/gold.svg')%>"
+                                            alt="">
+                                    </div>
+                                    <div class="numbers-item__tel">958-120-6666</div>
+                                    <div class="numbers-item__price-wrap">
+                                        <div class="numbers-item__price">5 499 руб</div>
+                                        <div class="numbers-item__discount"></div>
+                                    </div>
+                                    <div class="numbers-item__status">
+
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li class="catalog-list__numbers-item numbers-item">
+                                <div class="numbers-item__wrap">
+                                    <div class="numbers-item__icon-wrap">
+                                        <img class='numbers-item__icon' src="<%=require('@img/icons/silver.svg')%>"
+                                            alt="">
+                                    </div>
+                                    <div class="numbers-item__tel">958-120-6666</div>
+                                    <div class="numbers-item__price-wrap">
+                                        <div class="numbers-item__price">5 499 руб</div>
+                                        <div class="numbers-item__discount"></div>
+                                    </div>
+                                    <div class="numbers-item__status">
+
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li class="catalog-list__numbers-item numbers-item">
+                                <div class="numbers-item__wrap">
+                                    <div class="numbers-item__icon-wrap">
+                                        <img class='numbers-item__icon' src="<%=require('@img/icons/silver.svg')%>"
+                                            alt="">
+                                    </div>
+                                    <div class="numbers-item__tel">958-120-6666</div>
+                                    <div class="numbers-item__price-wrap">
+                                        <div class="numbers-item__price">5 499 руб</div>
+                                        <div class="numbers-item__discount"></div>
+                                    </div>
+                                    <div class="numbers-item__status">
+
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li class="catalog-list__numbers-item numbers-item">
+                                <div class="numbers-item__wrap">
+                                    <div class="numbers-item__icon-wrap">
+                                        <img class='numbers-item__icon' src="<%=require('@img/icons/bronze.svg')%>"
+                                            alt="">
+                                    </div>
+                                    <div class="numbers-item__tel">958-120-6666</div>
+                                    <div class="numbers-item__price-wrap">
+                                        <div class="numbers-item__price">5 499 руб</div>
+                                        <div class="numbers-item__discount"></div>
+                                    </div>
+                                    <div class="numbers-item__status">
+
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li class="catalog-list__numbers-item numbers-item">
+                                <div class="numbers-item__wrap">
+                                    <div class="numbers-item__icon-wrap">
+                                        <img class='numbers-item__icon' src="<%=require('@img/icons/silver.svg')%>"
+                                            alt="">
+                                    </div>
+                                    <div class="numbers-item__tel">958-120-6666</div>
+                                    <div class="numbers-item__price-wrap">
+                                        <div class="numbers-item__price">5 499 руб</div>
+                                        <div class="numbers-item__discount"></div>
+                                    </div>
+                                    <div class="numbers-item__status">
+
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li class="catalog-list__numbers-item numbers-item">
+                                <div class="numbers-item__wrap">
+                                    <div class="numbers-item__icon-wrap">
+                                        <img class='numbers-item__icon' src="<%=require('@img/icons/gold.svg')%>"
+                                            alt="">
+                                    </div>
+                                    <div class="numbers-item__tel">958-120-6666</div>
+                                    <div class="numbers-item__price-wrap">
+                                        <div class="numbers-item__price">5 499 руб</div>
+                                        <div class="numbers-item__discount"></div>
+                                    </div>
+                                    <div class="numbers-item__status">
+
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="catalog-list__numbers-item numbers-item">
+                                <div class="numbers-item__wrap">
+                                    <div class="numbers-item__icon-wrap">
+                                        <img class='numbers-item__icon' src="<%=require('@img/icons/bronze.svg')%>"
+                                            alt="">
+                                    </div>
+                                    <div class="numbers-item__tel">958-120-6666</div>
+                                    <div class="numbers-item__price-wrap">
+                                        <div class="numbers-item__price">5 499 руб</div>
+                                        <div class="numbers-item__discount"></div>
+                                    </div>
+                                    <div class="numbers-item__status">
+
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="catalog-list__numbers-item numbers-item">
+                                <div class="numbers-item__wrap">
+                                    <div class="numbers-item__icon-wrap">
+                                        <img class='numbers-item__icon' src="<%=require('@img/icons/gold.svg')%>"
+                                            alt="">
+                                    </div>
+                                    <div class="numbers-item__tel">958-120-6666</div>
+                                    <div class="numbers-item__price-wrap">
+                                        <div class="numbers-item__price">5 499 руб</div>
+                                        <div class="numbers-item__discount">7 499 руб</div>
+                                    </div>
+                                    <div class="numbers-item__status">
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li class="catalog-list__numbers-item numbers-item">
+                                <div class="numbers-item__wrap">
+                                    <div class="numbers-item__icon-wrap">
+                                        <img class='numbers-item__icon' src="<%=require('@img/icons/bronze.svg')%>"
+                                            alt="">
+                                    </div>
+                                    <div class="numbers-item__tel">958-120-6666</div>
+                                    <div class="numbers-item__price-wrap">
+                                        <div class="numbers-item__price">5 499 руб</div>
+                                        <div class="numbers-item__discount"></div>
+                                    </div>
+                                    <div class="numbers-item__status">
+
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li class="catalog-list__numbers-item numbers-item">
+                                <div class="numbers-item__wrap">
+                                    <div class="numbers-item__icon-wrap">
+                                        <img class='numbers-item__icon' src="<%=require('@img/icons/gold.svg')%>"
+                                            alt="">
+                                    </div>
+                                    <div class="numbers-item__tel">958-120-6666</div>
+                                    <div class="numbers-item__price-wrap">
+                                        <div class="numbers-item__price">5 499 руб</div>
+                                        <div class="numbers-item__discount"></div>
+                                    </div>
+                                    <div class="numbers-item__status">
+
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li class="catalog-list__numbers-item numbers-item">
+                                <div class="numbers-item__wrap">
+                                    <div class="numbers-item__icon-wrap">
+                                        <img class='numbers-item__icon' src="<%=require('@img/icons/silver.svg')%>"
+                                            alt="">
+                                    </div>
+                                    <div class="numbers-item__tel">958-120-6666</div>
+                                    <div class="numbers-item__price-wrap">
+                                        <div class="numbers-item__price">5 499 руб</div>
+                                        <div class="numbers-item__discount"></div>
+                                    </div>
+                                    <div class="numbers-item__status">
+
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li class="catalog-list__numbers-item numbers-item">
+                                <div class="numbers-item__wrap">
+                                    <div class="numbers-item__icon-wrap">
+                                        <img class='numbers-item__icon' src="<%=require('@img/icons/gold.svg')%>"
+                                            alt="">
+                                    </div>
+                                    <div class="numbers-item__tel">958-120-6666</div>
+                                    <div class="numbers-item__price-wrap">
+                                        <div class="numbers-item__price">5 499 руб</div>
+                                        <div class="numbers-item__discount"></div>
+                                    </div>
+                                    <div class="numbers-item__status">
+
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li class="catalog-list__numbers-item numbers-item">
+                                <div class="numbers-item__wrap">
+                                    <div class="numbers-item__icon-wrap">
+                                        <img class='numbers-item__icon' src="<%=require('@img/icons/gold.svg')%>"
+                                            alt="">
+                                    </div>
+                                    <div class="numbers-item__tel">958-120-6666</div>
+                                    <div class="numbers-item__price-wrap">
+                                        <div class="numbers-item__price">5 499 руб</div>
+                                        <div class="numbers-item__discount"></div>
+                                    </div>
+                                    <div class="numbers-item__status">
+
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li class="catalog-list__numbers-item numbers-item">
+                                <div class="numbers-item__wrap">
+                                    <div class="numbers-item__icon-wrap">
+                                        <img class='numbers-item__icon' src="<%=require('@img/icons/bronze.svg')%>"
+                                            alt="">
+                                    </div>
+                                    <div class="numbers-item__tel">958-120-6666</div>
+                                    <div class="numbers-item__price-wrap">
+                                        <div class="numbers-item__price">5 499 руб</div>
+                                        <div class="numbers-item__discount"></div>
+                                    </div>
+                                    <div class="numbers-item__status">
+
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li class="catalog-list__numbers-item numbers-item">
+                                <div class="numbers-item__wrap">
+                                    <div class="numbers-item__icon-wrap">
+                                        <img class='numbers-item__icon' src="<%=require('@img/icons/silver.svg')%>"
+                                            alt="">
+                                    </div>
+                                    <div class="numbers-item__tel">958-120-6666</div>
+                                    <div class="numbers-item__price-wrap">
+                                        <div class="numbers-item__price">5 499 руб</div>
+                                        <div class="numbers-item__discount"></div>
+                                    </div>
+                                    <div class="numbers-item__status">
+
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li class="catalog-list__numbers-item numbers-item">
+                                <div class="numbers-item__wrap">
+                                    <div class="numbers-item__icon-wrap">
+                                        <img class='numbers-item__icon' src="<%=require('@img/icons/silver.svg')%>"
+                                            alt="">
+                                    </div>
+                                    <div class="numbers-item__tel">958-120-6666</div>
+                                    <div class="numbers-item__price-wrap">
+                                        <div class="numbers-item__price">5 499 руб</div>
+                                        <div class="numbers-item__discount"></div>
+                                    </div>
+                                    <div class="numbers-item__status">
+
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                        <button class="catalog-list__show-more">Показать еще 30 номеров<svg width="10" height="6"
+                                viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5 4.18086L9.12056 0.0603027L10 0.939741L5 5.93974L-3.84414e-08 0.93974L0.879437 0.0603023L5 4.18086Z"
+                                    fill="#8C97A2" />
+                            </svg>
+                        </button>
+
+                        <div class="catalog-list__small-banner small-banner">
+                            
+                            <div class="small-banner__padding-wrap">
+                                <a href="" class="small-banner__wrap">
+                                    <div class="small-banner__content">
+                                        <div class="small-banner__logo-wrap">
+                                            <img src="<%=require('@img/icons/logo-gold.svg')%>" alt="">
+                                        </div>
+                                        <span class="small-banner__title">Лучшие номера и тарифы
+                                            по выгодным ценам.</span>
+                                    </div>
+                                    <div class="small-banner__info-small">РК Коннект</div>
+                                </a>
+                            </div>
+                       
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="archive-numbers__hot hot">
+        <div class="container">
+            <h2 class="hot__heading">Горячие предложения</h2>
+            <div class="hot__toggle">
+                <p class="slider-active">Распродажа номеров</p>
+                <label class="hot__hot-toggle">
+                    <input type="checkbox">
+                    <span class="hot-toggle__slider"></span>
+                </label>
+                <p>Распродажа тарифов</p>
+            </div>
+            <div class="hot__hot-slider hot-slider">
+                <div class="hot-slider__control-wrapper">
+                    <div class="hot-slider__wrapper">
+                        <div class="hot-slider__content swiper-container slider-active" id="numbersHotSlider">
+                            <div class="hot-slider__swiper-wrapper swiper-wrapper">
+                                <div class="hot-slider__numbers-item numbers-item swiper-slide">
+                                    <a href="" class="numbers-item__card-wrap">
+
+                                        <div class="numbers-item__prestige">
+                                            <div class="numbers-item__icon-wrap">
+                                                <img class='numbers-item__icon'
+                                                    src="<%=require('@img/icons/silver.svg')%>" alt="">
+                                            </div>
+                                            <div class="numbers-item__tel">958-120-6666</div>
+                                        </div>
+
+                                        <div class="numbers-item__specs">
+
+                                            <ul class="numbers-item__list">
+                                                <li class="numbers-item__specs-item">
+                                                    <div class="numbers-item__info">Оператор:</div>
+                                                    <div class="numbers-item__value">Мегафон</div>
+                                                </li>
+                                                <li class="numbers-item__specs-item">
+                                                    <div class="numbers-item__info">Номер:</div>
+                                                    <div class="numbers-item__value">958-120-6666</div>
+                                                </li>
+                                            </ul>
+
+                                            <div class="numbers-item__footer">
+                                                <div class="numbers-items__price-wrap">
+                                                    <div class="numbers-item__hot-price">5 499 руб</div>
+                                                    <div class="numbers-item__monthly">Абонентская плата 600 руб./мес.
+                                                    </div>
+                                                </div>
+                                                <div class="numbers-item__buy-btn"></div>
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="hot-slider__numbers-item numbers-item swiper-slide">
+                                    <a href="" class="numbers-item__card-wrap">
+
+                                        <div class="numbers-item__prestige">
+                                            <div class="numbers-item__icon-wrap">
+                                                <img class='numbers-item__icon'
+                                                    src="<%=require('@img/icons/gold.svg')%>" alt="">
+                                            </div>
+                                            <div class="numbers-item__tel">958-120-6666</div>
+                                        </div>
+
+                                        <div class="numbers-item__specs">
+
+                                            <ul class="numbers-item__list">
+                                                <li class="numbers-item__specs-item">
+                                                    <div class="numbers-item__info">Оператор:</div>
+                                                    <div class="numbers-item__value">Мегафон</div>
+                                                </li>
+                                                <li class="numbers-item__specs-item">
+                                                    <div class="numbers-item__info">Номер:</div>
+                                                    <div class="numbers-item__value">958-120-6666</div>
+                                                </li>
+                                            </ul>
+
+                                            <div class="numbers-item__footer">
+                                                <div class="numbers-items__price-wrap">
+                                                    <div class="numbers-item__hot-price">5 499 руб</div>
+                                                    <div class="numbers-item__monthly">Абонентская плата 600 руб./мес.
+                                                    </div>
+                                                </div>
+                                                <div class="numbers-item__buy-btn"></div>
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="hot-slider__numbers-item numbers-item swiper-slide">
+                                    <a href="" class="numbers-item__card-wrap">
+
+                                        <div class="numbers-item__prestige">
+                                            <div class="numbers-item__icon-wrap">
+                                                <img class='numbers-item__icon'
+                                                    src="<%=require('@img/icons/bronze.svg')%>" alt="">
+                                            </div>
+                                            <div class="numbers-item__tel">958-120-6666</div>
+                                        </div>
+
+                                        <div class="numbers-item__specs">
+
+                                            <ul class="numbers-item__list">
+                                                <li class="numbers-item__specs-item">
+                                                    <div class="numbers-item__info">Оператор:</div>
+                                                    <div class="numbers-item__value">Мегафон</div>
+                                                </li>
+                                                <li class="numbers-item__specs-item">
+                                                    <div class="numbers-item__info">Номер:</div>
+                                                    <div class="numbers-item__value">958-120-6666</div>
+                                                </li>
+                                            </ul>
+
+                                            <div class="numbers-item__footer">
+                                                <div class="numbers-items__price-wrap">
+                                                    <div class="numbers-item__hot-price">5 499 руб</div>
+                                                    <div class="numbers-item__monthly">Абонентская плата 600 руб./мес.
+                                                    </div>
+                                                </div>
+                                                <div class="numbers-item__buy-btn"></div>
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="hot-slider__numbers-item numbers-item swiper-slide">
+                                    <a href="" class="numbers-item__card-wrap">
+
+                                        <div class="numbers-item__prestige">
+                                            <div class="numbers-item__icon-wrap">
+                                                <img class='numbers-item__icon'
+                                                    src="<%=require('@img/icons/silver.svg')%>" alt="">
+                                            </div>
+                                            <div class="numbers-item__tel">958-120-6666</div>
+                                        </div>
+
+                                        <div class="numbers-item__specs">
+
+                                            <ul class="numbers-item__list">
+                                                <li class="numbers-item__specs-item">
+                                                    <div class="numbers-item__info">Оператор:</div>
+                                                    <div class="numbers-item__value">Мегафон</div>
+                                                </li>
+                                                <li class="numbers-item__specs-item">
+                                                    <div class="numbers-item__info">Номер:</div>
+                                                    <div class="numbers-item__value">958-120-6666</div>
+                                                </li>
+                                            </ul>
+
+                                            <div class="numbers-item__footer">
+                                                <div class="numbers-items__price-wrap">
+                                                    <div class="numbers-item__hot-price">5 499 руб</div>
+                                                    <div class="numbers-item__monthly">Абонентская плата 600 руб./мес.
+                                                    </div>
+                                                </div>
+                                                <div class="numbers-item__buy-btn"></div>
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="hot-slider__numbers-item numbers-item swiper-slide">
+                                    <a href="" class="numbers-item__card-wrap">
+
+                                        <div class="numbers-item__prestige">
+                                            <div class="numbers-item__icon-wrap">
+                                                <img class='numbers-item__icon'
+                                                    src="<%=require('@img/icons/gold.svg')%>" alt="">
+                                            </div>
+                                            <div class="numbers-item__tel">958-120-6666</div>
+                                        </div>
+
+                                        <div class="numbers-item__specs">
+
+                                            <ul class="numbers-item__list">
+                                                <li class="numbers-item__specs-item">
+                                                    <div class="numbers-item__info">Оператор:</div>
+                                                    <div class="numbers-item__value">Мегафон</div>
+                                                </li>
+                                                <li class="numbers-item__specs-item">
+                                                    <div class="numbers-item__info">Номер:</div>
+                                                    <div class="numbers-item__value">958-120-6666</div>
+                                                </li>
+                                            </ul>
+
+                                            <div class="numbers-item__footer">
+                                                <div class="numbers-items__price-wrap">
+                                                    <div class="numbers-item__hot-price">5 499 руб</div>
+                                                    <div class="numbers-item__monthly">Абонентская плата 600 руб./мес.
+                                                    </div>
+                                                </div>
+                                                <div class="numbers-item__buy-btn"></div>
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="hot-slider__numbers-item numbers-item swiper-slide">
+                                    <a href="" class="numbers-item__card-wrap">
+
+                                        <div class="numbers-item__prestige">
+                                            <div class="numbers-item__icon-wrap">
+                                                <img class='numbers-item__icon'
+                                                    src="<%=require('@img/icons/bronze.svg')%>" alt="">
+                                            </div>
+                                            <div class="numbers-item__tel">958-120-6666</div>
+                                        </div>
+
+                                        <div class="numbers-item__specs">
+
+                                            <ul class="numbers-item__list">
+                                                <li class="numbers-item__specs-item">
+                                                    <div class="numbers-item__info">Оператор:</div>
+                                                    <div class="numbers-item__value">Мегафон</div>
+                                                </li>
+                                                <li class="numbers-item__specs-item">
+                                                    <div class="numbers-item__info">Номер:</div>
+                                                    <div class="numbers-item__value">958-120-6666</div>
+                                                </li>
+                                            </ul>
+
+                                            <div class="numbers-item__footer">
+                                                <div class="numbers-items__price-wrap">
+                                                    <div class="numbers-item__hot-price">5 499 руб</div>
+                                                    <div class="numbers-item__monthly">Абонентская плата 600 руб./мес.
+                                                    </div>
+                                                </div>
+                                                <div class="numbers-item__buy-btn"></div>
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="hot-slider__content swiper-container " id="tariffsHotSlider">
+                            <div class="hot-slider__swiper-wrapper swiper-wrapper">
+                                <div class="hot-slider__tariffs-item tariffs-item swiper-slide">
+                                    <a href='' class="tariffs-item__tariff-wrap">
+
+                                        <div class="tariffs-item__header">
+                                            <div class="tariffs-item__small-wrap">
+                                                <div class="tariffs-item__icon-wrap">
+                                                    <img class='tariffs-item__icon'
+                                                        src="<%=require('@img/icons/biline.svg')%>" alt="">
+                                                </div>
+                                                <div class="tariffs-item__tel">Tvoy за 600</div>
+                                            </div>
+                                            <div class="tariffs-item__sum">+ 1346</div>
+                                        </div>
+
+                                        <div class="tariffs-item__specs">
+
+                                            <ul class="tariffs-item__list">
+                                                <li class="tariffs-item__specs-item">
+                                                    <div class="tariffs-item__info">Звонки по России:</div>
+                                                    <div class="tariffs-item__value">2000 минут</div>
+                                                </li>
+                                                <li class="tariffs-item__specs-item">
+                                                    <div class="tariffs-item__info">Интернет:</div>
+                                                    <div class="tariffs-item__value">35Gb</div>
+                                                </li>
+                                                <li class="tariffs-item__specs-item">
+                                                    <div class="tariffs-item__info">SMS/MMS:</div>
+                                                    <div class="tariffs-item__value">1000</div>
+                                                </li>
+                                            </ul>
+
+                                            <div class="tariffs-item__more">
+                                                Подробнее
+                                            </div>
+
+                                            <div class="tariffs-item__footer">
+                                                <div class="tariffs-item__price-wrap">
+                                                    <div class="tariffs-item__price">499 руб</div>
+                                                    <div class="tariffs-item__monthly">Абонентская плата 600 руб./мес.
+                                                    </div>
+                                                </div>
+                                                <div class="tariffs-item__buy-btn"></div>
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="hot-slider__tariffs-item tariffs-item swiper-slide">
+                                    <a href='' class="tariffs-item__tariff-wrap">
+
+                                        <div class="tariffs-item__header">
+                                            <div class="tariffs-item__small-wrap">
+                                                <div class="tariffs-item__icon-wrap">
+                                                    <img class='tariffs-item__icon'
+                                                        src="<%=require('@img/icons/rost.svg')%>" alt="">
+                                                </div>
+                                                <div class="tariffs-item__tel">Tvoy за 600</div>
+                                            </div>
+                                            <div class="tariffs-item__sum">+ 1346</div>
+                                        </div>
+
+                                        <div class="tariffs-item__specs">
+
+                                            <ul class="tariffs-item__list">
+                                                <li class="tariffs-item__specs-item">
+                                                    <div class="tariffs-item__info">Звонки по России:</div>
+                                                    <div class="tariffs-item__value">2000 минут</div>
+                                                </li>
+                                                <li class="tariffs-item__specs-item">
+                                                    <div class="tariffs-item__info">Интернет:</div>
+                                                    <div class="tariffs-item__value">35Gb</div>
+                                                </li>
+                                                <li class="tariffs-item__specs-item">
+                                                    <div class="tariffs-item__info">SMS/MMS:</div>
+                                                    <div class="tariffs-item__value">1000</div>
+                                                </li>
+                                            </ul>
+
+                                            <div class="tariffs-item__more">
+                                                Подробнее
+                                            </div>
+
+                                            <div class="tariffs-item__footer">
+                                                <div class="tariffs-item__price-wrap">
+                                                    <div class="tariffs-item__price">499 руб</div>
+                                                    <div class="tariffs-item__monthly">Абонентская плата 600 руб./мес.
+                                                    </div>
+                                                </div>
+                                                <div class="tariffs-item__buy-btn"></div>
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="hot-slider__tariffs-item tariffs-item swiper-slide">
+                                    <a href='' class="tariffs-item__tariff-wrap">
+
+                                        <div class="tariffs-item__header">
+                                            <div class="tariffs-item__small-wrap">
+                                                <div class="tariffs-item__icon-wrap">
+                                                    <img class='tariffs-item__icon'
+                                                        src="<%=require('@img/icons/megafon.svg')%>" alt="">
+                                                </div>
+                                                <div class="tariffs-item__tel">Tvoy за 600</div>
+                                            </div>
+                                            <div class="tariffs-item__sum">+ 1346</div>
+                                        </div>
+
+                                        <div class="tariffs-item__specs">
+
+                                            <ul class="tariffs-item__list">
+                                                <li class="tariffs-item__specs-item">
+                                                    <div class="tariffs-item__info">Звонки по России:</div>
+                                                    <div class="tariffs-item__value">2000 минут</div>
+                                                </li>
+                                                <li class="tariffs-item__specs-item">
+                                                    <div class="tariffs-item__info">Интернет:</div>
+                                                    <div class="tariffs-item__value">35Gb</div>
+                                                </li>
+                                                <li class="tariffs-item__specs-item">
+                                                    <div class="tariffs-item__info">SMS/MMS:</div>
+                                                    <div class="tariffs-item__value">1000</div>
+                                                </li>
+                                            </ul>
+
+                                            <div class="tariffs-item__more">
+                                                Подробнее
+                                            </div>
+
+                                            <div class="tariffs-item__footer">
+                                                <div class="tariffs-item__price-wrap">
+                                                    <div class="tariffs-item__price">499 руб</div>
+                                                    <div class="tariffs-item__monthly">Абонентская плата 600 руб./мес.
+                                                    </div>
+                                                </div>
+                                                <div class="tariffs-item__buy-btn"></div>
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="hot-slider__tariffs-item tariffs-item swiper-slide">
+                                    <a href='' class="tariffs-item__tariff-wrap">
+
+                                        <div class="tariffs-item__header">
+                                            <div class="tariffs-item__small-wrap">
+                                                <div class="tariffs-item__icon-wrap">
+                                                    <img class='tariffs-item__icon'
+                                                        src="<%=require('@img/icons/biline.svg')%>" alt="">
+                                                </div>
+                                                <div class="tariffs-item__tel">Tvoy за 600</div>
+                                            </div>
+                                            <div class="tariffs-item__sum">+ 1346</div>
+                                        </div>
+
+                                        <div class="tariffs-item__specs">
+
+                                            <ul class="tariffs-item__list">
+                                                <li class="tariffs-item__specs-item">
+                                                    <div class="tariffs-item__info">Звонки по России:</div>
+                                                    <div class="tariffs-item__value">2000 минут</div>
+                                                </li>
+                                                <li class="tariffs-item__specs-item">
+                                                    <div class="tariffs-item__info">Интернет:</div>
+                                                    <div class="tariffs-item__value">35Gb</div>
+                                                </li>
+                                                <li class="tariffs-item__specs-item">
+                                                    <div class="tariffs-item__info">SMS/MMS:</div>
+                                                    <div class="tariffs-item__value">1000</div>
+                                                </li>
+                                            </ul>
+
+                                            <div class="tariffs-item__more">
+                                                Подробнее
+                                            </div>
+
+                                            <div class="tariffs-item__footer">
+                                                <div class="tariffs-item__price-wrap">
+                                                    <div class="tariffs-item__price">499 руб</div>
+                                                    <div class="tariffs-item__monthly">Абонентская плата 600 руб./мес.
+                                                    </div>
+                                                </div>
+                                                <div class="tariffs-item__buy-btn"></div>
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="hot-slider__tariffs-item tariffs-item swiper-slide">
+                                    <a href='' class="tariffs-item__tariff-wrap">
+
+                                        <div class="tariffs-item__header">
+                                            <div class="tariffs-item__small-wrap">
+                                                <div class="tariffs-item__icon-wrap">
+                                                    <img class='tariffs-item__icon'
+                                                        src="<%=require('@img/icons/rost.svg')%>" alt="">
+                                                </div>
+                                                <div class="tariffs-item__tel">Tvoy за 600</div>
+                                            </div>
+                                            <div class="tariffs-item__sum">+ 1346</div>
+                                        </div>
+
+                                        <div class="tariffs-item__specs">
+
+                                            <ul class="tariffs-item__list">
+                                                <li class="tariffs-item__specs-item">
+                                                    <div class="tariffs-item__info">Звонки по России:</div>
+                                                    <div class="tariffs-item__value">2000 минут</div>
+                                                </li>
+                                                <li class="tariffs-item__specs-item">
+                                                    <div class="tariffs-item__info">Интернет:</div>
+                                                    <div class="tariffs-item__value">35Gb</div>
+                                                </li>
+                                                <li class="tariffs-item__specs-item">
+                                                    <div class="tariffs-item__info">SMS/MMS:</div>
+                                                    <div class="tariffs-item__value">1000</div>
+                                                </li>
+                                            </ul>
+
+                                            <div class="tariffs-item__more">
+                                                Подробнее
+                                            </div>
+
+                                            <div class="tariffs-item__footer">
+                                                <div class="tariffs-item__price-wrap">
+                                                    <div class="tariffs-item__price">499 руб</div>
+                                                    <div class="tariffs-item__monthly">Абонентская плата 600 руб./мес.
+                                                    </div>
+                                                </div>
+                                                <div class="tariffs-item__buy-btn"></div>
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="hot-slider__tariffs-item tariffs-item swiper-slide">
+                                    <a href='' class="tariffs-item__tariff-wrap">
+
+                                        <div class="tariffs-item__header">
+                                            <div class="tariffs-item__small-wrap">
+                                                <div class="tariffs-item__icon-wrap">
+                                                    <img class='tariffs-item__icon'
+                                                        src="<%=require('@img/icons/megafon.svg')%>" alt="">
+                                                </div>
+                                                <div class="tariffs-item__tel">Tvoy за 600</div>
+                                            </div>
+                                            <div class="tariffs-item__sum">+ 1346</div>
+                                        </div>
+
+                                        <div class="tariffs-item__specs">
+
+                                            <ul class="tariffs-item__list">
+                                                <li class="tariffs-item__specs-item">
+                                                    <div class="tariffs-item__info">Звонки по России:</div>
+                                                    <div class="tariffs-item__value">2000 минут</div>
+                                                </li>
+                                                <li class="tariffs-item__specs-item">
+                                                    <div class="tariffs-item__info">Интернет:</div>
+                                                    <div class="tariffs-item__value">35Gb</div>
+                                                </li>
+                                                <li class="tariffs-item__specs-item">
+                                                    <div class="tariffs-item__info">SMS/MMS:</div>
+                                                    <div class="tariffs-item__value">1000</div>
+                                                </li>
+                                            </ul>
+
+                                            <div class="tariffs-item__more">
+                                                Подробнее
+                                            </div>
+
+                                            <div class="tariffs-item__footer">
+                                                <div class="tariffs-item__price-wrap">
+                                                    <div class="tariffs-item__price">499 руб</div>
+                                                    <div class="tariffs-item__monthly">Абонентская плата 600 руб./мес.
+                                                    </div>
+                                                </div>
+                                                <div class="tariffs-item__buy-btn"></div>
+                                            </div>
+
+                                        </div>
+
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-controls numbersHotSlider-swiper-controls">
+                        <div class="swiper-button-prev swiper-button"></div>
+                        <div class="swiper-button-next swiper-button"></div>
+                    </div>
+                    <div class="swiper-controls tariffsHotSlider-swiper-controls">
+                        <div class="swiper-button-prev swiper-button"></div>
+                        <div class="swiper-button-next swiper-button"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="archive-numbers__support support">
+        <div class="container">
+            <div class="support__wrap">
+                <div class="support__left">
+                    <picture class="support__image-wrap">
+                        <source srcset='<%=require('@img/img/support-img.png')%>.webp' type='image/webp'>
+                        <img class="support__img-main" src="<%=require('@img/img/support-img.png')%>" alt="">
+                    </picture>
+                    <div class="support__title">Подобрать вам
+                        красивый номер
+                        и выгодный тариф?</div>
+                    <a href="" class="support__cat-link">Перейти в каталог</a>
+                </div>
+                <div class="support__right">
+                    <h2 class="support__heading">Задать вопрос
+                        поддержке</h2>
+                    <div class="support__subheading">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+                    </div>
+                    <div class="support__buttons">
+                        <button class="support__btn">Позвонить</button>
+                        <button class="support__btn" data-bs-toggle="modal"
+                            data-bs-target="#message-modal">Написать сообщение</button>
+                    </div>
+                    <small class="support__small">Ожидание ответа в случае отправки сообщения
+                        может занимать до 3-х рабочих дней.</small>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+</main>
+
+<%= require('@parts/footer.ejs')() %>
